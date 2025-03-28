@@ -1,0 +1,543 @@
+ 
+
+ 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="referrer" contents="always">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="공지/안내 : 모두!" />
+    <meta property="og:site_name" content="modoo!">
+    <meta property="og:image" content="https://ssl.pstatic.net/static/modoo/publish/img/sns_logo_v2.png">
+    <meta name="twitter:image" content="https://ssl.pstatic.net/static/modoo/publish/img/sns_logo_v2.png">
+    <meta property="og:description" content="언론에 소개된 modoo 소식" />
+    <meta name="description" content="언론에 소개된 modoo 소식" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon_v1.ico@20250124144128">
+    <title>공지/안내 : 모두!</title>
+    <link rel="canonical" href="news.html">
+
+    <link rel="stylesheet" type="text/css" href="../../static/modoo/css/modoo_20250124144128.css">
+    <link rel="stylesheet" type="text/css" href="../../static/common/css/common_20250124144128.css">
+
+    <script type="text/javascript" src="../../application/static/script/modules/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../application/static/script/modules/all-0.3.0.min.js"></script>
+
+    <script type="text/javascript" src="../../application/static/script/mfarm_min/mfarm.js@20250124144128"></script>
+
+    <script type="text/javascript" src="../../application/static/script/modules/clickcr.js"></script>
+    <script type="text/javascript" src="../../application/static/script/modules/lcslog.js@20250124144128"></script>
+    <script type="text/javascript" src="../../../wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">if(!wcs_add){wcs_add={}}wcs_add.wa="b5b3d674191fe0";wcs.inflow();</script>
+</head>
+
+<body >
+
+<div id="wrap" class="sub">
+    <div id="u_skip">
+        <a href="news.html#content"><span>본문으로 바로가기</span></a>
+    </div>
+
+    <div id="header">
+        <div class="header_wrap">
+            <h1 class="logo">
+                <a href="https://naver.com" class="sp naver"><span class="blind">NAVER</span></a>
+                <a href="../../index.html" class="sp modoo" onClick="clickcr(this, 'gnb.modoo', '', '', event)"><span class="blind">modoo!</span></a>
+            </h1>
+            <ul class="gnb">
+                <li class="menu2"><a href="../renewal.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.campaign', '', '', event)"><span class="blind">시작하기</span></a></li>
+                <li class="menu3"><a href="../main/promote.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.inform', '', '', event)"><span class="blind">활용하기</span></a></li>
+                <li class="menu4 active"><a href="notice.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.notice', '', '', event)"><span class="blind">공지/안내</span></a></li>
+                <li class="menu6"><a href="../main/start.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.start', '', '', event)"><span class="blind">업종별 템플릿</span></a></li>
+            </ul>
+            <ul class="h_menu">
+                <li class="_naver_login_btn _naver_login"><a href="news.html#" class="btn_login sp"><span class="blind">로그인</span></a></li>
+                <li><a href="../../management.html" target="_blank" class="btn_management sp" onClick="clickcr(this, 'gnb.edit', '', '', event)"><span class="blind">홈페이지관리</span></a></li>
+                <li><a href="https://talk.naver.com/ct/wc61mx" target="_blank" class="btn_smartbot sp"><span class="blind">궁금할 땐 modoo 스마트봇 beta</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+<style>
+    .layer_announce {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 990;
+
+        font-family: "나눔고딕", NanumGothic, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.5em;
+        letter-spacing: -0.05em;
+        color: #222;
+    }
+
+    .layer_announce .layer_area_announce {
+        overflow: hidden;
+        position: absolute;
+        top: auto;
+        bottom: 100px;
+        right: 50px;
+    }
+
+    .ly_announce {
+        width: 500px;
+        height: 400px;
+        border: 1px solid #393d46;
+        background-color: #fff;
+    }
+
+    .ly_announce .l_tit {
+        position: relative;
+        height: 55px;
+        background-color: #5c6677
+    }
+
+    .ly_announce .l_tit span {
+        position: absolute;
+        bottom: 22px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    .ly_announce .l_cont {
+        position: absolute;
+        top: 70px;
+        bottom: 70px;
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ly_announce .l_cont ul {
+        list-style-position: outside;
+        list-style-type: disc;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    .ly_announce .l_cont p {
+        padding-bottom: 1em;
+    }
+
+    .ly_announce .btn_close {
+        overflow: hidden;
+        background-image: url(../../static/management/img/sp_manage.png);
+        width: 22px;
+        height: 22px;
+        background-position: 0 -776px;
+        position: absolute;
+        top: 18px;
+        right: 22px;
+        line-height: 1000px;
+        z-index: 10
+    }
+
+    .ly_announce .close_chk {
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        text-decoration: none;
+    }
+
+    .ly_announce .close_chk span {
+        vertical-align: middle;
+    }
+
+    .ly_announce .ico_chk {
+        display: inline-block;
+        overflow: hidden;
+        width: 13px;
+        height: 13px;
+        margin-right: 2px;
+        background: url(../../static/modoo/img/check_v3.png) no-repeat;
+    }
+
+    .ly_announce .selected .ico_chk {
+        background: url(../../static/modoo/img/check_v3.png) no-repeat 0 -60px;
+    }
+
+    .ly_announce .link {
+        text-decoration: underline;
+        color: #00c73c;
+        letter-spacing: 0;
+    }
+</style>
+<div class="layer_announce" id="_no_new_site_layer" style="display:none">
+    <div class="layer_area_announce">
+        <div class="ly_announce">
+            <div class="l_tit">
+                <span>신규 홈페이지 추가 및 신규 연동 중단 안내</span>
+            </div>
+            <div class="l_cont">
+                <p>2025년 2월 3일(월)부터 아래 지원 중단됩니다.</p>
+                <ul>
+                    <li>신규 홈페이지 추가 중단</li>
+                    <li>기존 홈페이지에 신규 연동 중단 (플레이스/예약/스마트스토어/톡톡/개인도메인)</li>
+                </ul>
+
+                <p><strong>기존 홈페이지의 경우 <u>홈페이지 및 연동 셋팅이 그대로 유지</u></strong>되오니 참고 바라며<br>
+                    관련 일정과 상세 내용은 아래 <strong>[공지 바로가기]</strong>로 확인 부탁 드립니다.</p>
+                <p>남은 기간까지 최선을 다하도록 하겠습니다.</p>
+                <p><a class="link" href="noticeDetail@boardId=167&amp;pageNum=1.html"><strong>공지
+                            바로가기</strong></p>
+            </div>
+            <a href="news.html#" class="close_chk _btn_close_chk"><span class="ico_chk"></span> <span>다시 보지 않기</span></a>
+            <a href="news.html#" class="btn_close _btn_close">닫기</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" data-compress="1">
+    var layer = $("#_no_new_site_layer");
+    var optOut = layer.find("._btn_close_chk");
+    var closeButton = layer.find("._btn_close");
+    var notiStatusCookie = 'no-new-site';
+
+    var setUpEvent = function () {
+        // 레이어 닫기
+        closeButton.click(function (event) {
+            event.preventDefault();
+            if (optOut.hasClass("selected")) {
+                $.cookie(notiStatusCookie, 'N', {expires: 365, path: '/', domain: '.modoo.at'});
+            }
+            layer.fadeTo(800, 0, function () {
+                layer.hide();
+            });
+        });
+
+        optOut.click(function (event) {
+            event.preventDefault();
+            optOut.toggleClass("selected");
+        });
+    }
+
+    // 브라우저 높이 800이하 style 적용 (left:52%;top:70px;margin-top:20px)
+    layer.fadeTo(800, 1);
+    setUpEvent();
+</script>
+
+    <div id="container" class="notice">
+<div id="banner" class="banner"></div>        <div id="content" data-role="page-container" data-page-type="normal" data-page-status="ready">
+<h2 class="title">
+    <span class="blind">공지/안내</span>
+    <span class="txt txt_desc sp"><span class="blind">modoo! 모두에서 알립니다</span></span>
+</h2>
+<div class="notice_wrap">
+<ul class="lnb col4">
+    <li class=""><a href="post.html" onClick="clickcr(this, 'not.tab1', '', '', event)">modoo! 포스트</a></li>
+    <li class="active"><a href="news.html" onClick="clickcr(this, 'not.tab2', '', '', event)">언론보도</a></li>
+    <li class=""><a href="notice.html" onClick="clickcr(this, 'not.tab3', '', '', event)">알립니다</a></li>
+    <li class=""><a href="faq.html" onClick="clickcr(this, 'not.tab4', '', '', event)">궁금한 이야기</a></li>
+</ul>
+    <ul class="report_list">
+            <li>
+                <div class="info">
+                    <a href="http://www.etnews.com/20180131000423" target="_blank" onClick="clickcr(this, 'not.2post', '147', '1', event);"><strong class="title">네이버, 소상공인연합회 '올림픽 성공을 위한 소상공인 캠페인'에 협력</strong></a> <span class="bar"></span> <span class="journal">전자신문</span> <span class="date">2018.02.01</span>
+                    <p class="news_cont">
+                        <a href="http://www.etnews.com/20180131000423" target="_blank" onClick="clickcr(this, 'not.2post', '147', '1', event);">네이버는 소상공인연합회가 실시하는 '올림픽 성공을 위한 소상공인 캠페인' 취지에 공감, 협력하기로 했다고 31일 밝혔다.<br> 
+이 캠페인은 평창올림픽 성공 개최를 위해 강원도 소상공인들이 공정 가격을 준수하고 친절한 서비스와 환한 웃음을 제공하자는 의도로 기획됐다. <br>
+네이버는 3월 8일까지 메인 페이지 하단에 캠페인 배너를 노출한다.</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="http://www.fnnews.com/news/201707250959082021" target="_blank"><img data-lazy-src="https://modo-phinf.pstatic.net/20170725_247/1500968094290kBLgw_PNG/137_120.png" alt="KB국민카드, 소상공인 대상 모바일 플랫폼 제작 지원" width="137" height="120" onClick="clickcr(this, 'not.2post', '130', '2', event);"></a>
+                </div>
+                <div class="info">
+                    <a href="http://www.fnnews.com/news/201707250959082021" target="_blank" onClick="clickcr(this, 'not.2post', '130', '2', event);"><strong class="title">KB국민카드, 소상공인 대상 모바일 플랫폼 제작 지원</strong></a> <span class="bar"></span> <span class="journal">파이낸셜뉴스</span> <span class="date">2017.07.24</span>
+                    <p class="news_cont">
+                        <a href="http://www.fnnews.com/news/201707250959082021" target="_blank" onClick="clickcr(this, 'not.2post', '130', '2', event);">KB국민카드는 지난 24일 국내 최대 포털사이트 네이버와 소상공인 모바일 플랫폼 구축을 위한 업무 협약을 맺고 소상공인 대상 모바일 홈페이지 제작 지원에 나선다고 25일 밝혔다.<br>
+이번 협약을 통해 양사는 소상공인을 대상으로 △모바일 홈페이지 구축 △온라인 마케팅 및 모바일 홈페이지 활용...</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <a href="http://www.asiae.co.kr/news/view.htm?idxno=2017071813091774254" target="_blank" onClick="clickcr(this, 'not.2post', '131', '3', event);"><strong class="title">[소상공인 도우미 네이버 플랫폼]'모두'로 홈피 무료제작</strong></a> <span class="bar"></span> <span class="journal">아시아경제</span> <span class="date">2017.07.18</span>
+                    <p class="news_cont">
+                        <a href="http://www.asiae.co.kr/news/view.htm?idxno=2017071813091774254" target="_blank" onClick="clickcr(this, 'not.2post', '131', '3', event);">제주도 렌터카업체인 '제주클린렌트카'는 지난 4월 '모두'로 만든 홈페이지를 오픈한 지 두 달 만에 월간 홈페이지 방문자가 1만명을 넘어섰다. 마이비즈니스와 연동해 홈페이지의 '전화' 버튼으로 월간 1200통 가량의 전화문의가 이어진다. 홈페이지를 만든 덕분에 오프라인 매출 증대로 이어진 사례다.</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <a href="http://www.bloter.net/archives/284592" target="_blank" onClick="clickcr(this, 'not.2post', '133', '4', event);"><strong class="title">중소상공인이 알아두면 돈 버는 ‘네이버 무료 플랫폼’</strong></a> <span class="bar"></span> <span class="journal">블로터</span> <span class="date">2017.07.11</span>
+                    <p class="news_cont">
+                        <a href="http://www.bloter.net/archives/284592" target="_blank" onClick="clickcr(this, 'not.2post', '133', '4', event);">“새로 오픈한 내 가게를 어떻게 홍보해야 할까요?”, “인터넷에서 검색이 되게 하려면, 홈페이지가 있어야 하죠?”, “네이버 보면 많은 서비스가 있던데, 어떤 차이가 있는 건가요?”<br>
+이제 막 창업한 분들이 공통적으로 많이 하는 질문이다. 안타깝게도 정답은 없다. 사업을 시작했다는 공통점만 빼면...</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <a href="http://www.asiae.co.kr/news/view.htm?idxno=2017071110360423522" target="_blank" onClick="clickcr(this, 'not.2post', '132', '5', event);"><strong class="title">[소상공인 도우미 네이버 플랫폼] 매장·상품 정보 등록, 모두 무료</strong></a> <span class="bar"></span> <span class="journal">아시아경제</span> <span class="date">2017.07.11</span>
+                    <p class="news_cont">
+                        <a href="http://www.asiae.co.kr/news/view.htm?idxno=2017071110360423522" target="_blank" onClick="clickcr(this, 'not.2post', '132', '5', event);">쇼핑이나 식당 예약 등 다양한 정보를 언제 어디서나 온라인으로 손쉽게 찾을 수 있는 세상이다. 막대한 정보를 보유한 포털 사업자와 함께 LTE로 표현되는 막강한 통신망이 뒷받침하고 있어서다. 이용자들의 편리한 생활을 가능하게 하는 원동력이다. 온라인에서 영업행위를 하는 소상공인들 역시 이 같은 플랫폼이 있기에 활발하게 사업을 펼칠 수 있다.</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="http://view.asiae.co.kr/news/view.htm?idxno=2016090510010269974" target="_blank"><img data-lazy-src="https://modo-phinf.pstatic.net/20160905_173/14730631080134UffA_PNG/137.png" alt="네이버 모바일 홈 '모두' 개편…디자인 추가·SNS 연동 강화" width="137" height="120" onClick="clickcr(this, 'not.2post', '112', '6', event);"></a>
+                </div>
+                <div class="info">
+                    <a href="http://view.asiae.co.kr/news/view.htm?idxno=2016090510010269974" target="_blank" onClick="clickcr(this, 'not.2post', '112', '6', event);"><strong class="title">네이버 모바일 홈 '모두' 개편…디자인 추가·SNS 연동 강화</strong></a> <span class="bar"></span> <span class="journal">아시야경제</span> <span class="date">2016.09.05</span>
+                    <p class="news_cont">
+                        <a href="http://view.asiae.co.kr/news/view.htm?idxno=2016090510010269974" target="_blank" onClick="clickcr(this, 'not.2post', '112', '6', event);">네이버가 모바일 홈 제작 서비스 '모두(modoo!)'를 개편했다. 본인의 사업에 맞는 디자인을 선택하고 SNS와 연계하는 기능 등이 강화됐다. 
+네이버( NAVER)의 '모두(modoo!)'는 지난 4월 오픈한 모바일 홈페이지 서비스로 누구나 무료로 만들 수 있다. 그동안 개설된 모바일 홈페이지는 일반 가게나 문화 콘텐츠, 공공기관 등 약 70만 개에 달한다.</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <a href="http://www.ditoday.com/articles/articles_view.html?idno=21434" target="_blank" onClick="clickcr(this, 'not.2post', '108', '7', event);"><strong class="title">우리 동네 가게를 위한 모바일 웹 빌더 네이버 modoo!</strong></a> <span class="bar"></span> <span class="journal">디투데이</span> <span class="date">2016.08.22</span>
+                    <p class="news_cont">
+                        <a href="http://www.ditoday.com/articles/articles_view.html?idno=21434" target="_blank" onClick="clickcr(this, 'not.2post', '108', '7', event);">스마트폰에 최적화된 모바일 웹은 화면에 꽉 차는 구성으로 사용자의 이해도와 가독성을 높여준다. 이러한 모바일 웹은 개인이나 사업자들이 스스로 제작하기 어려워, 대행업체에 맡기는 게 일반적이다. 하지만 소상공인들은 대행업체에 맡기는 것이 부담돼, 모바일 웹 제작을 망설인다. 이제 ‘모두!’를 사용해 전문가 못지않은 모바일·웹을 쉽고 빠르게 제작해보자!</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="http://www.kyeonggi.com/?mod=news&act=articleView&idxno=1200855" target="_blank"><img data-lazy-src="https://modo-phinf.pstatic.net/20160704_59/1467623549152BLRgk_PNG/11.png" alt="포천시 전통문화, 명장, 명인 네이버 홈페이지 구축" width="137" height="120" onClick="clickcr(this, 'not.2post', '102', '8', event);"></a>
+                </div>
+                <div class="info">
+                    <a href="http://www.kyeonggi.com/?mod=news&act=articleView&idxno=1200855" target="_blank" onClick="clickcr(this, 'not.2post', '102', '8', event);"><strong class="title">포천시 전통문화, 명장, 명인 네이버 홈페이지 구축</strong></a> <span class="bar"></span> <span class="journal">경기일보</span> <span class="date">2016.06.30</span>
+                    <p class="news_cont">
+                        <a href="http://www.kyeonggi.com/?mod=news&act=articleView&idxno=1200855" target="_blank" onClick="clickcr(this, 'not.2post', '102', '8', event);">포천시, 서경대학교, 네이버(주) 등이 전통문화 명장,명인 육성 지원 업무를 협력하는 업무제휴 협약을 체결했다고 3일 밝혔다. 
+지난달 30일 맺은 업무제휴 협약 내용에 따르면 네이버(주)는 누구나 쉽게 무료로 만들 수 있는 modoo라는 홈페이지 제작툴을 통해 홈페이지 제작교육을 제공하고, 서경대는 청년문화콘텐츠기획단(지도교수 방미영)에서는....</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="http://www.cstimes.com/news/articleView.html?idxno=214824" target="_blank"><img data-lazy-src="https://modo-phinf.pstatic.net/20160602_176/1464864597077vmtua_PNG/137_120.PNG" alt="네이버-서울시, ‘작은가게 페스티벌’ 공동 개최" width="137" height="120" onClick="clickcr(this, 'not.2post', '100', '9', event);"></a>
+                </div>
+                <div class="info">
+                    <a href="http://www.cstimes.com/news/articleView.html?idxno=214824" target="_blank" onClick="clickcr(this, 'not.2post', '100', '9', event);"><strong class="title">네이버-서울시, ‘작은가게 페스티벌’ 공동 개최</strong></a> <span class="bar"></span> <span class="journal">컨슈머타임즈</span> <span class="date">2016.06.02</span>
+                    <p class="news_cont">
+                        <a href="http://www.cstimes.com/news/articleView.html?idxno=214824" target="_blank" onClick="clickcr(this, 'not.2post', '100', '9', event);">네이버(NAVER)는 ‘서울시와 함께하는 작은가게 페스티벌(이하 작은가게 페스티벌)’을 개최한다고 26일 밝혔다. 
+
+이번 행사는 모바일 홈페이지 modoo(모두)를 통해 온라인 비즈니스를 하고 있는 소상공인들이 오프라인에서도 고객들을 만나 소통하고 지속적으로 비즈니스 기회를 늘릴 수 있도록 하고자 마련됐다. <br></a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="http://www.sedaily.com/NewsView/1KUXL7SCQG" target="_blank"><img data-lazy-src="https://modo-phinf.pstatic.net/20160406_49/1459936231269vVXDB_PNG/137_120.png" alt="충남도, 네이버와 ‘소상공인 모바일 홈페이지’ 지원" width="137" height="120" onClick="clickcr(this, 'not.2post', '92', '10', event);"></a>
+                </div>
+                <div class="info">
+                    <a href="http://www.sedaily.com/NewsView/1KUXL7SCQG" target="_blank" onClick="clickcr(this, 'not.2post', '92', '10', event);"><strong class="title">충남도, 네이버와 ‘소상공인 모바일 홈페이지’ 지원</strong></a> <span class="bar"></span> <span class="journal">서울경제</span> <span class="date">2016.04.06</span>
+                    <p class="news_cont">
+                        <a href="http://www.sedaily.com/NewsView/1KUXL7SCQG" target="_blank" onClick="clickcr(this, 'not.2post', '92', '10', event);">충남도가 네이버와 손잡고 도내 소상공인 모바일 홈페이지 제작지원에 나선다.<br>
+충남도와 네이버는 6일 도청 국제회의실에서 김하균 충남도 경제산업실장, 김지현 네이버 modoo! TF 이사 등이 참석한 가운데 ‘소상공인 모바일 홈페이지 제작 지원을 위한 업무협약’ 체결식을 가졌다.</a>
+                    </p>
+                </div>
+            </li>
+    </ul>
+
+    <div class="_page_area">
+        <div class="paginate"><strong>1</strong><a href="news.html#" class="_movePage" data-page="2">2</a><a href="news.html#" class="_movePage" data-page="3">3</a><a href="news.html#" class="_movePage" data-page="4">4</a></div>
+    </div>
+<div class="cooperate_list_wrap">
+    <h3 class="title">modoo!의 파트너</h3>
+    <ul class="cooperate_list">
+        <li class="list1"><a href="https://kfme.modoo.at" onClick="clickcr(this, 'not.partner', '', '1', event);" target="_blank" class="sp"><span class="blind">소상공인연합회</span></a></li>
+        <li class="list2"><a href="https://www.semas.or.kr" onClick="clickcr(this, 'not.partner', '', '2', event);" target="_blank" class="sp"><span class="blind">소상공인시장진흥공단</span></a></li>
+        <li class="list3"><a href="https://www.heemangfdn.or.kr" onClick="clickcr(this, 'not.partner', '', '3', event);" target="_blank" class="sp"><span class="blind">중소상공인 희망재단</span></a></li>
+        <li class="list14"><a href="https://card.kbcard.com" onClick="clickcr(this, 'not.partner', '', '14', event);" target="_blank" class="sp"><span class="blind">KB국민카드</span></a></li>
+        <li class="list4"><a href="https://www.mcst.go.kr" onClick="clickcr(this, 'not.partner', '', '4', event);" target="_blank" class="sp"><span class="blind">문화체육관광부</span></a></li>
+        <li class="list5"><a href="https://www.mogaha.go.kr" onClick="clickcr(this, 'not.partner', '', '5', event);" target="_blank" class="sp"><span class="blind">행정자치부</span></a></li>
+        <li class="list6"><a href="https://www.mafra.go.kr" onClick="clickcr(this, 'not.partner', '', '6', event);" target="_blank" class="sp"><span class="blind">농림축산식품부</span></a></li>
+        <li class="list12"><a href="https://ccei.creativekorea.or.kr" onClick="clickcr(this, 'not.partner', '', '7', event);" target="_blank" class="sp"><span class="blind">창조경제혁신센터 추진단</span></a></li>
+        <li class="list7"><a href="https://www.smalltheater.or.kr" onClick="clickcr(this, 'not.partner', '', '8', event);" target="_blank" class="sp"><span class="blind">한국소극장협회</span></a></li>
+        <li class="list8"><a href="https://www.visitkorea.or.kr" onClick="clickcr(this, 'not.partner', '', '9', event);" target="_blank" class="sp"><span class="blind">한국관광공사</span></a></li>
+        <li class="list9"><a href="https://www.seoul.go.kr" onClick="clickcr(this, 'not.partner', '', '10', event);" target="_blank" class="sp"><span class="blind">서울특별시</span></a></li>
+        <li class="list10"><a href="https://www.seongnam.go.kr" onClick="clickcr(this, 'not.partner', '', '11', event);" target="_blank" class="sp"><span class="blind">성남시</span></a></li>
+        <li class="list11"><a href="https://www.jeonbuk.go.kr" onClick="clickcr(this, 'not.partner', '', '12', event);" target="_blank" class="sp"><span class="blind">전라북도</span></a></li>
+        <li class="list13"><a href="https://www.changwon.go.kr" onClick="clickcr(this, 'not.partner', '', '12', event);" target="_blank" class="sp"><span class="blind">창원시</span></a></li>
+        <li class="list15"><a href="https://www.pocheon.go.kr" onClick="clickcr(this, 'not.partner', '', '15', event);" target="_blank" class="sp"><span class="blind">포천시</span></a></li>
+        <li class="list16"><a href="https://www.provin.gangwon.kr" onClick="clickcr(this, 'not.partner', '', '16', event);" target="_blank" class="sp"><span class="blind">강원도</span></a></li>
+        <li class="list17"><a href="https://www.chungnam.go.kr" onClick="clickcr(this, 'not.partner', '', '17', event);" target="_blank" class="sp"><span class="blind">충청남도</span></a></li>
+    </ul>
+</div>
+</div>
+
+<script>
+jQuery(window).on("onpageshow" in window ? "pageshow" : "load", function() {
+	mfarm.init(['mfarm.ajax', 'mfarm.DataTable', 'mfarm.DataView', 'mfarm.widget.Table'], function (dom, ajax, DataTable, DataView, WidgetTable) {
+		'use_strict';
+
+		var publicObj, $ = jQuery, pageSize =10;
+
+		publicObj = {
+			view: function () {return view},
+			finalize: finalize
+		};
+
+		function initialize() {
+			attachEventHandler();
+		}
+
+		function finalize() {
+			// finalize codes
+		}
+
+		function attachEventHandler() {
+			$(".paginate").delegate('a', 'click', function (event) {
+				event.preventDefault();
+
+				var el = $(event.target)
+						, page = el.attr('data-page');
+				paging(page);
+				clickcr(this, 'not.2page', '', page, event);
+			});
+
+			$("._movePage").on('click', function(e) {
+				e.preventDefault();
+
+				$('html,body').animate({scrollTop:$(".notice_wrap").offset().top}, 100);
+			});
+		}
+
+		function paging(page) {
+			mfarm.ajax('https://www.modoo.at/home/notice/news', {
+				pageNum: page
+				, initFlag: 0
+			}, function (ret) {
+				if (ret.retCode === 0) {
+					redraw(ret.boardList, page);
+					redrawPage(ret.paginate);
+
+				} else {
+					alert(ret.retMsg);
+				}
+			}, 'json');
+		}
+
+		function redraw(dataList, page) {
+			var content = '';
+			var rank = (page - 1) * pageSize + 1;
+			$.each(dataList, function (k, data) {
+				content += '<li>';
+				if (data.imgUrl != '') {
+					content += '<div class="img"><a href="https://www.modoo.at/home/notice/'&#32;+&#32;data.linkUrl&#32;+&#32;'" target="_blank" onClick="clickcr(this, \'not.2post\', \'' + data.boardId + '\', \'' + rank + '\', event);"><img src="https://www.modoo.at/home/notice/'&#32;+&#32;data.imgUrl&#32;+&#32;'" alt="" width="137" height="120"></a></div>';
+				}
+				content += '<div class="info">';
+				content += '<a href="https://www.modoo.at/home/notice/'&#32;+&#32;data.linkUrl&#32;+&#32;'" target="_blank" onClick="clickcr(this, \'not.2post\', \'' + data.boardId + '\', \'' + rank + '\', event);"><strong class="title">' + data.title + '</strong></a> <span class="bar"></span> <span class="journal">' + data.writerName + '</span>';
+				content += '<span class="date">' + data.regTm + '</span>';
+				content += '<p class="news_cont">';
+				content += '<a href="https://www.modoo.at/home/notice/'&#32;+&#32;data.linkUrl&#32;+&#32;'" target="_blank" onClick="clickcr(this, \'not.2post\', \'' + data.boardId + '\', \'' + rank + '\', event);">' + data.content + '</a>';
+				content += '</p>';
+				content += '</div>';
+				content += '</li>';
+
+				rank++;
+			});
+
+			$('.report_list').html(content);
+		}
+
+		function redrawPage(paginate) {
+			$('._page_area').html(paginate);
+			attachEventHandler();
+		}
+
+		initialize();
+
+		return publicObj;
+	});
+});
+</script>
+        </div>
+    </div>
+
+    <div id="footer"  >
+        <div class="footer_wrap">
+            <ul class="provision">
+                <li class="list1"><a href="../signup/userPolicy.html" target="_blank" onClick="clickcr(this, 'fot.agreement', '', '', event);">서비스 이용약관</a></li>
+                <li class="list2"><a href="../signup/operationalPolicy.html" target="_blank" onClick="clickcr(this, 'fot.policy', '', '', event);">운영 정책</a></li>
+                <li class="list2"><a href="../signup/userPrivacy.html" target="_blank" onClick="clickcr(this, 'fot.privacy', '', '', event);"><strong>개인정보 처리방침</strong></a></li>
+                <li class="list3"><a href="https://help.naver.com/support/alias/modoo/main.naver" target="_blank" onClick="clickcr(this, 'fot.help', '', '', event);">modoo! 고객센터</a></li>
+            </ul>
+            <div class="corp_info">
+                <span class="info info1">사업자등록번호 : <em>220-81-62517</em></span>
+                <span class="info info2">통신판매업신고번호 : 경기성남 제<em>2006-692</em>호</span><br>
+                <span class="info info3">대표이사 : 최수연</span>
+                <span class="info info4">주소 : 경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561</span><br>
+                <span class="info info5">대표전화 : <em>1644-3930</em>(유료) <a href="https://help.naver.com/support/alias/modoo/main.naver" target="_blank" class="link_help">통화전 클릭</a></span>
+            </div>
+            <p class="copyright">
+                <span class="logo">
+                    <a href="https://www.naver.com/" target="_blank" class="sp" onClick="clickcr(this, 'fot.naver', '', '', event);"><span class="blind">NAVER</span></a>
+                </span>
+                Copyright © <a href="https://www.navercorp.com/" target="_blank"><strong>NAVER Corp.</strong></a> All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="rg_float_banner" style="display:none;">
+    <div class="rg_float_banner_inner">
+        <a href="../../management.html" target="_blank">
+            <i class="sp_rg_float_banner_content"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+        </a>
+    </div>
+</div>
+<div class="rg_float_banner_inner">
+    <a href="../../management.html">
+        <i class="sp_rg_float_banner_content"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+    </a>
+    <a href="https://markethub.modoo.at/">
+        <i class="sp_rg_float_banner_content v2"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+    </a>
+</div>
+
+<div class="layer_section" id="_first_mobile_layer" style="display:none">
+    <div class="layer_area" id="_first_mobile_layer_area">
+		<span class="blind">
+			모바일 편집기능 OPEN<br>
+			언제 어디서나 쉽고 빠르게 홈페이지 제작과 편집이 가능합니다<br>스마트폰에서  www.modoo.at 에 접속하세요<br>
+			홈페이지제작 : 이제 모바일에서도 제작과 편집을<br>
+			내용편집 : 사진,글,지도를 바로 수정<br>
+			구성수정 : 구성요소 이동,추가도 자유롭게<br>
+		</span>
+        <!-- [D] 선택시 selected 클래스 추가 -->
+        <a href="news.html#" class="close_chk" id="_close_check"><span class="ico_chk sp"></span><span class="blind">다시 보지 않기</span></a>
+        <a href="news.html#" class="layer_close" id="_layer_close"><span class="blind">닫기</span></a>
+    </div>
+</div>
+
+<div class="layer_section layer_event _newStuffLayer" style="display:none">
+    <div class="layer_area">
+        <div class="layer ly_event">
+            <div class="l_tit">
+                <h1 class="blind">modoo!에서 특별히 소개합니다!</h1>
+            </div>
+            <div class="l_cont">
+                <strong class="blind">연말에 가볼 만한곳 지금 만나보세요!</strong>
+                <p class="blind">2016년 특별한 연말을 계획하고 계신가요? 소중한 분들과 즐거운 추억을 만들 수 있도록 다양한 파티 공간부터 식사공간, 이색 숙소, 취향 저격 선물까지 소개합니다. 지금 만나보세요.</p>
+            </div>
+            <a href="https://finalfest2016.modoo.at" target="_blank" class="link_event _btn_go_event">2016 특별한 modoo! 보기</a>
+            <a href="../main/start.html" class="link_event2">나도 홈페이지 만들기</a>
+            <a href="news.html#" class="close_chk _btn_close_chk"><span class="ico_chk"></span><span class="blind">다시 보지 않기</span></a>
+            <a href="news.html#" class="btn_clse _btn_close">닫기</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">var nsc="modoo.home";var $=jQuery;if(!window.console){window.console={log:function(){},dir:function(){}};}function mergeEnv(b){function a(d){var c;for(c in b){d[c]=b[c];}}ENV=window.ENV||{};a(ENV);}mergeEnv({resetCacheVer:"20250124144128",loginId:"",age:"",gender:"",customerId:parseInt("0",10),userType:"",name:"",penaltyFlag:parseInt("0",10),emailCertSt:parseInt("0",10),membershipLevel:"",runLevel:parseInt("0",10)});</script>
+
+<script type="text/javascript">$(window).on("load",function(){var b=$("#header");b.delegate("._naver_logout a","click",function(c){if(confirm("로그아웃 하시겠습니까?")){$.ajax({url:"https://www.modoo.at/home/oAuth/logout.json",type:"post",dataType:"json",success:function(d){if(d.retCode===0){location.href="https://www.modoo.at/home";}else{alert(d.retMsg);}}});}return false;});b.delegate("._naver_login a","click",function(c){location.href="https://www.modoo.at/home/oAuth/login?returnUrl="+encodeURIComponent(location.href);return false;});function a(){b.find("[data-role=info-login-id]").text(ENV.loginId);if(ENV.loginId.length>27){b.find("[data-role=info-login-id]").parent().addClass("id_ellipsis");}if(ENV.loginId){b.find("._user_name").html(ENV.loginId+" 님");b.find("._naver_login_btn").removeClass("_naver_login").addClass("_naver_logout").find("a").removeClass("btn_login").addClass("btn_logout").find(".blind").html("로그아웃");b.find("._naver_login_btn").bind("click",function(c){clickcr(this,"gnb.logout","","",c);});}else{b.find("._naver_login_btn").removeClass("_naver_logout").addClass("_naver_login").find("a").removeClass("btn_logout").addClass("btn_login");b.find("._naver_login_btn").bind("click",function(c){clickcr(this,"gnb.login","","",c);});}}a();$("body").find("img[data-lazy-src], video[data-lazy-src]").each(function(){var c=this.getAttribute("data-lazy-src");$(this).attr("src",c);});fixedGNB();});$(window).on("resize",function(){fixedGNB();});function fixedGNB(){if($(window).width()<=1024){$(".h_menu").css({right:"auto",left:10,top:100});}else{$(".h_menu").removeAttr("style");}}lcs_do();wcs_do();</script>
+
+</body>
+</html>

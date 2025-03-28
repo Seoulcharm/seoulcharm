@@ -1,0 +1,594 @@
+ 
+ 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="referrer" contents="always">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="회원가입 : 모두!" />
+    <meta property="og:site_name" content="modoo!">
+    <meta property="og:image" content="https://ssl.pstatic.net/static/modoo/publish/img/sns_logo_v2.png">
+    <meta name="twitter:image" content="https://ssl.pstatic.net/static/modoo/publish/img/sns_logo_v2.png">
+    <meta property="og:description" content="네이버 modoo! 바로 지금 만들어 보세요" />
+    <meta name="description" content="네이버 modoo! 바로 지금 만들어 보세요" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon_v1.ico@20250124144128">
+    <title>회원가입 : 모두!</title>
+    <link rel="canonical" href="userPolicy.html">
+
+    <link rel="stylesheet" type="text/css" href="../../static/modoo/css/modoo_20250124144128.css">
+    <link rel="stylesheet" type="text/css" href="../../static/common/css/common_20250124144128.css">
+
+    <script type="text/javascript" src="../../application/static/script/modules/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../application/static/script/modules/all-0.3.0.min.js"></script>
+
+    <script type="text/javascript" src="../../application/static/script/mfarm_min/mfarm.js@20250124144128"></script>
+
+    <script type="text/javascript" src="../../application/static/script/modules/clickcr.js"></script>
+    <script type="text/javascript" src="../../application/static/script/modules/lcslog.js@20250124144128"></script>
+    <script type="text/javascript" src="../../../wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">if(!wcs_add){wcs_add={}}wcs_add.wa="b5b3d674191fe0";wcs.inflow();</script>
+</head>
+
+<body >
+
+<div id="wrap" class="sub">
+    <div id="u_skip">
+        <a href="userPolicy.html#content"><span>본문으로 바로가기</span></a>
+    </div>
+
+    <div id="header">
+        <div class="header_wrap">
+            <h1 class="logo">
+                <a href="https://naver.com" class="sp naver"><span class="blind">NAVER</span></a>
+                <a href="../../index.html" class="sp modoo" onClick="clickcr(this, 'gnb.modoo', '', '', event)"><span class="blind">modoo!</span></a>
+            </h1>
+            <ul class="gnb">
+                <li class="menu2"><a href="../renewal.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.campaign', '', '', event)"><span class="blind">시작하기</span></a></li>
+                <li class="menu3"><a href="../main/promote.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.inform', '', '', event)"><span class="blind">활용하기</span></a></li>
+                <li class="menu4"><a href="../notice/notice.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.notice', '', '', event)"><span class="blind">공지/안내</span></a></li>
+                <li class="menu6"><a href="../main/start.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.start', '', '', event)"><span class="blind">업종별 템플릿</span></a></li>
+            </ul>
+            <ul class="h_menu">
+                <li class="_naver_login_btn _naver_login"><a href="userPolicy.html#" class="btn_login sp"><span class="blind">로그인</span></a></li>
+                <li><a href="../../management.html" target="_blank" class="btn_management sp" onClick="clickcr(this, 'gnb.edit', '', '', event)"><span class="blind">홈페이지관리</span></a></li>
+                <li><a href="https://talk.naver.com/ct/wc61mx" target="_blank" class="btn_smartbot sp"><span class="blind">궁금할 땐 modoo 스마트봇 beta</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+<style>
+    .layer_announce {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 990;
+
+        font-family: "나눔고딕", NanumGothic, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.5em;
+        letter-spacing: -0.05em;
+        color: #222;
+    }
+
+    .layer_announce .layer_area_announce {
+        overflow: hidden;
+        position: absolute;
+        top: auto;
+        bottom: 100px;
+        right: 50px;
+    }
+
+    .ly_announce {
+        width: 500px;
+        height: 400px;
+        border: 1px solid #393d46;
+        background-color: #fff;
+    }
+
+    .ly_announce .l_tit {
+        position: relative;
+        height: 55px;
+        background-color: #5c6677
+    }
+
+    .ly_announce .l_tit span {
+        position: absolute;
+        bottom: 22px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    .ly_announce .l_cont {
+        position: absolute;
+        top: 70px;
+        bottom: 70px;
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ly_announce .l_cont ul {
+        list-style-position: outside;
+        list-style-type: disc;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    .ly_announce .l_cont p {
+        padding-bottom: 1em;
+    }
+
+    .ly_announce .btn_close {
+        overflow: hidden;
+        background-image: url(../../static/management/img/sp_manage.png);
+        width: 22px;
+        height: 22px;
+        background-position: 0 -776px;
+        position: absolute;
+        top: 18px;
+        right: 22px;
+        line-height: 1000px;
+        z-index: 10
+    }
+
+    .ly_announce .close_chk {
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        text-decoration: none;
+    }
+
+    .ly_announce .close_chk span {
+        vertical-align: middle;
+    }
+
+    .ly_announce .ico_chk {
+        display: inline-block;
+        overflow: hidden;
+        width: 13px;
+        height: 13px;
+        margin-right: 2px;
+        background: url(../../static/modoo/img/check_v3.png) no-repeat;
+    }
+
+    .ly_announce .selected .ico_chk {
+        background: url(../../static/modoo/img/check_v3.png) no-repeat 0 -60px;
+    }
+
+    .ly_announce .link {
+        text-decoration: underline;
+        color: #00c73c;
+        letter-spacing: 0;
+    }
+</style>
+<div class="layer_announce" id="_no_new_site_layer" style="display:none">
+    <div class="layer_area_announce">
+        <div class="ly_announce">
+            <div class="l_tit">
+                <span>신규 홈페이지 추가 및 신규 연동 중단 안내</span>
+            </div>
+            <div class="l_cont">
+                <p>2025년 2월 3일(월)부터 아래 지원 중단됩니다.</p>
+                <ul>
+                    <li>신규 홈페이지 추가 중단</li>
+                    <li>기존 홈페이지에 신규 연동 중단 (플레이스/예약/스마트스토어/톡톡/개인도메인)</li>
+                </ul>
+
+                <p><strong>기존 홈페이지의 경우 <u>홈페이지 및 연동 셋팅이 그대로 유지</u></strong>되오니 참고 바라며<br>
+                    관련 일정과 상세 내용은 아래 <strong>[공지 바로가기]</strong>로 확인 부탁 드립니다.</p>
+                <p>남은 기간까지 최선을 다하도록 하겠습니다.</p>
+                <p><a class="link" href="../notice/noticeDetail@boardId=167&amp;pageNum=1.html"><strong>공지
+                            바로가기</strong></p>
+            </div>
+            <a href="userPolicy.html#" class="close_chk _btn_close_chk"><span class="ico_chk"></span> <span>다시 보지 않기</span></a>
+            <a href="userPolicy.html#" class="btn_close _btn_close">닫기</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" data-compress="1">
+    var layer = $("#_no_new_site_layer");
+    var optOut = layer.find("._btn_close_chk");
+    var closeButton = layer.find("._btn_close");
+    var notiStatusCookie = 'no-new-site';
+
+    var setUpEvent = function () {
+        // 레이어 닫기
+        closeButton.click(function (event) {
+            event.preventDefault();
+            if (optOut.hasClass("selected")) {
+                $.cookie(notiStatusCookie, 'N', {expires: 365, path: '/', domain: '.modoo.at'});
+            }
+            layer.fadeTo(800, 0, function () {
+                layer.hide();
+            });
+        });
+
+        optOut.click(function (event) {
+            event.preventDefault();
+            optOut.toggleClass("selected");
+        });
+    }
+
+    // 브라우저 높이 800이하 style 적용 (left:52%;top:70px;margin-top:20px)
+    layer.fadeTo(800, 1);
+    setUpEvent();
+</script>
+
+    <div id="container" class="provision">
+<div id="banner" class="banner"></div>        <div id="content" data-role="page-container" data-page-type="normal" data-page-status="ready">
+<h2 class="title">
+    <span class="blind">약관/정책</span>
+    <span class="txt txt_desc sp"><span class="blind">누구나 쉽게 무료로 만드는 스마트 홈페이지 modoo!</span></span>
+</h2>
+<div class="provision_wrap">
+    <h3 class="title"><span class="txt">서비스 이용약관</span></h3>
+    <div class="provision_box">
+        <p class="desc">
+            모두 서비스의 이용약관은 다음과 같은 내용을 담고 있습니다.<br>
+            이용 약관을 반드시 확인하시고 준수하셔야 하며, 이용 약관을 준수하지 않음으로 인해 서비스 이용에 제한을 받으시는 일이 없도록 주의하여 주시기 바랍니다.
+        </p>
+        <div class="idx_area">
+            <ol class="idx">
+                <li><a href="userPolicy.html#a1">제1조 목적</a></li>
+                <li><a href="userPolicy.html#a2">제2조 정의</a></li>
+                <li><a href="userPolicy.html#a3">제3조 약관의 게시와 개정</a></li>
+                <li><a href="userPolicy.html#a4">제4조 회원 가입</a></li>
+                <li><a href="userPolicy.html#a5">제5조 회원정보 등의 변경</a></li>
+                <li><a href="userPolicy.html#a6">제6조 회원의 계정 관리의무</a></li>
+                <li><a href="userPolicy.html#a7">제7조 회사의 개인정보 보호의무</a></li>
+                <li><a href="userPolicy.html#a8">제8조 서비스 이용계약 체결</a></li>
+                <li><a href="userPolicy.html#a9">제9조 서비스의 제공 등</a></li>
+                <li><a href="userPolicy.html#a10">제10조 서비스의 변경</a></li>
+                <li><a href="userPolicy.html#a11">제11조 서비스의 중단</a></li>
+            </ol>
+            <ol class="idx">
+                <li><a href="userPolicy.html#a12">제12조 회원에 대한 통지</a></li>
+                <li><a href="userPolicy.html#a13">제13조 회사의 권리와 의무</a></li>
+                <li><a href="userPolicy.html#a14">제14조 회원의 의무</a></li>
+                <li><a href="userPolicy.html#a15">제15조 정보의 제공 및 방법</a></li>
+                <li><a href="userPolicy.html#a16">제16조 저작권의 귀속</a></li>
+                <li><a href="userPolicy.html#a17">제17조 회원탈퇴 및 이용계약 해지 등</a></li>
+                <li><a href="userPolicy.html#a18">제18조 이용제한 및 해제</a></li>
+                <li><a href="userPolicy.html#a19">제19조 약관의 해석</a></li>
+                <li><a href="userPolicy.html#a20">제20조 책임제한</a></li>
+                <li><a href="userPolicy.html#a21">제21조 준거법 및 재판관할</a></li>
+                <li><a href="userPolicy.html#a22">부칙</a></li>
+            </ol>
+        </div>
+        <ol class="policy_box">
+            <li id="a1">
+                <h3>제 1 조 (목적)</h3>
+                <p class="txt">
+                    이 약관(이하 "약관"이라고 합니다)은 네이버 주식회사(이하 "회사"라고 합니다)가 제공하는 모두 서비스의 이용과 관련하여 회사와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+                </p>
+            </li>
+            <li id="a2">
+                <h3>제 2 조 (정의)</h3>
+                <p class="txt">
+                    "약관"에서 사용하는 용어의 정의는 아래와 같습니다.
+                </p>
+                <ol>
+                    <li>①	"모두 서비스"(이하"서비스"라고 합니다)라 함은 "회원"이 회원 본인의 모바일웹 홈페이지를 제작 및 운영 할 수 있도록 “회사”가 제공하는 제작 툴(에디터), 도메인, 서버공간 및 홈페이지 관리시스템 등을 의미합니다.</li>
+                    <li>②	"회원" 이라 함은 회사의 "서비스"를 이용하기 위해 "약관"에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 "서비스"를 이용하는 고객을 말합니다. </li>
+                    <li>③	"모두 홈" 이라 함은 "회원"이 "서비스"의 이용과 관련된 신청, 관리 등을 할 수 있도록 "회사"가 제공하는 웹사이트를 의미합니다.</li>
+                    <li>④	"계정"이라 함은 "회원"이 "서비스"를 이용할 수 있도록 "회사"가 "회원"에게 부여하는 권한단위를 의미합니다.</li>
+                    <li>⑤	"아이디(ID)"라 함은 "회원"을 식별하고 "회원"이 "서비스"를 이용하도록 하기 위해 "회원"이 정하고 "회사"가 승인하는 문자와 숫자의 조합을 의미합니다.</li>
+                    <li>⑥	"비밀번호" 이라 함은 고객이 이미 부여된 "아이디(ID)"로 식별되는 "회원"임을 확인하고 "회원"의 "서비스" 이용 등과 관련된 비밀을 보호하기 위해 "회원"이 정한 문자 또는 숫자의 조합을 의미합니다. </li>
+                    <li>⑦	"모두 홈페이지"(이하 "홈페이지"라고 합니다)이라 함은 "회원"이 "서비스"를 이용하여 제작,  운영하는 회원 자신의 모바일웹 홈페이지를 의미합니다.</li>
+                    <li>⑧	"게시물" 이라 함은 "회원"이 "홈페이지" 상에 게시한 부호 · 문자 · 이미지 · 음성 · 음향 ·  동영상 등의 정보 및 링크, “홈페이지”에 업로드한 각종 파일 등을 의미합니다.</li>
+                    <li>⑨	"약관"에서 사용하는 용어 중 본 조 제1항 내지 제8항에서 하지 아니한 것은 관련 법령 및 일반적인 상관례에 따릅니다.</li>
+                </ol>
+            </li>
+            <li id="a3">
+                <h3>제 3 조 (약관의 게시와 개정)</h3>
+                <ol>
+                    <li>①	"회사"는 "약관"의 내용을 "회원"이 쉽게 알 수 있도록 "모두 홈" 초기 화면 또는 연결 화면을 통하여 게시합니다.</li>
+                    <li>②	"회사"는 필요한 경우 관련 법령을 위배하지 않는 범위 내에서 "약관"을 개정할 수 있습니다.</li>
+                    <li>③	"회사"는 "약관"을 개정할 경우 개정내용과 적용일자를 명시하여 제12조에 따른 방법으로 적용일자 7일 전부터 적용일자 전일까지 통지합니다. 다만, "회원"에게 불리하게 개정되는 경우에는 적용일자 30일 전부터 적용일자까지 공지하고, “회원”이 기재한 전자우편, 전자쪽지, 로그인 시 노출되는 팝업 창 등의 전자적 수단을 통해 별도로 통지합니다.</li>
+                    <li>④	"회사"가 전항에 따라 "약관"의 개정을 공지하면서 "회원"에게 적용일자 전일까지 이의 제기 등 거부의 의사표시를 하지 않으면 동의의 의사표시가 표명된 것으로 본다는 뜻을 명확하게 고지했거나 제12조에 따른 방법으로 통지하였음에도 "회원"이 명시적으로 거부의 의사표시를 하지 않은 경우 "회원"이 개정되는 "약관"에 동의한 것으로 봅니다.</li>
+                    <li>⑤	"회원"은 "약관"의 개정에 동의하지 않을 경우 적용일자 전일까지 "회사"에 거부의사를 표시하고 "회원" 탈퇴를 할 수 있습니다.</li>
+                </ol>
+            </li>
+            <li id="a4">
+                <h3>제 4 조 (회원 가입)</h3>
+                <ol>
+                    <li>①	"회원" 가입은 "서비스"를 이용하고자 하는 자(이하 "가입신청자"라고 합니다)가 네이버 서비스 아이디로 로그인 한 후 본 "약관"의 내용에 동의를 하면 가입신청이 됩니다.</li>
+                    <li>②	"회사"는 "가입신청자"의 가입신청에 대하여 "서비스" 이용을 승낙함을 원칙으로 합니다. 다만, "회사"는 다음 각 호에 해당하는 신청에 대하여는 승낙을 하지 않거나, 회원가입 이후에라도 다음의 각 호의 사유가 확인될 경우에는 제20조에 따라 "회원" 자격 박탈 조치를 할 수 있습니다.
+                        <ol>
+                            <li>1.	"가입신청자"가 "약관"에 의하여 이전에 "회원"자격을 상실한 적이 있는 경우</li>
+                            <li>2.	"가입신청자"가 "약관"에 의하여 "서비스" 이용정지를 받고 있던 중에 "회원" 탈퇴를 한 적이 있는 경우</li>
+                            <li>3.	실명이 아닌 명의 또는 타인의 명의를 기재한 경우</li>
+                            <li>4.	허위의 정보를 기재 또는 제공하거나, "회사"가 제시하는 내용을 기재하지 않은 경우</li>
+                            <li>5.	"가입신청자"가 14세 미만의 아동인 경우</li>
+                            <li>6.	"가입신청자"의 귀책사유로 인하여 승낙이 불가능하거나 기타 "약관"에서 규정한 제반 사항을 위반 하여 신청하는 경우</li>
+                        </ol>
+                    </li>
+                    <li>③	"회원" 가입의 성립 시기는 "회사"가 가입완료를 신청절차 상에서 표시하거나, 제12조에 따른 통지가 "가입신청자"에게 도달한 시점으로 합니다.</li>
+                </ol>
+            </li>
+            <li id="a5">
+                <h3>제 5 조 (회원정보 등의 변경)</h3>
+                <ol>
+                    <li>①	"회원"은 회원정보 관리화면을 통하여 언제든지 본인의 회원정보를 열람할 수 있으며, "모두 홈"또는 모두 고객센터를 통해 수정을 신청할 수 있습니다.</li>
+                    <li>②	"회원"은 회원가입신청 시 기재한 사항이 변경되었을 경우, 회원정보 관리화면을 통하여 수정을 하거나 "회사"에 대하여 그 변경사항을 알려야 합니다.</li>
+                    <li>③	"회원"이 제 2항을 위반하여 변경사항을 "회사"에 알리지 않아 발생한 불이익에 대해서 "회사"는 책임지지 않습니다.</li>
+                </ol>
+            </li>
+            <li id="a6">
+                <h3>제 6 조 (회원의 계정 관리의무)</h3>
+                <ol>
+                    <li>①	"회원"의 "아이디(ID)"와 "비밀번호"에 관한 관리책임은 "회원"에게 있으며, "회원"은 이를 제3자가 이용하도록 하여서는 안 됩니다.</li>
+                    <li>②	"회원"은 자신의 "아이디" 및 "비밀번호"가 도용되었거나 제3자에 의해 사용되고 있음을 인지한 경우 이를 즉시 "회사"에 통지하고 "회사"의 안내에 따라야 합니다.</li>
+                    <li>③	"회사"는 "회원"의 "아이디" 등 개인정보의 유출 우려가 있는 경우, 해당 계정의 이용을 제한할 수 있으며, 이러한 경우 제12조에 따른 방법으로 "회원"에게 통지합니다.</li>
+                    <li>④	"회원"이 제1항의 의무를 위반하거나 제2항에 따라 "회사"에 그 사실을 통지하지 않거나, 통지한 경우라도 "회사"의 안내에 따르지 않아 발생한 불이익에 대해서 "회사"는 책임지지 않습니다.</li>
+                </ol>
+            </li>
+            <li id="a7">
+                <h3>제 7 조 (회사의 개인정보 보호의무)</h3>
+                <p class="txt">
+                    "회사"는 "정보통신망 이용촉진 및 정보보호 등에 관한 법률", "개인정보보호법" 등 관련 법령이 정하는 바에 따라 "회원"의 개인정보를 보호하기 위해 노력합니다. 개인정보의 보호 및 이용에 대해서는 관련 법령 및 "회사"의 개인정보처리방침이 적용됩니다. 다만, "회사"의 공식 사이트 이외의 링크된 사이트나 “회원”이 관리하는 “홈페이지” (모두 서비스 내 회원 홈페이지)에서는 "회사"의 개인정보처리방침이 적용되지 않습니다.<br>
+                    <a href="userPolicy.html">개인정보보호정책</a>
+                </p>
+            </li>
+            <li id="a8">
+                <h3>제 8 조 (서비스 이용계약 체결)</h3>
+                <ol>
+                    <li>①	"서비스" 이용계약은 "회원"이 "회사"가 정한 절차에 따라 "서비스" 이용을 신청하고 "회사"가 이를 승낙함으로써 체결되며, "회사"는 구체적인 신청절차 및 승낙조건 등에 관하여 "모두 홈"을 통해 안내할 수 있습니다.</li>
+                    <li>②	"회사"는 "서비스"관련 설비의 여유가 없거나, 기술상 또는 업무상 장애가 있는 경우에는 승낙을 유보할 수 있습니다.</li>
+                    <li>③	제2항에 따라 "서비스" 이용의 승낙을 하지 아니하거나 유보한 경우, "회사"는 원칙적으로 이를 제12조에 따른 방법으로 "회원"에게 통지합니다.</li>
+                    <li>④	이용계약의 성립 시기는 "회사"가 승낙조건 등을 확인하여 계약체결을 "서비스" 이용계약 체결절차 상에서 표시하거나 제12조에 따른 방법으로 통지하여 "회원"에게 도달한 시점으로 합니다.</li>
+                    <li>⑤	"회사"가 본 조에 따라 "서비스" 이용 신청을 승낙한 것이 "회원"이 생성한 "홈페이지" 또는 해당 "홈페이지"의 "게시물"이 관련 법령을 위반하지 않는다거나 "약관"이나 서비스 운영정책, 이용안내 등에 적합함을 보증하거나 보장하는 것은 아니며, 승낙 이후에라도 "홈페이지" 또는 해당 "홈페이지"의 게시물"이 관련 법령 또는 "약관"이나 서비스 운영정책, 이용안내 등에 위반하는 것이 확인될 경우 "회사"는 제20조에 따라 "서비스" 이용계약을 해지할 수 있습니다.</li>
+                </ol>
+            </li>
+            <li id="a9">
+                <h3>제 9 조 (서비스의 제공 등)</h3>
+                <ol>
+                    <li>①	"회사"가 제공하는 "서비스"는 원칙적으로 무료입니다. 다만, "회사"는 장래 시장상황의 변화, 정부 규제, "회사" 정책 등에 따라 "서비스"의 중대한 변경이 불가피한 경우 "서비스"를 "유료"로 전환할 수 있습니다. 또한 "서비스"에 별도의 유료서비스를 추가 또는 제공할 수 있으며 이 경우 "회사"는 제12조에 따른 방법으로 "회원"에게 통지합니다.</li>
+                    <li>②	"회사"는 "회원"에게 아래와 같은 "서비스"를 제공합니다.
+                        <ol>
+                            <li>1.	"홈페이지" 제작 및 운영을 위한 관리시스템의 제공</li>
+                            <li>2.	제1호에 따라 제작 및 운영되는 "홈페이지"에 대한 도메인, 서버공간 등</li>
+                            <li>3.	기타 "회원" 또는 "회원"의 "홈페이지" 운영/관리 등을 위한 제반 지원 서비스</li>
+                        </ol>
+                    </li>
+                    <li>③	"회사"는 원칙적으로 제8조에 따라서 이용신청을 승낙한 때로부터 "서비스"를 연중무휴로 1일 24시간 제공합니다. 다만, "회사"의 기술상 또는 업무상의 장애로 인하여 "서비스"를 즉시 개시하지 못하는 경우 "회사"는 제12조에 따른 방법으로 "회원"에게 통지합니다.</li>
+                    <li>④	"회사"는 "회원"이 "홈페이지"의 운영현황확인 및 방문자 행태 분석을 할 수 있도록 "홈페이지"에 "회사"의 웹 로그 분석 서비스인 "NAVER Analytics"를 적용합니다.</li>
+                </ol>
+            </li>
+            <li id="a10">
+                <h3>제 10 조 (서비스의 변경)</h3>
+                <ol>
+                    <li>①	"회사"는 "서비스"의 안정적인 제공 또는 개선을 위하여 운영상, 기술상 필요에 따라 제공하고 있는 "서비스"를 변경할 수 있습니다.</li>
+                    <li>②	"회사"는 "서비스" 중요사항을 변경할 경우 변경내용과 적용일자를 명시하여 제12조에 따른 방법으로 사전에 통지합니다. 이때, "회원"의 권리나 의무 및 "서비스"이용과 관련되는 실질적인 사항을 변경할 경우 적용일자 7일 전부터 통지하며, "회원"에게 불리한 변경일 경우엔 적용일자 30일 전부터 통지합니다.</li>
+                    <li>③	"회원"은 "서비스" 변경에 동의하지 않을 경우 "회사"에 거부의사를 표시하고 "회원" 탈퇴를 할 수 있습니다.</li>
+                    <li>④	"회사"는 본 조 제1항에 따른 "서비스" 변경에 대하여 관련 법령에 특별한 규정이 없는 한 "회원"에게 별도로 보상하지 않습니다.</li>
+                </ol>
+            </li>
+            <li id="a11">
+                <h3>제 11 조 (서비스의 중단)</h3>
+                <ol>
+                    <li>①	"회사"는 다음 각 호에 해당하는 경우 "서비스"의 일부 또는 전부의 제공을 일시적으로 중단할 수 있습니다.
+                        <ol>
+                            <li>1.	설비의 보수 등을 위하여 부득이한 경우</li>
+                            <li>2.	전기통신사업법에 규정된 기간통신사업자가 전기통신서비스를 중지하는 경우</li>
+                            <li>3.	국가비상사태, 정전, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 제공에 지장이 있는 경우</li>
+                            <li>4.	기타 회사가 서비스를 제공할 수 없는 위 제1호 내지 제3호에 준하는 사유가 발생한 경우</li>
+                        </ol>
+                    </li>
+                    <li>②	"회사"는 "회원"이 "회사"가 제공하는 통상적인 수준의 트래픽, 용량 등을 과도하게 초과하여 "회사"의 정상적인 "서비스" 제공에 지장이 있는 경우, "회원"에 대한 "서비스 "제공을 일시적으로 중단할 수 있으며, "회원"이 "서비스"의 중단 사유를 해소하는 경우에는 서비스 운영정책에 정하는 바에 따라 "서비스" 제공을 재개합니다.</li>
+                    <li>③	"회사"는 "서비스" 제공을 일시적으로 중단할 경우 중단사유와 중단기간을 명시하여 제12조에 따른 방법으로 사전에 통지합니다. 다만, "회사"가 사전에 통지할 수 없는 부득이한 사유가 있는 경우엔 사후에 통지할 수 있습니다.</li>
+                    <li>④	"회사"는 본 조 제1항, 제2항에 따른 "서비스" 제공 중단으로 발생한 "회원"의 손해에 대하여 고의 또는 중과실이 없는 한 책임을 지지 않습니다.</li>
+                </ol>
+            </li>
+            <li id="a12">
+                <h3>제 12 조 (회원에 대한 통지)</h3>
+                <ol>
+                    <li>①	"회사"가 "회원"에 대하여 통지를 하는 경우 "약관"에 별도의 규정이 없는 한 서비스 내 전자우편, 전자쪽지, 로그인시 팝업창 등의 전자적 수단을 할 수 있습니다.</li>
+                    <li>②	"회사"는 "회원" 전체에 대하여 통지를 하는 경우 "모두 홈" 초기화면 또는 게시판에 게시함으로써 전항의 통지에 갈음할 수 있습니다. 다만, "회원"의 "서비스" 이용에 중대한 영향을 주는 사항에 대해서는 전항의 통지 수단 중 선택하여 통지합니다.</li>
+                </ol>
+            </li>
+            <li id="a13">
+                <h3>제 13 조 (회사의 권리와 의무)</h3>
+                <ol>
+                    <li>①	"회사"는 관련 법령과 "약관"을 준수하며, 계속적이고 안정적으로 "서비스"를 제공하기 위하여 최선을 다하여 노력합니다.</li>
+                    <li>②	"회사"는 "서비스" 이용과 관련하여 "회원"으로부터 제기된 의견이나 불만이 정당하다고 인정될 경우 이를 처리하여야 하며, 제12조에 따른 방법으로 "회원"에게 처리과정 및 결과를 전달할 수 있습니다.</li>
+                    <li>③	"회사"는 "회원"의 신원정보 확인을 위해 "회사"가 정한 일정한 범위의 정보 및 관련 서류의 제출을 요청할 수 있으며, 관련 법령에 따라 권한 있는 기관 등으로부터 요청을 받는 경우 해당 정보를 제공할 수 있습니다.</li>
+                    <li>④	"회원"은 전항의 의무를 소홀히 하여 발생한 불이익에 대해서는 보호받지 못합니다.</li>
+                </ol>
+            </li>
+            <li id="a14">
+                <h3>제 14 조 (회원의 의무)</h3>
+                <ol>
+                    <li>①	"회원"은 관련 법령 및 본 약관, 운영정책 등을 준수하는 범위내에서 “회원” 본인의 홈페이지를 운영,관리하여야 하며, 이와 관련한 일체의 책임을 부담합니다.</li>
+                    <li>②	"회원"은 "서비스"를 이용하는 과정에서 취득한 일체의 정보(제3자 정보 포함)를 거래의 이행에 필요한 목적 이외에 다른 용도로 사용하여서는 아니되며, 개인정보보호 등 관계 법령 의무를 준수하여야 합니다.</li>
+                    <li>③	"회원"은 "서비스" 이용과 관련하여 다음 각 호의 행위를 하여서는 아니 됩니다.
+                        <ol>
+                            <li>1.	다른 "회원"의 "아이디(ID)"를 부정 사용하는 행위</li>
+                            <li>2.	범죄행위를 목적으로 하거나 기타 범죄행위와 관련된 행위</li>
+                            <li>3.	선량한 풍속, 기타 사회질서를 해하는 행위</li>
+                            <li>4.	타인의 명예를 훼손하거나 모욕하는 행위</li>
+                            <li>5.	타인의 지적재산권 등의 권리를 침해하는 행위</li>
+                            <li>6.	동의 받지 않은 타인에 대한 개인정보를 수집 또는 저장하는 행위</li>
+                            <li>7.	해킹행위 또는 컴퓨터바이러스의 유포행위</li>
+                            <li>8.	타인의 의사에 반하여 광고성 정보 등 일정한 내용을 지속적으로 전송하는 행위</li>
+                            <li>9.	통신사업자에 해당함에도 이를 표시하지 않고 기본적인 신원정보를 제공하지 않는 행위</li>
+                            <li>10. "서비스"의 안정적인 운영에 지장을 주거나 줄 우려가 있는 일체의 행위<br>("회사"의 서버 및 설비 등에 부하를 야기하는 행위 등)</li>
+                            <li>11. 기타 관련 법령에 위배되는 행위</li>
+                            <li>12. "서비스"를 본래의 목적에 어긋나게 사용하는 행위</li>
+                            <li>13. 기타 상기 각호에 준하는 내용으로서 "회사"가 "서비스" 운영상 부적절하다고 판단하는 행위</li>
+                        </ol>
+                    </li>
+                    <li>④	"회원"은 자신의 "아이디(ID)"를 "서비스"에 이용하기 위한 용도로만 사용하여야 하며, 이를 타인에게 대여 또는 양도하거나 타인의 "아이디(ID)"를 대여 또는 양도받아서는 안됩니다.</li>
+                    <li>⑤	"회원"은 "회사"가 본 조의 위반여부 등을 확인하기 위해 관련자료의 제공 및 소명 등을 요청하는 경우 이에 성실히 임해야 합니다.</li>
+                    <li>⑥	"회원"은 "서비스"를 이용하기 위해 업로드한 자료 등을 자체적으로 백업하여 보관할 의무가 있습니다.</li>
+                </ol>
+            </li>
+            <li id="a15">
+                <h3>제 15 조 (정보의 제공 및 방법)</h3>
+                <ol>
+                    <li>①	"회사"는 "회원"이 "서비스" 이용 중 필요하다고 인정되는 다양한 정보를 공지사항이나 전자우편 등의 방법으로 "회원"에게 제공할 수 있습니다. 다만, "회원"은 관련법에 따른 거래관련 정보 및 고객문의 등에 대한 답변 등을 제외하고는 언제든지 전자우편에 대해서 수신 거절을 할 수 있습니다.</li>
+                    <li>②	제1항의 정보를 전화 및 모사전송기기에 의하여 전송하려고 하는 경우에는 "회원"의 사전 동의를 받아서 전송합니다. 다만, "회원"의 가입, 탈퇴, 거래관련 정보 및 고객문의 등에 대한 회신에 있어서는 제외됩니다.</li>
+                    <li>③	"회사"는 "서비스"의 운영과 관련하여 서비스 화면, 홈페이지, 전자우편 등에 광고를 게재할 수 있습니다. 광고가 게재된 전자우편을 수신한 "회원"은 수신거절을 "회사"에게 할 수 있습니다.</li>
+                </ol>
+            </li>
+            <li id="a16">
+                <h3>제 16 조 (저작권의 귀속 등)</h3>
+                <ol>
+                    <li>①	"회원"이 "서비스" 이용을 통해 제작한 "홈페이지 및 "홈페이지" 내 "게시물"의 저작권은 각각의 해당 저작자에게 귀속되며,"서비스"에 대한 저작권 및 지적재산권은 "회사"에 귀속됩니다.</li>
+                    <li>②	"회사"는 서비스와 관련하여 "회원"에게 “회사”가 제공하는 제작 툴(에디터), 도메인, 서버공간 및 홈페이지 관리시스템 등을 이용할 수 있는 이용권만을 부여하며, "회원"은 이를 양도, 판매, 담보제공 등의 처분행위를 할 수 없습니다.</li>
+                    <li>③	"회원"이 "서비스" 이용을 통해 제작한 "홈페이지" 및 "홈페이지" 내 "게시물"은 "회사"가 제공하는 “서비스” 및 관련 프로모션 등에 노출될 수 있으며, 해당 노출을 위해 필요한 범위 내에서는 일부 수정, 복제, 편집되어 게시될 수 있습니다.</li>
+                    <li>④	"회사"는 제2항 이외의 방법으로 "회원"의 "홈페이지" 및 "홈페이지" 내 "게시물"을 이용하고자 하는 경우에는 제12조에 따른 방법으로 "회원"에게 사전에 통지하여 동의를 얻어야 합니다.</li>
+                </ol>
+            </li>
+            <li id="a17">
+                <h3>제 17 조 (회원탈퇴 및 이용계약 해지 등)</h3>
+                <ol>
+                    <li>①	"회원"은 언제든지 "모두 홈" 또는 모두 고객센터를 통하여 제8조에 따라 체결된 바에 따라 이를 즉시 처리하여야 합니다.</li>
+                    <li>②	"회원" 탈퇴가 완료되는 경우, "회사"는 관련 법령 및 개인정보처리방침에 따라 보유하는 "회원"의 정보를 제외한 "회원"의 모든 정보 및 "회원"의 "아이디(ID)"에 등록된 "홈페이지" 및 "게시물" 정보 일체 등을 삭제합니다.</li>
+                    <li>③	"회원" 탈퇴 이후 서비스 운영정책에서 정하는 바에 따라 탈퇴한 "회원"의 정보로 다시 가입하는 것이 제한될 수 있습니다.</li>
+                </ol>
+            </li>
+            <li id="a18">
+                <h3>제 18 조 (이용제한 및 해제)</h3>
+                <ol>
+                    <li>①	"회사"는 "회원"이 일정기간 이상 로그인하지 않는 경우, 회원정보의 보호 및 운영의 효율성을 위해 이용을 제한할 수 있습니다.
+                    </li><li>②	"회사"는 "회원"이 관련 법령, "약관" 또는 서비스 운영정책 등을 위반하는 경우 제8조에 따라 체결된 "서비스" 이용계약의 중단, 정지, 해지 및 회원 홈페이지내 개별 “게시물”에 대한 제한 등(이하 "이용제한"이라 합니다)의 조치를 취할 수 있습니다. "이용제한"의 구체적인 기준 등에 대해서는 운영정책에서 정합니다
+                    </li><li>③	"회사"는 법원의 판결 이전이라도 아래 각 호의 사유가 있는 경우에는 그 사유를 고려하여 "이용제한"을 할 수 있습니다.
+                        <ol>
+                            <li>1. 관계 기관에서 현행 법령을 위반한 업체의 홈페이지 또는 현행 법령을 위반하는 게시물을 처리하는 홈페이지라고 판단하여 "서비스" 제공 중지를 요청해 온 경우</li>
+                            <li>2. 방송통신심의위원회에서 시정요구 등을 해온 경우</li>
+                            <li>3. 공정거래위원회, 경찰청 등의 국가기관 또는 서울시 전자상거래센터에서 이용자 피해를 유발하고 있는 "홈페이지"라고 판단하여 공지한 경우</li>
+                            <li>4. 제3자로부터 명예훼손, 지적재산권 침해 등을 이유로 권리침해신고가 접수되는 경우</li>
+                        </ol>
+                    </li>
+                    <li>④	"회사"는 제1항 또는 제2항에 따라 "이용제한"을 하는 경우 제12조에 따른 방법으로 "회원"에게 통지합니다. 이 경우 "회사"는 "이용제한"을 하기 전에 상당한 기간을 정하여 "회원"에게 이의신청의 기회를 부여함을 원칙으로 하며, 다만 운영정책에서 정하는 사유가 있을 경우엔 별도의 이의 신청 기간을 부여하지 않을 수 있습니다.
+                    </li><li>⑤	"회원"은 본 조에 따라 제8조에 따라 체결된 "서비스" 이용계약의 이행중단 또는 "서비스" 이용정지를 받은 경우 해당 위반사유를 해소한 후 동 조치의 철회를 요청할 수 있습니다.
+                    </li><li>⑥	"회사"가 본 조에 따라서 "이용제한"을 하는 경우 “회원”은 “이용제한”의 철회를 요청할 수 있으며, 해당 절차에 관한 구체적인 내용은 "서비스" 운영정책에서 정하는 바에 의합니다.
+                    </li><li>⑦	본 조에 따라 "회원" 자격이 박탈되는 경우, "회사"는 관련 법령 및 개인정보처리방침에 따라 보유하는 "회원"의 정보를 제외한 "회원"의 "아이디(ID)"에 등록된 "홈페이지" 및 "게시물" 정보 일체 등을 삭제합니다.</li>
+                </ol>
+            </li>
+            <li id="a19">
+                <h3>제 19 조 (약관의 해석)</h3>
+                <ol>
+                    <li>①	"회사"는 "약관" 외에 별도의 서비스 운영정책 등을 둘 수 있습니다.</li>
+                    <li>②	"약관"에서 정하지 않은 사항이나 해석에 대하여는 서비스 운영정책, 이용안내, 기타 관련 법령 또는 상관례에 따릅니다.</li>
+                </ol>
+            </li>
+            <li id="a20">
+                <h3>제 20 조 (책임제한)</h3>
+                <ol>
+                    <li>①	"회사"는 천재지변, 디도스(DDOS) 공격, IDC 장애, 기간통신사업자의 회선 장애 또는 이에 준하는 불가항력으로 인하여 "서비스"를 제공할 수 없는 경우에는 "서비스" 제공에 관한 책임을 지지 않습니다.</li>
+                    <li>②	"회사"는 "회원"의 귀책사유로 인한 "서비스" 이용의 장애에 대하여는 책임을 지지 않습니다.</li>
+                    <li>③	"회원"이 "서비스" 이용을 통해 제작한 "홈페이지" 및 "홈페이지" 내 "게시물"의 내용에 관하여는 "회원"이 그에 대한 일체의 책임을 부담하며 “회사”는 이에 대해 어떠한 책임도 부담하지 않습니다.</li>
+                    <li>④	"회사"는 "회원" 간 또는 "회원"과 제3자 상호간의 "서비스"를 매개로 한 거래 등에 관하여 책임을 지지 않습니다.</li>
+                </ol>
+            </li>
+            <li id="a21">
+                <h3>제 21 조 (준거법 및 재판관할)</h3>
+                <ol>
+                    <li>①	"회사"와 "회원" 간에 발생한 분쟁에 대하여는 대한민국법을 준거법으로 합니다.</li>
+                    <li>②	"회사"와 "회원"간 발생한 분쟁에 관한 소송은 제소 당시의 "회원"의 주소에 의하고, 주소가 없는 경우 거소를 관할하는 지방법원의 전속관할로 합니다. 단, 제소 당시 "회원"의 주소 또는 거소가 명확하지 아니한 경우의 관할법원은 민사소송법에 따라 정합니다.</li>
+                    <li>③	해외에 주소나 거소가 있는 "회원"의 경우 "회사"와 "회원"간 발생한 분쟁에 관한 소송은 전항에도 불구하고 대한민국 서울중앙지방법원을 관할법원으로 합니다.</li>
+                </ol>
+            </li>
+            <li id="a22">
+                <h3>[부칙]</h3>
+                <p class="txt">1. 본 약관은 2015년 11월 23일부터 시행됩니다.</p>
+            </li>
+        </ol>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <div id="footer"  >
+        <div class="footer_wrap">
+            <ul class="provision">
+                <li class="list1"><a href="userPolicy.html" target="_blank" onClick="clickcr(this, 'fot.agreement', '', '', event);">서비스 이용약관</a></li>
+                <li class="list2"><a href="operationalPolicy.html" target="_blank" onClick="clickcr(this, 'fot.policy', '', '', event);">운영 정책</a></li>
+                <li class="list2"><a href="userPrivacy.html" target="_blank" onClick="clickcr(this, 'fot.privacy', '', '', event);"><strong>개인정보 처리방침</strong></a></li>
+                <li class="list3"><a href="https://help.naver.com/support/alias/modoo/main.naver" target="_blank" onClick="clickcr(this, 'fot.help', '', '', event);">modoo! 고객센터</a></li>
+            </ul>
+            <div class="corp_info">
+                <span class="info info1">사업자등록번호 : <em>220-81-62517</em></span>
+                <span class="info info2">통신판매업신고번호 : 경기성남 제<em>2006-692</em>호</span><br>
+                <span class="info info3">대표이사 : 최수연</span>
+                <span class="info info4">주소 : 경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561</span><br>
+                <span class="info info5">대표전화 : <em>1644-3930</em>(유료) <a href="https://help.naver.com/support/alias/modoo/main.naver" target="_blank" class="link_help">통화전 클릭</a></span>
+            </div>
+            <p class="copyright">
+                <span class="logo">
+                    <a href="https://www.naver.com/" target="_blank" class="sp" onClick="clickcr(this, 'fot.naver', '', '', event);"><span class="blind">NAVER</span></a>
+                </span>
+                Copyright © <a href="https://www.navercorp.com/" target="_blank"><strong>NAVER Corp.</strong></a> All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="rg_float_banner" style="display:none;">
+    <div class="rg_float_banner_inner">
+        <a href="../../management.html" target="_blank">
+            <i class="sp_rg_float_banner_content"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+        </a>
+    </div>
+</div>
+<div class="rg_float_banner_inner">
+    <a href="../../management.html">
+        <i class="sp_rg_float_banner_content"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+    </a>
+    <a href="https://markethub.modoo.at/">
+        <i class="sp_rg_float_banner_content v2"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+    </a>
+</div>
+
+<div class="layer_section" id="_first_mobile_layer" style="display:none">
+    <div class="layer_area" id="_first_mobile_layer_area">
+		<span class="blind">
+			모바일 편집기능 OPEN<br>
+			언제 어디서나 쉽고 빠르게 홈페이지 제작과 편집이 가능합니다<br>스마트폰에서  www.modoo.at 에 접속하세요<br>
+			홈페이지제작 : 이제 모바일에서도 제작과 편집을<br>
+			내용편집 : 사진,글,지도를 바로 수정<br>
+			구성수정 : 구성요소 이동,추가도 자유롭게<br>
+		</span>
+        <!-- [D] 선택시 selected 클래스 추가 -->
+        <a href="userPolicy.html#" class="close_chk" id="_close_check"><span class="ico_chk sp"></span><span class="blind">다시 보지 않기</span></a>
+        <a href="userPolicy.html#" class="layer_close" id="_layer_close"><span class="blind">닫기</span></a>
+    </div>
+</div>
+
+<div class="layer_section layer_event _newStuffLayer" style="display:none">
+    <div class="layer_area">
+        <div class="layer ly_event">
+            <div class="l_tit">
+                <h1 class="blind">modoo!에서 특별히 소개합니다!</h1>
+            </div>
+            <div class="l_cont">
+                <strong class="blind">연말에 가볼 만한곳 지금 만나보세요!</strong>
+                <p class="blind">2016년 특별한 연말을 계획하고 계신가요? 소중한 분들과 즐거운 추억을 만들 수 있도록 다양한 파티 공간부터 식사공간, 이색 숙소, 취향 저격 선물까지 소개합니다. 지금 만나보세요.</p>
+            </div>
+            <a href="https://finalfest2016.modoo.at" target="_blank" class="link_event _btn_go_event">2016 특별한 modoo! 보기</a>
+            <a href="../main/start.html" class="link_event2">나도 홈페이지 만들기</a>
+            <a href="userPolicy.html#" class="close_chk _btn_close_chk"><span class="ico_chk"></span><span class="blind">다시 보지 않기</span></a>
+            <a href="userPolicy.html#" class="btn_clse _btn_close">닫기</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">var nsc="modoo.home";var $=jQuery;if(!window.console){window.console={log:function(){},dir:function(){}};}function mergeEnv(b){function a(d){var c;for(c in b){d[c]=b[c];}}ENV=window.ENV||{};a(ENV);}mergeEnv({resetCacheVer:"20250124144128",loginId:"",age:"",gender:"",customerId:parseInt("0",10),userType:"",name:"",penaltyFlag:parseInt("0",10),emailCertSt:parseInt("0",10),membershipLevel:"",runLevel:parseInt("0",10)});</script>
+
+<script type="text/javascript">$(window).on("load",function(){var b=$("#header");b.delegate("._naver_logout a","click",function(c){if(confirm("로그아웃 하시겠습니까?")){$.ajax({url:"https://www.modoo.at/home/oAuth/logout.json",type:"post",dataType:"json",success:function(d){if(d.retCode===0){location.href="https://www.modoo.at/home";}else{alert(d.retMsg);}}});}return false;});b.delegate("._naver_login a","click",function(c){location.href="https://www.modoo.at/home/oAuth/login?returnUrl="+encodeURIComponent(location.href);return false;});function a(){b.find("[data-role=info-login-id]").text(ENV.loginId);if(ENV.loginId.length>27){b.find("[data-role=info-login-id]").parent().addClass("id_ellipsis");}if(ENV.loginId){b.find("._user_name").html(ENV.loginId+" 님");b.find("._naver_login_btn").removeClass("_naver_login").addClass("_naver_logout").find("a").removeClass("btn_login").addClass("btn_logout").find(".blind").html("로그아웃");b.find("._naver_login_btn").bind("click",function(c){clickcr(this,"gnb.logout","","",c);});}else{b.find("._naver_login_btn").removeClass("_naver_logout").addClass("_naver_login").find("a").removeClass("btn_logout").addClass("btn_login");b.find("._naver_login_btn").bind("click",function(c){clickcr(this,"gnb.login","","",c);});}}a();$("body").find("img[data-lazy-src], video[data-lazy-src]").each(function(){var c=this.getAttribute("data-lazy-src");$(this).attr("src",c);});fixedGNB();});$(window).on("resize",function(){fixedGNB();});function fixedGNB(){if($(window).width()<=1024){$(".h_menu").css({right:"auto",left:10,top:100});}else{$(".h_menu").removeAttr("style");}}lcs_do();wcs_do();</script>
+
+</body>
+</html>

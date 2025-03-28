@@ -1,0 +1,657 @@
+ 
+ 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="referrer" contents="always">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="회원가입 : 모두!" />
+    <meta property="og:site_name" content="modoo!">
+    <meta property="og:image" content="https://ssl.pstatic.net/static/modoo/publish/img/sns_logo_v2.png">
+    <meta name="twitter:image" content="https://ssl.pstatic.net/static/modoo/publish/img/sns_logo_v2.png">
+    <meta property="og:description" content="네이버 modoo! 바로 지금 만들어 보세요" />
+    <meta name="description" content="네이버 modoo! 바로 지금 만들어 보세요" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon_v1.ico@20250124144128">
+    <title>회원가입 : 모두!</title>
+    <link rel="canonical" href="operationalPolicy@version=1.0.html">
+
+    <link rel="stylesheet" type="text/css" href="../../static/modoo/css/modoo_20250124144128.css">
+    <link rel="stylesheet" type="text/css" href="../../static/common/css/common_20250124144128.css">
+
+    <script type="text/javascript" src="../../application/static/script/modules/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../application/static/script/modules/all-0.3.0.min.js"></script>
+
+    <script type="text/javascript" src="../../application/static/script/mfarm_min/mfarm.js@20250124144128"></script>
+
+    <script type="text/javascript" src="../../application/static/script/modules/clickcr.js"></script>
+    <script type="text/javascript" src="../../application/static/script/modules/lcslog.js@20250124144128"></script>
+    <script type="text/javascript" src="../../../wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">if(!wcs_add){wcs_add={}}wcs_add.wa="b5b3d674191fe0";wcs.inflow();</script>
+</head>
+
+<body >
+
+<div id="wrap" class="sub">
+    <div id="u_skip">
+        <a href="operationalPolicy@version=1.0.html#content"><span>본문으로 바로가기</span></a>
+    </div>
+
+    <div id="header">
+        <div class="header_wrap">
+            <h1 class="logo">
+                <a href="https://naver.com" class="sp naver"><span class="blind">NAVER</span></a>
+                <a href="../../index.html" class="sp modoo" onClick="clickcr(this, 'gnb.modoo', '', '', event)"><span class="blind">modoo!</span></a>
+            </h1>
+            <ul class="gnb">
+                <li class="menu2"><a href="../renewal.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.campaign', '', '', event)"><span class="blind">시작하기</span></a></li>
+                <li class="menu3"><a href="../main/promote.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.inform', '', '', event)"><span class="blind">활용하기</span></a></li>
+                <li class="menu4"><a href="../notice/notice.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.notice', '', '', event)"><span class="blind">공지/안내</span></a></li>
+                <li class="menu6"><a href="../main/start.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.start', '', '', event)"><span class="blind">업종별 템플릿</span></a></li>
+            </ul>
+            <ul class="h_menu">
+                <li class="_naver_login_btn _naver_login"><a href="operationalPolicy@version=1.0.html#" class="btn_login sp"><span class="blind">로그인</span></a></li>
+                <li><a href="../../management.html" target="_blank" class="btn_management sp" onClick="clickcr(this, 'gnb.edit', '', '', event)"><span class="blind">홈페이지관리</span></a></li>
+                <li><a href="https://talk.naver.com/ct/wc61mx" target="_blank" class="btn_smartbot sp"><span class="blind">궁금할 땐 modoo 스마트봇 beta</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+<style>
+    .layer_announce {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 990;
+
+        font-family: "나눔고딕", NanumGothic, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.5em;
+        letter-spacing: -0.05em;
+        color: #222;
+    }
+
+    .layer_announce .layer_area_announce {
+        overflow: hidden;
+        position: absolute;
+        top: auto;
+        bottom: 100px;
+        right: 50px;
+    }
+
+    .ly_announce {
+        width: 500px;
+        height: 400px;
+        border: 1px solid #393d46;
+        background-color: #fff;
+    }
+
+    .ly_announce .l_tit {
+        position: relative;
+        height: 55px;
+        background-color: #5c6677
+    }
+
+    .ly_announce .l_tit span {
+        position: absolute;
+        bottom: 22px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    .ly_announce .l_cont {
+        position: absolute;
+        top: 70px;
+        bottom: 70px;
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ly_announce .l_cont ul {
+        list-style-position: outside;
+        list-style-type: disc;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    .ly_announce .l_cont p {
+        padding-bottom: 1em;
+    }
+
+    .ly_announce .btn_close {
+        overflow: hidden;
+        background-image: url(../../static/management/img/sp_manage.png);
+        width: 22px;
+        height: 22px;
+        background-position: 0 -776px;
+        position: absolute;
+        top: 18px;
+        right: 22px;
+        line-height: 1000px;
+        z-index: 10
+    }
+
+    .ly_announce .close_chk {
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        text-decoration: none;
+    }
+
+    .ly_announce .close_chk span {
+        vertical-align: middle;
+    }
+
+    .ly_announce .ico_chk {
+        display: inline-block;
+        overflow: hidden;
+        width: 13px;
+        height: 13px;
+        margin-right: 2px;
+        background: url(../../static/modoo/img/check_v3.png) no-repeat;
+    }
+
+    .ly_announce .selected .ico_chk {
+        background: url(../../static/modoo/img/check_v3.png) no-repeat 0 -60px;
+    }
+
+    .ly_announce .link {
+        text-decoration: underline;
+        color: #00c73c;
+        letter-spacing: 0;
+    }
+</style>
+<div class="layer_announce" id="_no_new_site_layer" style="display:none">
+    <div class="layer_area_announce">
+        <div class="ly_announce">
+            <div class="l_tit">
+                <span>신규 홈페이지 추가 및 신규 연동 중단 안내</span>
+            </div>
+            <div class="l_cont">
+                <p>2025년 2월 3일(월)부터 아래 지원 중단됩니다.</p>
+                <ul>
+                    <li>신규 홈페이지 추가 중단</li>
+                    <li>기존 홈페이지에 신규 연동 중단 (플레이스/예약/스마트스토어/톡톡/개인도메인)</li>
+                </ul>
+
+                <p><strong>기존 홈페이지의 경우 <u>홈페이지 및 연동 셋팅이 그대로 유지</u></strong>되오니 참고 바라며<br>
+                    관련 일정과 상세 내용은 아래 <strong>[공지 바로가기]</strong>로 확인 부탁 드립니다.</p>
+                <p>남은 기간까지 최선을 다하도록 하겠습니다.</p>
+                <p><a class="link" href="../notice/noticeDetail@boardId=167&amp;pageNum=1.html"><strong>공지
+                            바로가기</strong></p>
+            </div>
+            <a href="operationalPolicy@version=1.0.html#" class="close_chk _btn_close_chk"><span class="ico_chk"></span> <span>다시 보지 않기</span></a>
+            <a href="operationalPolicy@version=1.0.html#" class="btn_close _btn_close">닫기</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" data-compress="1">
+    var layer = $("#_no_new_site_layer");
+    var optOut = layer.find("._btn_close_chk");
+    var closeButton = layer.find("._btn_close");
+    var notiStatusCookie = 'no-new-site';
+
+    var setUpEvent = function () {
+        // 레이어 닫기
+        closeButton.click(function (event) {
+            event.preventDefault();
+            if (optOut.hasClass("selected")) {
+                $.cookie(notiStatusCookie, 'N', {expires: 365, path: '/', domain: '.modoo.at'});
+            }
+            layer.fadeTo(800, 0, function () {
+                layer.hide();
+            });
+        });
+
+        optOut.click(function (event) {
+            event.preventDefault();
+            optOut.toggleClass("selected");
+        });
+    }
+
+    // 브라우저 높이 800이하 style 적용 (left:52%;top:70px;margin-top:20px)
+    layer.fadeTo(800, 1);
+    setUpEvent();
+</script>
+
+    <div id="container" class="provision">
+<div id="banner" class="banner"></div>        <div id="content" data-role="page-container" data-page-type="normal" data-page-status="ready">
+<h2 class="title">
+    <span class="blind">약관/정책</span>
+    <span class="txt txt_desc sp"><span class="blind">누구나 쉽게 무료로 만드는 스마트 홈페이지 modoo!</span></span>
+</h2>
+<div class="provision_wrap">
+    <h3 class="title"><span class="txt">운영 정책(Ver 1.0)</span></h3>
+    <div class="provision_box">
+        <p class="desc">
+            모두 서비스의 운영정책은 다음과 같은 내용을 담고 있습니다.<br>
+            운영 정책을 지키지 않은 경우 서비스 이용이 제한될 수 있습니다. 반드시 확인하시고 준수해주시기 바라며, 운영 정책을 준수하지 않음으로 인해 서비스 이용에 제한을 받으시는 일이 없도록 협조 부탁 드리겠습니다.
+        </p>
+        <div class="idx_area">
+            <ol class="idx">
+                <li><a href="operationalPolicy@version=1.0.html#a1">회원가입</a></li>
+                <li><a href="operationalPolicy@version=1.0.html#a2">회원계정 정보변경</a></li>
+                <li><a href="operationalPolicy@version=1.0.html#a3">도메인 신청 등</a></li>
+                <li><a href="operationalPolicy@version=1.0.html#a4">서비스 이용</a></li>
+            </ol>
+            <ol class="idx">
+                <li><a href="operationalPolicy@version=1.0.html#a5">서비스 중단</a></li>
+                <li><a href="operationalPolicy@version=1.0.html#a6">이용제한</a></li>
+                <li><a href="operationalPolicy@version=1.0.html#a7">이용제한 사유</a></li>
+                <li><a href="operationalPolicy@version=1.0.html#a8">회원탈퇴</a></li>
+            </ol>
+        </div>
+        <ol class="policy_box">
+            <li id="a1">
+                <h3>회원 가입</h3>
+                <ol>
+                    <li>1.	회원 가입
+                        <ol>
+                            <li>①	모두 서비스를 이용하시고자 하는 분은 모두 홈에 방문하시어 회원 신규가입 절차를 거쳐 자유롭게 모두 서비스를 이용하실 수 있습니다.</li>
+                            <li>②	가입 후 이용 목적에 따라 회원 유형 변경이 가능하며, 개인회원, 사업자회원, 법인 및 기관 회원으로 분류할 수 있습니다.</li>
+                        </ol>
+                    </li>
+                    <li>2.	회원 가입의 제한
+                        <ol>
+                            <li>①	모두 서비스는 안정적인 서비스 운영 등을 위해 다음과 같은 경우에 회원 가입 승인을 거절하거나 해당 사정이 있었던 날로부터 1년간 가입을 제한할 수 있습니다.
+                                <ul>
+                                    <li>· 가입 신청자가 약관 및 서비스 운영정책 위반으로 이용 제한된 상태에서 탈퇴한 이력이 있는 경우</li>
+                                    <li>· 가입 신청자가 약관 및 서비스 운영정책을 중대하게 위반하는 행동을 한 후 자진하여 탈퇴한 이력이 있는 경우</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li id="a2">
+                <h3>회원계정 정보변경</h3>
+                <ol>
+                    <li>1.	회원계정 정보변경
+                        <ol>
+                            <li>①	회원 가입 이후에 사업자등록을 하셨거나(개인 회원) 또는 등록한 사업자 정보에 변경이 있는(개인사업자, 법인/기관 회원) 경우에는 회원계정의 정보를 변경하셔야 합니다.</li>
+                            <li>②	회원계정의 정보변경이 필요한 회원은 모두 홈에 접속하여 회원 정보 변경을 신청하시거나 모두 고객센터(1644-3930)을 통하여 변경을 요청하셔야 합니다.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li id="a3">
+                <h3>도메인 신청 등</h3>
+                <p class="txt">
+                    회원은 모두가 포함된 무료 도메인을 신청하여 사용할 수 있습니다. 예를 들면, 회원이 주소로서 “***”를 선택한 경우  https://***.modoo.at과 같은 도메인이 제공되며, 기존에 갖고 계신 도메인 및 새로 구입한 도메인을 모두 내 홈페이지에 연결할 수 있습니다.
+                </p>
+                <ol>
+                    <li>1.	도메인 신청
+                        <ol>
+                            <li>①	모두 도메인은 영문(소문자)과 숫자로만 기재할 수 있으며, 한글 및 기타 외국어, 특수문자 등은 기재하실 수 없습니다.</li>
+                            <li>②	모두 도메인은 최소 3자 이상을 기재해야 하며, 최대 20자까지 기재하실 수 있습니다.</li>
+                            <li>③	모두 도메인에는 관련 법령 또는 선량한 풍속, 기타 사회질서에 반하거나 반하는 행위를 지칭할 수 있는 문구, 욕설 등을 기재할 수 없습니다.</li>
+                            <li>④	다른 회원이 이미 사용 중인 모두 도메인은 사용하실 수 없습니다.</li>
+                            <li>⑤	회원이 동시에 보유할 수 있는 홈페이지의 모두 도메인은 계정당 최대 10개로 제한되며, 동시에 연결 서비스를 제공받을 수 있는 홈페이지의 모두 도메인 역시 계정당 최대 10개로 제한됩니다. 단, 개인사업자 또는 법인/기관회원으로 유형을 전환한 경우 개인사업자회원은 최대 20개, 법인/기관회원은 최대 200개로 제한됩니다.</li>
+                        </ol>
+                    </li>
+                    <li>2.	도메인 변경
+                        <ol>
+                            <li>①	모두 도메인의 변경이 필요한 회원은 언제든지 모두 홈에 접속하여 모두 도메인의 변경을 신청하실 수 있습니다.</li>
+                            <li>②	안정적인 서비스 운영 등을 위해 모두 도메인의 변경은 각 홈페이지당 월 1회로 제한됩니다.</li>
+                        </ol>
+                    </li>
+                    <li>3.	도메인 재사용의 제한
+                        <ol>
+                            <li>①	서비스의 안정적인 운영 등을 위해 다음과 같은 경우에 해당하는 모두 도메인의 재사용을 원칙적으로 삭제 또는 변경일로부터 30일간 제한합니다.
+                                <ul>
+                                    <li>· 탈퇴에 의해 삭제된 회원 홈페이지의 모두 도메인</li>
+                                    <li>· 회원이 삭제한 회원의 홈페이지의 모두 도메인</li>
+                                    <li>· 원이 모두 도메인을 변경한 홈페이지의 변경 전 모두 도메인</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>4.	도메인 이용 제한
+                        <p class="txt">회사는 회원이 계속해서 12개월 이상 자신의 홈페이지에 모두 도메인을 사용하지 않을 경우, 회사는 서비스 운영의 효율성을 위해 해당 모두 도메인 이용 승낙을 철회할 수 있습니다.</p>
+                    </li>
+                    <li>5.	부정경쟁행위의 금지
+                        <ol>
+                            <li>①	회사는 회원이 제3자의 상표 및 상호 등 객관적으로 제3자가 보유한 권리에 대한 표시하는 것으로 오인/혼동될 수 있는 모두 도메인을 신청하는 경우 이를 거절할 수 있으며, 서비스 개시 이후라도 회사의 인지 및 제3자의 이의제기 등을 통하여 그와 같은 오인/혼동가능성이 명백한 것으로 밝혀지는 경우 해당 모두 도메인을 회수하거나 해당 분쟁이 종결될 때까지 해당 모두 도메인의 사용을 정지할 수 있습니다.</li>
+                            <li>②	회사는 회원의 특정 모두 도메인 사용 등이 “부정경쟁행위” 등에 해당하여 제3자의 권리를 침해한다는 법원의 판결문 또는 결정문, 기타 관련 국가기관의 유권해석 등이 회사에 제출되는 경우 해당 판단의 취지에 따라 지체 없이 해당 특정 모두 도메인의 사용을 제한할 수 있습니다.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li id="a4">
+                <h3>서비스 이용</h3>
+                <ol>
+                    <li>1. 서비스 이용
+                        <ol>
+                            <li>①	회원 가입 시 '본인확인'을 완료하지 않은 가입 신청자는 '본인확인' 완료 후 회원 가입이 가능합니다.</li>
+                            <li>②	회원 가입이 완료되면 회사가 제공하는 여러 기능을 통해 회원 본인의 홈페이지 제작과 관리를 하실 수 있습니다.</li>
+                            <li>③	회사가 회원의 서비스 이용신청을 승낙한 것이 해당 서비스의 대상이 된 홈페이지 등이 위법하지 않거나 약관, 서비스 운영정책, 이용안내 등에 적합함을 최종적으로 보증하거나 보장하는 것은 아니며, 서비스 이용을 승낙한 이후에도 서비스의 대상이 된 홈페이지 등이 관련 법령 또는 약관, 서비스 운영정책, 이용안내 등을 위반하는 것이 확인될 경우 모두 서비스 이용계약의 중단, 정지, 해지 등의 조치를 취할 수 있습니다.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li id="a5">
+                <h3>서비스 중단</h3>
+                <p class="txt">다음의 각 항목 중 어느 하나에 해당할 경우, 회사는 서비스의 일부 또는 전체를 중단할 수 있습니다.</p>
+                <ol>
+                    <li>1. 서비스 중단 사유
+                        <ol>
+                            <li>①	국가비상사태, 정전, 서비스 설비의 장애 또는 서비스 이용의 폭주, 기간통신사업자의 서비스 장애 등으로 정상적인 서비스 제공에 지장이 있는 경우</li>
+                            <li>②	설비의 보수 등을 위해 부득이한 경우</li>
+                            <li>③	회원이 회사가 제공하는 통상적인 수준의 트래픽, 용량 등을 과도하게 초과하여 회사의 정상적인 서비스 제공에 지장이 있는 경우</li>
+                            <li>④	기타 회사가 서비스를 제공할 수 없는 사유가 발생한 경우</li>
+                        </ol>
+                    </li>
+                    <li>2. 서비스 중단 및 재개 절차
+                        <ol>
+                            <li>①	회사가 서비스를 중단하는 경우, 중단사유와 중단기간을 명시하여 약관 제12조에 따른 방법으로 회원에게 통지합니다. 다만, 사전에 통지할 수 없는 부득이한 사유가 있는 경우에는 사후에 통지할 수 있습니다.</li>
+                            <li>②	회사가 중단한 서비스를 재개하는 경우에도 약관 제12조에 따른 방법으로 회원에게 통지합니다.</li>
+                            <li>③	통상적인 수준의 트래픽, 용량 등을 과도하게 초과하여 서비스가 중단된 경우, 중단 사유를 해소한 회원은 모두 고객센터(1644-3930)를 통해 서비스 재개 요청을 하실 수 있으며, 회사가 서비스 중단 사유가 해소되었음을 확인한 때에는 신속히 서비스를 재개하고 약관 제12조의 방법에 따라 회원에게 그 결과를 통지합니다.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li id="a6">
+                <h3>이용제한</h3>
+                <ol>
+                    <li>1. 이용제한 조치
+                        <ol>
+                            <li>①	회사는 회원이 관련 법령 및 약관 또는 서비스 운영정책에 따른 의무를 위반하는 경우 모두 서비스 이용계약의 중단, 정지, 해지 등을 할 수 있습니다.</li>
+                        </ol>
+                    </li>
+                    <li>2. 이용제한의 종류
+                        <ol>
+                            <li>①	모두 서비스 이용계약의 중단은 특정 홈페이지 제공을 임시적으로 중단하는 것을 의미합니다.</li>
+                            <li>②	모두 서비스 이용계약의 정지는 특정 홈페이지 제공을 최종적으로 중단하는 것을 의미합니다.</li>
+                            <li>③	모두 서비스 이용계약의 해지는 서비스 이용약관에 따른 모두 서비스의 사용을 최종적으로 중단하는 것을 의미합니다.</li>
+                            <li>④	홈페이지내 개별 게시물에 대한 제한은 회원 홈페이지 특정 게시물에 대한 (임시)차단, 삭제 등의 조치를 취하는 것을 의미합니다.</li>
+                        </ol>
+                    </li>
+                    <li>3. 이용제한 절차
+                        <ol>
+                            <li>①	회사는 이용제한을 하는 경우 회원에게 약관 제12조에 따른 방법으로 통지합니다.</li>
+                            <li>②	회사가 전항의 통지를 하는 경우에는 이의신청의 기회를 부여 합니다. 다만, 회원의 관련 법령, 약관, 서비스 운영정책 등 위반행위가 중대하다고 판단될 경우에는 이의신청 기회를 부여하지 않을 수 있습니다.</li>
+                            <li>③	이용제한 조치에 대하여 궁금한 점이나 이의가 있는 회원은 모두 고객센터(1644-3930) 를 통하여 해당 내용을 문의할 수 있습니다.</li>
+                            <li>④	이용제한 조치와 관련된 회원의 문의가 접수될 경우, 회사는 해당 내용을 검토하고 처리하며 약관 제12조에 따른 방법으로 회원에게 그 결과를 통지합니다.</li>
+                            <li>⑤	이용제한 사유를 확인하고 해소한 회원은 모두 고객센터(1644-3930)를 통해 이용제한 철회 요청을 하실 수 있으며, 회사는 해당 이용제한의 철회 여부를 검토하고 처리하며 약관 제12조의 방법에 따라 회원에게 그 결과를 통지합니다. 다만, 서비스 이용계약의 정지 및 해지에 대해서는 이용제한 철회 요청을 할 수 없습니다. (서비스 재계약 또는 1년 후 회원 재가입)</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li id="a7">
+                <h3>이용제한 사유</h3>
+                <p class="txt">
+                    회사는 회원의 서비스 이용이 아래에 해당할 경우 이용제한을 할 수 있습니다.
+                </p>
+                <ol>
+                    <li>1. 관련 법령을 위반하는 경우
+                        <ol>
+                            <li>①	음란 게시물을 제공하는 경우
+                                <ul>
+                                    <li>· 남녀의 성기 등이 노출되거나 관련 내용을 저속하게 표현한 내용</li>
+                                    <li>· 영 · 유아 또는 청소년을 성적 유희의 대상으로 묘사한 콘텐츠</li>
+                                    <li>· 수간(동물대상), 시간(시체대상) 등의 성행위에 대한 직접적인 묘사 또는 이를 연상시키는 모자이크된 콘텐츠</li>
+                                    <li>· 모자이크나 천 등으로 가렸더라도 성기 등이 지나치게 강조되거나 근접 촬영되어 윤곽 또는 굴곡이 드러난 내용</li>
+                                    <li>· 성행위나 자위행위를 직접적으로 묘사한 내용</li>
+                                    <li>· 불륜관계, 근친상간 등 반인륜적 성행위를 자세하게 소개하거나 흥미위주로 묘사한 내용</li>
+                                    <li>· 매춘 등 불법 성행위를 정당하게 묘사한 내용</li>
+                                </ul>
+                            </li>
+                            <li>②	청소년 부적합 홈페이지
+                                <ol>
+                                    <li>A. 신체 노출 등 선정적인 게시물
+                                        <ul>
+                                            <li>· 신체 노출여부와 관계없이 이성 또는 동성간의 성행위(신체 애무 포함)를 직접적으로 묘사한 경우</li>
+                                            <li>· 모자이크 등으로 일부를 가리거나, 간접적인 표현을 사용하였더라도 성행위(신체 애무 포함)를 묘사하고 있음을 쉽게 인지할 수 있는 경우(성행위 시의 기성, 신음소리 포함)</li>
+                                            <li>· 여성의 유두 또는 유륜이 노출된 경우</li>
+                                            <li>· 성기 등 특정 부위를 강조하기 위해 엉덩이를 치켜 들거나 다리를 벌리고 있는 경우(이로 인해 성기 또는 항문의 윤곽이 드러나는 경우)</li>
+                                            <li>· 모자이크 등으로 노출부위를 가렸더라도 가슴 또는 성기의 윤곽이 비교적 쉽게 드러나는 경우</li>
+                                            <li>· 성적 체벌 관련 콘텐츠</li>
+                                            <li>· 성행위 체위 및 성인용품 정보를 제공하는 경우</li>
+                                            <li>· 신체의 일부 또는 기구를 이용한 자위행위를 묘사한 경우</li>
+                                            <li>· 신체의 일부가 사람과 유사하게 묘사된 인형 등 자위 목적의 사물 소개</li>
+                                            <li>· 성인 동영상, 성인 게임 등 성인 콘텐츠를 직접 제공하거나, 소개하는 경우</li>
+                                        </ul>
+                                    </li>
+                                    <li>B. 유해정보
+                                        <ul>
+                                            <li>· 룸살롱, 키스방, 호스트바 등의 유흥업소 및 관련 정보를 홍보하는 경우</li>
+                                            <li>· 아이템 거래, 게임 캐릭터 계정 대여, 게임 캐릭터 육성 전문 정보 홍보</li>
+                                            <li>· 중고속옷(스타킹 포함) 및 분비물(침, 변 등) 판매</li>
+                                            <li>· 청소년 유해약물 등의 효능 및 제조방법 등을 구체적으로 기술하여 그 복용, 제조 및 사용을 조장하거나 이을 매개하는 내용</li>
+                                            <li>· 스와핑, 혼음 등 사회 윤리적으로 용납되지 않은 행위를 매개하는 경우</li>
+                                            <li>· 존속에 대한 상해 폭행 살인 등 전통적인 가족윤리를 훼손할 우려가 있는 내용</li>
+                                            <li>· 청소년에게 불건전한 교제를 조장할 우려가 있거나 이를 매개하는 내용</li>
+                                        </ul>
+                                    </li>
+                                    <li>C. 잔혹/폭력성
+                                        <ul>
+                                            <li>· 시체 사진 또는 신체가 훼손되거나 혈흔이 낭자한 잔혹한 콘텐츠(동물 포함)</li>
+                                            <li>· 자해를 묘사한 콘텐츠</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>③	불법 게시물을 제공하는 경우
+                                <ul>
+                                    <li>· 매춘, 사이버섹스, 노골적인 성적 대화 등 성적 유희의 대상을 찾거나 매개하는 내용</li>
+                                    <li>· 성매매(유사성매매 포함) 가능 업소를 소개하거나 그 이용정보 등을 공유하는 경우</li>
+                                    <li>· 주민등록번호 생성기, 카드번호 생성기, 아이템 생성기, 비밀번호 해제 프로그램, 게임 오토마우스/버그/맵핵 등 불법자료를 등록하는 경우</li>
+                                    <li>· 타인에게 피해를 줄 목적으로 불법적인 해킹 방법, 해킹 툴 등 관련 정보를 유통하는 경우</li>
+                                    <li>· 불법대출을 소개 또는 권유하는 내용</li>
+                                    <li>· 난자매매, 장기매매, 대리모 등의 신체와 관련된 금전 거래를 야기할 우려가 있는 내용</li>
+                                    <li>· 자살을 미화, 권유하거나 자살방법을 적시하는 내용, 동반자살을 유도하는 내용</li>
+                                    <li>· 범죄 관련 내용을 미화/권유/조장하는 내용</li>
+                                    <li>· 성폭력 마약복용 등 퇴폐적 행위를 자극하거나 미화하는 내용</li>
+                                    <li>· 살인을 청탁하거나 이를 권유, 유도 및 매개하는 내용</li>
+                                    <li>· 음란정보 또는 퇴폐업소가 있는 장소를 안내 또는 매개하는 내용</li>
+                                    <li>· 불법제품을 이용자에게 판매하거나 소개하는 경우</li>
+                                    <li>· 타인의 신체를 본인의 의사에 반해 촬영 및 게시하여, 성적 수치심을 유발하는 경우</li>
+                                    <li>· 불법 다단계 영업행위, 유사 수신 등 허위사실이나 불법적 내용을 게시하는 경우</li>
+                                    <li>· 불법성 게시물을 게재하고 있는 타 사이트로 링크를 제공하는 경우</li>
+                                    <li>· 악성코드, 바이러스 등 이용자의 서비스 환경을 저해하는 프로그램 및 검색 어뷰징 등 회사의 업무를 방해하는 프로그램을 수록하거나 설치를 유도, 배포하는 경우</li>
+                                    <li>· 불법적인 사행심 조장 : 한국 마사회 법, 경륜＊경정 법, 복권 및 복권기금 법 등 관련 법률상의 규정을 준수하지 않는 사행행위 영업을 통한 상업활동을 하는 경우 등</li>
+                                </ul>
+                            </li>
+                            <li>④	통신판매 금지 및 제한 품목을 취급하는 경우
+                                <ul>
+                                    <li>· 주류, 담배, 마약 및 향정신성의약품, 의약품</li>
+                                    <li>· 총포, 도검, 화약류, 분사기, 전자충격기, 석궁 및 총포와 비슷하게 보이는 모의총포</li>
+                                    <li>· 도수 있는 안경, 콘택트렌즈 및 선글라스</li>
+                                    <li>· 안전인증표시 없는 안전인증 대상 전기용품 또는 공산품, 자율안전 확인 신고의 표시 등이 없는 자율안전 확인 대상 전기용품 또는 공산품, 어린이보호포장표시가 없는 어린이 보호 포장대상 공산품</li>
+                                    <li>· 음란물, 청소년 유해매체물, 청소년 유해약물, 청소년 유해물건(단, 청소년 유해매체물, 유해약물, 유해물건의 경우 청소년에게 판매되는 경우에 한함</li>
+                                    <li>· 상표권 침해물품, 모조품 (소위 '짝퉁' 상품)</li>
+                                    <li>· 저작권, 초상권 및 성명권 침해 물품 및 심의되지 아니한 물품</li>
+                                    <li>· 군복 및 군용물품</li>
+                                    <li>· 위해식품, 병육, 고시되지 않은 화학적 합성품</li>
+                                    <li>· 건강기능식품 및 의료기기</li>
+                                    <li>· 장물이나 습득한 유실물</li>
+                                    <li>· 멸종위기 및 보호 야생 동식물, 가공품, 야생동물 포획 도구</li>
+                                    <li>· 기타 관계법령에서 인터넷을 통한 매매를 금지하는 물품</li>
+                                </ul>
+                            </li>
+                            <li>⑤	타인의 개인정보(성명, 주민등록번호, 주소, 사진, 영상 등)를 본인의 동의 없이 제공하는 경우
+                                <ul>
+                                    <li>· 타인의 홈페이지명+아이디+비밀번호 등 계정 로그인 정보 노출</li>
+                                    <li>· 타인의 주민등록번호 or 여권번호 or 외국인등록번호(국내거소신고번호 포함) 등 고유식별번호 노출</li>
+                                    <li>· 결합개인정보 노출(2가지 이상의 정보를 결합하여 개인을 식별할 수 있는 경우)</li>
+                                    <li>· 사진(또는 동영상) or 실명과 단체명/집주소/이메일주소/전화번호/홈페이지(트위터, 페이스북, 미니홈피 등)주소</li>
+                                    <li>· 타인으로 하여금 개인정보의 제공 및 노출을 유도하는 경우</li>
+                                </ul>
+                            </li>
+                            <li>⑥	타인의 지적재산권 등의 권리를 침해하는 경우
+                                <ul>
+                                    <li>· 음원, 방송, 영화, 출판, 만화, 게임, 소프트웨어 등의 저작물을 저작권자의 동의없이 아래의 방법 등으로 복제, 배포, 전송하거나, 이를 유도 및 홍보하는 경우</li>
+                                    <li>· 첨부파일 형태로 다운로드를 제공하는 경우</li>
+                                    <li>· 토렌트 시드파일을 공유하는 방법으로 다운로드를 제공하는 경우</li>
+                                    <li>· 링크형태로 다운로드를 제공하는 경우(클릭 시 다운로드 창이 뜨는 경우)</li>
+                                    <li>· 저작물을 스캔하여 게시한 경우(만화, 출판물, 악보 등)</li>
+                                    <li>· 저작물을 실시간 스트리밍 방식으로 제공하는 경우(음원, 방송, 영화 등)</li>
+                                    <li>· 위젯(플레이어)을 사용하여 음악을 스트리밍 방식으로 제공하는 경우</li>
+                                    <li>· 권리자의 동의 없이 방송, 음원, 영화, 소설, 모바일 게임, 만화 등 타인의 지적 활동으로 창출된 결과물 등을 복제, 배포, 전송하는 경우</li>
+                                    <li>· CD키 자동생성 프로그램, 버그나 핵 프로그램을 공유하는 등 권리자가 자신의 권리를 보호하기 위해 마련한 기술적 보호조치를 무력화시키기 위한 내용의 게시물</li>
+                                    <li>· 타인의 권리에 속하는 상표권, 의장권 등을 무단으로 침해하는 내용</li>
+                                </ul>
+                            </li>
+                            <li>⑦	타인의 명예를 훼손하거나 모욕하는 경우
+                                <ul>
+                                    <li>· 개인의 사생활, 초상권을 침해한 내용</li>
+                                    <li>· 개인이나 단체에 대해 비방하거나 허위사실을 유포한 경우 또는 권리를 침해한 경우</li>
+                                    <li>· 욕설 또는 언어폭력 등의 저속한 표현으로 특정인의 인격을 모독하거나 불쾌감을 불러 일으키는 내용</li>
+                                </ul>
+                            </li>
+                            <li>⑧	기타 관련 법령에 위반하는 경우</li>
+                        </ol>
+                    </li>
+                    <li>2. 관계 기관의 판단 또는 요청이 있거나 제3자로부터 권리침해신고 등이 접수된 경우
+                        <ol>
+                            <li>①	관할 국가기관에서 현행 법령을 위반한 홈페이지 또는 현행 법령을 위반하는 게시물을 가진 홈페이지라고 판단하여 “서비스”제공 중지를 요청해 온 경우</li>
+                            <li>②	방송통신심의위원회에서 시정요구 등을 해 온 경우</li>
+                            <li>③	공정거래위원회, 경찰청 등의 국가기관 또는 서울시 전자상거래센터에서 이용자 피해를 유발하고 있는 홈페이지라고 판단하여 공지한 경우</li>
+                            <li>④	제3자로부터 명예훼손, 지적재산권 침해 등을 이유로 권리침해신고가 접수되는 경우</li>
+                        </ol>
+                    </li>
+                    <li>3. 약관을 위반하는 경우
+                        <ol>
+                            <li>①	실명이 아닌 명의 또는 타인의 명의를 이용하여 회원가입 및 서비스 이용승낙을 득한 경우</li>
+                            <li>②	허위 또는 잘못된 정보를 기재 또는 제공하거나 "회사"가 제시하는 사항을 기재하지 않은 경우</li>
+                            <li>③	약관 제14조(회원의 의무) 규정에 의한 회원의 의무를 이행하지 않은 경우</li>
+                            <li>④	서비스를 이용하는 과정에서 취득한 일체의 정보를 회사의 사전 승낙 없이 제3자에게 제공, 공개 또는 누설하는 경우</li>
+                            <li>⑤	회원 계정을 타인에게 대여 또는 양도하거나 타인의 계정을 대여 또는 양도받는 경우</li>
+                            <li>⑥	관련 법령, 기타 약관 또는 서비스 운영정책 등에 위반하는 행위를 한 경우</li>
+                        </ol>
+                    </li>
+                    <li>4. 서비스의 정상적인 운영을 방해하는 경우
+                        <ol>
+                            <li>①	서비스의 안정적 운영을 방해할 목적으로 다량의 정보를 전송할 경우</li>
+                            <li>②	정보통신설비의 오동작이나 정보 등의 파괴를 유발시키는 컴퓨터 바이러스 프로그램 등을 유포하는 경우</li>
+                            <li>③	기타 서비스에 위해를 가하거나 정상적인 서비스의 이용을 저해하는 경우</li>
+                        </ol>
+                    </li>
+                    <li>5. 그 외 대한민국 법률과 법령에 위배되는 불법적인 행위에 해당하는 경우
+                        <ol>
+                            <li>①	공공질서 및 미풍양속에 저해되는 게시물을 제공하는 경우 (예시: 성인컨텐츠 제공 홈페이지, 성인용품 판매 홈페이지, 유흥업소 홍보 및 관련 직업 정보 제공 홈페이지 등)</li>
+                            <li>②	모두 서비스를 본래의 목적에 어긋나게 사용하는 경우</li>
+                            <li>③	관련 법령 또는 선량한 풍속, 기타 사회질서에 반하거나 반하는 행위를 지칭할 수 있는 문구, 욕설 등을 모두 도메인에 사용하는 경우</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li id="a8">
+                <h3>회원 탈퇴</h3>
+                <ol>
+                    <li>1. 회원 탈퇴
+                        <ol>
+                            <li>① 회원은 언제든지 모두 고객센터(1644-3930)로 요청하거나 직접 모두 홈에 접속하여 회원계정의 탈퇴를 신청할 수 있으며, 회사는 탈퇴 검토 후 관련 법령 등이 정하는 바에 따라 이를 처리합니다.</li>
+                            <li>② 회원 계정의 탈퇴가 완료되는 경우, 관련 법령 및 개인정보취급방침에 따라 보유하는 회원의 정보를 제외한 모든 정보 및 회원 계정에 등록된 홈페이지 및 게시물 등의 정보 일체는 즉시 삭제됩니다.</li>
+                            <li>③ 회원 계정의 탈퇴가 완료된 회원은 더 이상 모두 홈 및 모두 서비스를 이용하실 수 없습니다.</li>
+                        </ol>
+                    </li>
+                    <li>2. 회원 탈퇴와 재가입 제한
+                        <ol>
+                            <li>① 회원 탈퇴를 하신 경우 탈퇴한 회원 정보로는 원칙적으로 탈퇴일로부터 30일간 다시 회원으로 가입하실 수 없습니다.
+                            </li><li>② 회사는 안정적인 서비스 운영 등을 위해 다음의 경우 탈퇴일로부터 1년간 회원 가입을 제한할 수 있습니다.
+                                <ul>
+                                    <li>* 약관 및 서비스 운영정책 위반으로 서비스 이용정지 된 상태에서 탈퇴한 이력이 있는 경우</li>
+                                    <li>* 약관 및 광고운영정책에 중대하게 어긋나는 행동을 한 후 자진하여 탈퇴한 이력이 있는 경우</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div id="footer"  >
+        <div class="footer_wrap">
+            <ul class="provision">
+                <li class="list1"><a href="userPolicy.html" target="_blank" onClick="clickcr(this, 'fot.agreement', '', '', event);">서비스 이용약관</a></li>
+                <li class="list2"><a href="operationalPolicy.html" target="_blank" onClick="clickcr(this, 'fot.policy', '', '', event);">운영 정책</a></li>
+                <li class="list2"><a href="userPrivacy.html" target="_blank" onClick="clickcr(this, 'fot.privacy', '', '', event);"><strong>개인정보 처리방침</strong></a></li>
+                <li class="list3"><a href="https://help.naver.com/support/alias/modoo/main.naver" target="_blank" onClick="clickcr(this, 'fot.help', '', '', event);">modoo! 고객센터</a></li>
+            </ul>
+            <div class="corp_info">
+                <span class="info info1">사업자등록번호 : <em>220-81-62517</em></span>
+                <span class="info info2">통신판매업신고번호 : 경기성남 제<em>2006-692</em>호</span><br>
+                <span class="info info3">대표이사 : 최수연</span>
+                <span class="info info4">주소 : 경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561</span><br>
+                <span class="info info5">대표전화 : <em>1644-3930</em>(유료) <a href="https://help.naver.com/support/alias/modoo/main.naver" target="_blank" class="link_help">통화전 클릭</a></span>
+            </div>
+            <p class="copyright">
+                <span class="logo">
+                    <a href="https://www.naver.com/" target="_blank" class="sp" onClick="clickcr(this, 'fot.naver', '', '', event);"><span class="blind">NAVER</span></a>
+                </span>
+                Copyright © <a href="https://www.navercorp.com/" target="_blank"><strong>NAVER Corp.</strong></a> All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="rg_float_banner" style="display:none;">
+    <div class="rg_float_banner_inner">
+        <a href="../../management.html" target="_blank">
+            <i class="sp_rg_float_banner_content"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+        </a>
+    </div>
+</div>
+<div class="rg_float_banner_inner">
+    <a href="../../management.html">
+        <i class="sp_rg_float_banner_content"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+    </a>
+    <a href="https://markethub.modoo.at/">
+        <i class="sp_rg_float_banner_content v2"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+    </a>
+</div>
+
+<div class="layer_section" id="_first_mobile_layer" style="display:none">
+    <div class="layer_area" id="_first_mobile_layer_area">
+		<span class="blind">
+			모바일 편집기능 OPEN<br>
+			언제 어디서나 쉽고 빠르게 홈페이지 제작과 편집이 가능합니다<br>스마트폰에서  www.modoo.at 에 접속하세요<br>
+			홈페이지제작 : 이제 모바일에서도 제작과 편집을<br>
+			내용편집 : 사진,글,지도를 바로 수정<br>
+			구성수정 : 구성요소 이동,추가도 자유롭게<br>
+		</span>
+        <!-- [D] 선택시 selected 클래스 추가 -->
+        <a href="operationalPolicy@version=1.0.html#" class="close_chk" id="_close_check"><span class="ico_chk sp"></span><span class="blind">다시 보지 않기</span></a>
+        <a href="operationalPolicy@version=1.0.html#" class="layer_close" id="_layer_close"><span class="blind">닫기</span></a>
+    </div>
+</div>
+
+<div class="layer_section layer_event _newStuffLayer" style="display:none">
+    <div class="layer_area">
+        <div class="layer ly_event">
+            <div class="l_tit">
+                <h1 class="blind">modoo!에서 특별히 소개합니다!</h1>
+            </div>
+            <div class="l_cont">
+                <strong class="blind">연말에 가볼 만한곳 지금 만나보세요!</strong>
+                <p class="blind">2016년 특별한 연말을 계획하고 계신가요? 소중한 분들과 즐거운 추억을 만들 수 있도록 다양한 파티 공간부터 식사공간, 이색 숙소, 취향 저격 선물까지 소개합니다. 지금 만나보세요.</p>
+            </div>
+            <a href="https://finalfest2016.modoo.at" target="_blank" class="link_event _btn_go_event">2016 특별한 modoo! 보기</a>
+            <a href="../main/start.html" class="link_event2">나도 홈페이지 만들기</a>
+            <a href="operationalPolicy@version=1.0.html#" class="close_chk _btn_close_chk"><span class="ico_chk"></span><span class="blind">다시 보지 않기</span></a>
+            <a href="operationalPolicy@version=1.0.html#" class="btn_clse _btn_close">닫기</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">var nsc="modoo.home";var $=jQuery;if(!window.console){window.console={log:function(){},dir:function(){}};}function mergeEnv(b){function a(d){var c;for(c in b){d[c]=b[c];}}ENV=window.ENV||{};a(ENV);}mergeEnv({resetCacheVer:"20250124144128",loginId:"",age:"",gender:"",customerId:parseInt("0",10),userType:"",name:"",penaltyFlag:parseInt("0",10),emailCertSt:parseInt("0",10),membershipLevel:"",runLevel:parseInt("0",10)});</script>
+
+<script type="text/javascript">$(window).on("load",function(){var b=$("#header");b.delegate("._naver_logout a","click",function(c){if(confirm("로그아웃 하시겠습니까?")){$.ajax({url:"https://www.modoo.at/home/oAuth/logout.json",type:"post",dataType:"json",success:function(d){if(d.retCode===0){location.href="https://www.modoo.at/home";}else{alert(d.retMsg);}}});}return false;});b.delegate("._naver_login a","click",function(c){location.href="https://www.modoo.at/home/oAuth/login?returnUrl="+encodeURIComponent(location.href);return false;});function a(){b.find("[data-role=info-login-id]").text(ENV.loginId);if(ENV.loginId.length>27){b.find("[data-role=info-login-id]").parent().addClass("id_ellipsis");}if(ENV.loginId){b.find("._user_name").html(ENV.loginId+" 님");b.find("._naver_login_btn").removeClass("_naver_login").addClass("_naver_logout").find("a").removeClass("btn_login").addClass("btn_logout").find(".blind").html("로그아웃");b.find("._naver_login_btn").bind("click",function(c){clickcr(this,"gnb.logout","","",c);});}else{b.find("._naver_login_btn").removeClass("_naver_logout").addClass("_naver_login").find("a").removeClass("btn_logout").addClass("btn_login");b.find("._naver_login_btn").bind("click",function(c){clickcr(this,"gnb.login","","",c);});}}a();$("body").find("img[data-lazy-src], video[data-lazy-src]").each(function(){var c=this.getAttribute("data-lazy-src");$(this).attr("src",c);});fixedGNB();});$(window).on("resize",function(){fixedGNB();});function fixedGNB(){if($(window).width()<=1024){$(".h_menu").css({right:"auto",left:10,top:100});}else{$(".h_menu").removeAttr("style");}}lcs_do();wcs_do();</script>
+
+</body>
+</html>

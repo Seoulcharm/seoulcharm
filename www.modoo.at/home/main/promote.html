@@ -1,0 +1,540 @@
+ 
+
+ 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="referrer" contents="always">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="활용하기 : 모두!" />
+    <meta property="og:site_name" content="modoo!">
+    <meta property="og:image" content="https://ssl.pstatic.net/static/modoo/publish/img/sns_logo_v2.png">
+    <meta name="twitter:image" content="https://ssl.pstatic.net/static/modoo/publish/img/sns_logo_v2.png">
+    <meta property="og:description" content="우리가 몰랐던 다양한 기능들을 살펴보세요." />
+    <meta name="description" content="우리가 몰랐던 다양한 기능들을 살펴보세요." />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon_v1.ico@20250124144128">
+    <title>활용하기 : 모두!</title>
+    <link rel="canonical" href="promote.html">
+
+    <link rel="stylesheet" type="text/css" href="../../static/modoo/css/modoo_20250124144128.css">
+    <link rel="stylesheet" type="text/css" href="../../static/common/css/common_20250124144128.css">
+
+    <script type="text/javascript" src="../../application/static/script/modules/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../application/static/script/modules/all-0.3.0.min.js"></script>
+
+    <script type="text/javascript" src="../../application/static/script/mfarm_min/mfarm.js@20250124144128"></script>
+
+    <script type="text/javascript" src="../../application/static/script/modules/clickcr.js"></script>
+    <script type="text/javascript" src="../../application/static/script/modules/lcslog.js@20250124144128"></script>
+    <script type="text/javascript" src="../../../wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">if(!wcs_add){wcs_add={}}wcs_add.wa="b5b3d674191fe0";wcs.inflow();</script>
+</head>
+
+<body >
+
+<div id="wrap">
+    <div id="u_skip">
+        <a href="promote.html#content"><span>본문으로 바로가기</span></a>
+    </div>
+
+    <div id="header">
+        <div class="header_wrap">
+            <h1 class="logo">
+                <a href="https://naver.com" class="sp naver"><span class="blind">NAVER</span></a>
+                <a href="../../index.html" class="sp modoo" onClick="clickcr(this, 'gnb.modoo', '', '', event)"><span class="blind">modoo!</span></a>
+            </h1>
+            <ul class="gnb">
+                <li class="menu2"><a href="../renewal.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.campaign', '', '', event)"><span class="blind">시작하기</span></a></li>
+                <li class="menu3 active"><a href="promote.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.inform', '', '', event)"><span class="blind">활용하기</span></a></li>
+                <li class="menu4"><a href="../notice/notice.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.notice', '', '', event)"><span class="blind">공지/안내</span></a></li>
+                <li class="menu6"><a href="start.html" target="_blank" class="sp" onClick="clickcr(this, 'gnb.start', '', '', event)"><span class="blind">업종별 템플릿</span></a></li>
+            </ul>
+            <ul class="h_menu">
+                <li class="_naver_login_btn _naver_login"><a href="promote.html#" class="btn_login sp"><span class="blind">로그인</span></a></li>
+                <li><a href="../../management.html" target="_blank" class="btn_management sp" onClick="clickcr(this, 'gnb.edit', '', '', event)"><span class="blind">홈페이지관리</span></a></li>
+                <li><a href="https://talk.naver.com/ct/wc61mx" target="_blank" class="btn_smartbot sp"><span class="blind">궁금할 땐 modoo 스마트봇 beta</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+<style>
+    .layer_announce {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 990;
+
+        font-family: "나눔고딕", NanumGothic, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.5em;
+        letter-spacing: -0.05em;
+        color: #222;
+    }
+
+    .layer_announce .layer_area_announce {
+        overflow: hidden;
+        position: absolute;
+        top: auto;
+        bottom: 100px;
+        right: 50px;
+    }
+
+    .ly_announce {
+        width: 500px;
+        height: 400px;
+        border: 1px solid #393d46;
+        background-color: #fff;
+    }
+
+    .ly_announce .l_tit {
+        position: relative;
+        height: 55px;
+        background-color: #5c6677
+    }
+
+    .ly_announce .l_tit span {
+        position: absolute;
+        bottom: 22px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    .ly_announce .l_cont {
+        position: absolute;
+        top: 70px;
+        bottom: 70px;
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ly_announce .l_cont ul {
+        list-style-position: outside;
+        list-style-type: disc;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    .ly_announce .l_cont p {
+        padding-bottom: 1em;
+    }
+
+    .ly_announce .btn_close {
+        overflow: hidden;
+        background-image: url(../../static/management/img/sp_manage.png);
+        width: 22px;
+        height: 22px;
+        background-position: 0 -776px;
+        position: absolute;
+        top: 18px;
+        right: 22px;
+        line-height: 1000px;
+        z-index: 10
+    }
+
+    .ly_announce .close_chk {
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        text-decoration: none;
+    }
+
+    .ly_announce .close_chk span {
+        vertical-align: middle;
+    }
+
+    .ly_announce .ico_chk {
+        display: inline-block;
+        overflow: hidden;
+        width: 13px;
+        height: 13px;
+        margin-right: 2px;
+        background: url(../../static/modoo/img/check_v3.png) no-repeat;
+    }
+
+    .ly_announce .selected .ico_chk {
+        background: url(../../static/modoo/img/check_v3.png) no-repeat 0 -60px;
+    }
+
+    .ly_announce .link {
+        text-decoration: underline;
+        color: #00c73c;
+        letter-spacing: 0;
+    }
+</style>
+<div class="layer_announce" id="_no_new_site_layer" style="display:none">
+    <div class="layer_area_announce">
+        <div class="ly_announce">
+            <div class="l_tit">
+                <span>신규 홈페이지 추가 및 신규 연동 중단 안내</span>
+            </div>
+            <div class="l_cont">
+                <p>2025년 2월 3일(월)부터 아래 지원 중단됩니다.</p>
+                <ul>
+                    <li>신규 홈페이지 추가 중단</li>
+                    <li>기존 홈페이지에 신규 연동 중단 (플레이스/예약/스마트스토어/톡톡/개인도메인)</li>
+                </ul>
+
+                <p><strong>기존 홈페이지의 경우 <u>홈페이지 및 연동 셋팅이 그대로 유지</u></strong>되오니 참고 바라며<br>
+                    관련 일정과 상세 내용은 아래 <strong>[공지 바로가기]</strong>로 확인 부탁 드립니다.</p>
+                <p>남은 기간까지 최선을 다하도록 하겠습니다.</p>
+                <p><a class="link" href="../notice/noticeDetail@boardId=167&amp;pageNum=1.html"><strong>공지
+                            바로가기</strong></p>
+            </div>
+            <a href="promote.html#" class="close_chk _btn_close_chk"><span class="ico_chk"></span> <span>다시 보지 않기</span></a>
+            <a href="promote.html#" class="btn_close _btn_close">닫기</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" data-compress="1">
+    var layer = $("#_no_new_site_layer");
+    var optOut = layer.find("._btn_close_chk");
+    var closeButton = layer.find("._btn_close");
+    var notiStatusCookie = 'no-new-site';
+
+    var setUpEvent = function () {
+        // 레이어 닫기
+        closeButton.click(function (event) {
+            event.preventDefault();
+            if (optOut.hasClass("selected")) {
+                $.cookie(notiStatusCookie, 'N', {expires: 365, path: '/', domain: '.modoo.at'});
+            }
+            layer.fadeTo(800, 0, function () {
+                layer.hide();
+            });
+        });
+
+        optOut.click(function (event) {
+            event.preventDefault();
+            optOut.toggleClass("selected");
+        });
+    }
+
+    // 브라우저 높이 800이하 style 적용 (left:52%;top:70px;margin-top:20px)
+    layer.fadeTo(800, 1);
+    setUpEvent();
+</script>
+
+    <div id="container" class="promote">
+<div id="banner" class="banner"></div>        <div id="content" data-role="page-container" data-page-type="normal" data-page-status="ready">
+<h2 class="title">
+    <span class="txt sp"><span class="blind">활용하기</span></span>
+    <span class="txt txt_desc sp"><span class="blind">내 모바일 홈을 잘 알리고 잘 쓰는 방법</span></span>
+</h2>
+<div class="promote_wrap">
+    <div class="promote_spot">
+        <span class="ic_new sp"><span class="blind">NEW</span></span>
+        <strong class="title">내 모바일 홈에서 바로<br>고객들과 <em>톡톡</em> 하세요!</strong>
+        <p class="desc">
+            <span class="bar"></span>
+						<span class="txt">이제 앱 설치 없이! 친구 추가 없이!<br>
+						어디서든 내 모바일에서 바로 고객과 상담할 수 있습니다</span>
+						<span class="txt">지금 내 모바일 홈에 네이버 톡톡 연동하고<br>
+						소중한 고객 문의 놓치지 마세요!</span>
+        </p>
+        <a href="../notice/noticeDetail@boardId=56&amp;pageNum=1.html" target="_blank" class="btn_spot_go" onclick="clickcr(this, 'prm.tbanner', '', '', event)">톡톡 연결방법 자세히 보기</a>
+        <div class="img sp"></div>
+    </div>
+    <ul class="promote_list">
+        <li class="list list1">
+            <strong class="title">네이버 검색 등록은 자동<br>지도 검색 등록은 간단히!!<span class="ic_new sp"><span class="blind">NEW</span></span></strong>
+            <div class="img sp"></div>
+            <!-- 마우스 오버시 노출 영역 -->
+            <div class="ly_list">
+                <div class="mask"></div>
+							<span class="desc">
+								<span class="txt">
+									modoo!에서 만든 모바일 홈은 간단한 확인을 거쳐<br>
+									네이버 검색 결과에 자동으로 노출됩니다.
+								</span>
+								<span class="txt">
+									또 하나! 네이버 지도 결과에도 노출되기<br>
+									원하신다면, 등록하기 버튼을 누르세요.<br>
+									간단한 확인만 거치면 지도 검색 결과에서도<br>
+									내 모바일 홈을 확인할 수 있습니다.
+								</span>
+								<span class="txt">
+									홈페이지명@로 검색하면
+									내 모바일 홈을<br>쉽게 찾을 수 있으니
+									홍보할 때<br>꼭 홈페이지명@를 잊지 마세요!
+								</span>
+								<a href="../notice/noticeDetail@boardId=54&amp;pageNum=1.html" target="_blank" class="btn_list_go" onclick="clickcr(this, 'prm.submit', '', '', event)">자세히 보기</a>
+							</span>
+                <span class="valign"></span>
+            </div>
+        </li>
+        <li class="list list2">
+            <strong class="title">직접 인쇄해서 사용하는<br>미니 간판&amp;라벨 스티커</strong>
+            <div class="img sp"></div>
+            <!-- 마우스 오버시 노출 영역 -->
+            <div class="ly_list">
+                <div class="mask"></div>
+							<span class="desc">
+								<span class="txt">
+									누구의 도움 없이, 디자인 비용 없이<br>내 모바일 홈 홍보하는 방법!
+								</span>
+								<span class="txt">
+									모바일 홈을 만든 후, 홈페이지 관리에서<br>
+									‘스티커 인쇄’ 버튼을 누르세요.
+								</span>
+								<span class="txt">
+									정해진 용지에 인쇄하면<br>가게 앞 유리에 붙이는 미니 간판과<br>어디서든 내 모바일 홈을 홍보할 수 있는<br>라벨 스티커를 바로 만들 수 있습니다.
+								</span>
+								<a href="https://m.post.naver.com/viewer/postView.nhn?volumeNo=2127389&memberNo=16562229" target="_blank" class="btn_list_go" onclick="clickcr(this, 'prm.msign', '', '', event)">자세히 보기</a>
+							</span>
+                <span class="valign"></span>
+            </div>
+        </li>
+        <li class="list list3">
+            <strong class="title">무료 통계 기능으로<br>홍보도 똑똑하게</strong>
+            <div class="img sp"></div>
+            <!-- 마우스 오버시 노출 영역 -->
+            <div class="ly_list">
+                <div class="mask"></div>
+							<span class="desc">
+								<span class="txt">
+									내 모바일 홈에 어떤 경로로 들어오고<br>얼마의 사람들이 방문할까 궁금하다면<br>
+									무료로 제공되는 통계 기능을 활용하세요!
+								</span>
+								<span class="txt">
+									내 모바일 홈의 방문자 수, 유입 경로, 유입<br>검색어는 물론
+									방문자의 지역, 성별, 연령대를<br>쉽게 확인할 수 있어 내 가게,<br>내 일을 홍보하는 데
+									큰 도움이 됩니다.
+								</span>
+							</span>
+                <span class="valign"></span>
+            </div>
+        </li>
+        <li class="list list4">
+            <strong class="title">쿠폰, 이벤트 공지도<br>내 모바일 홈에서 바로</strong>
+            <div class="img sp"></div>
+            <!-- 마우스 오버시 노출 영역 -->
+            <div class="ly_list">
+                <div class="mask"></div>
+							<span class="desc">
+								<span class="txt">
+									가게에서 진행되는 할인 행사, 이벤트<br>
+									어떻게 알리고 계세요?
+								</span>
+								<span class="txt">
+									modoo!에서는 쉽게 쿠폰을 만들고<br>
+									모바일 홈에 바로 노출할 수 있어 편리하며,<br>
+									이벤트 공지 배너로도 활용이
+									가능합니다.
+								</span>
+								<span class="txt">
+									쿠폰, 이벤트로 더 많은 사람에게<br>내 가게를 홍보하세요.
+								</span>
+								<a href="../notice/noticeDetail@boardId=48&amp;pageNum=1.html" target="_blank" class="btn_list_go" onclick="clickcr(this, 'prm.coupon', '', '', event)">자세히 보기</a>
+							</span>
+                <span class="valign"></span>
+            </div>
+        </li>
+        <li class="list list5">
+            <strong class="title">일정, 예약 관리는<br>스케줄로 편리하게<span class="ic_new sp"><span class="blind">NEW</span></span></strong>
+            <div class="img sp"></div>
+            <!-- 마우스 오버시 노출 영역 -->
+            <div class="ly_list">
+                <div class="mask"></div>
+							<span class="desc">
+								<span class="txt">
+									가게 휴무일, 예약 현황 등을 고객에게 쉽게 알리고<br>
+									예약 문의도 간편하게 받고 싶다면<br>
+									modoo! 스케줄을 사용해보세요.
+								</span>
+								<span class="txt">
+									내 일정을 간편하게 캘린더에 등록할 수 있고<br>
+									고객에게 알릴 공지 사항도 쓸 수 있습니다.
+								</span>
+								<span class="txt">
+									네이버 톡톡을 연결하시면 고객과<br>실시간 상담도 가능합니다. modoo! 스케줄로<br>편리하게 일정, 예약을 관리하세요!
+								</span>
+								<a href="../notice/noticeDetail@boardId=66&amp;pageNum=1.html" target="_blank" class="btn_list_go" onclick="clickcr(this, 'prm.schedule', '', '', event)">자세히 보기</a>
+							</span>
+                <span class="valign"></span>
+            </div>
+        </li>
+        <li class="list list6">
+            <strong class="title">상품 판매는<br>스토어 연결하여 쉽게<span class="ic_new sp"><span class="blind">NEW</span></span></strong>
+            <div class="img sp"></div>
+            <!-- 마우스 오버시 노출 영역 -->
+            <div class="ly_list">
+                <div class="mask"></div>
+							<span class="desc">
+								<span class="txt">
+									우리 가게 상품, 온라인에서도 팔고 싶으셨죠?
+								</span>
+								<span class="txt">
+									이제 modoo! 홈페이지에서 누구나 쉽게<br>상품을 판매할 수 있습니다.<br>스마트스토어 이용 동의 후<br>modoo! 스토어를 열어보세요.
+								</span>
+								<span class="txt">
+									스마트스토어는 입점, 판매 수수료가 없는 네이버의<br>무료 판매 플랫폼으로, modoo! 스토어는<br>스마트스토어를 통해 상품 판매를 지원합니다.
+								</span>
+								<a href="../notice/noticeDetail@boardId=65&amp;pageNum=1.html" target="_blank" class="btn_list_go" onclick="clickcr(this, 'prm.store', '', '', event)">자세히 보기</a>
+							</span>
+                <span class="valign"></span>
+            </div>
+        </li>
+		<li class="list list7">
+			<strong class="title">내 모바일 홈 주소<br>홍보는 SNS 공유하기로</strong>
+			<div class="img sp"></div>
+			<!-- 마우스 오버시 노출 영역 -->
+			<div class="ly_list">
+				<div class="mask"></div>
+				<span class="desc">
+								<span class="txt">
+									라인, 카톡, 페북, 트위터, 밴드에서<br>내 모바일 홈 주소를 공유해 보세요.
+								</span>
+								<span class="txt">
+									고객에게 보내는 홍보 문자에서도<br>모바일 홈 주소를 넣어 보내면
+									더 많은 고객들이<br>내 모바일 홈에 방문할 수 있습니다.
+								</span>
+							</span>
+				<span class="valign"></span>
+			</div>
+		</li>
+        <li class="list list8">
+            <strong class="title">모바일 홈 하나 만들면<br>PC 홈까지 생기는 일석이조</strong>
+            <div class="img sp"></div>
+            <!-- 마우스 오버시 노출 영역 -->
+            <div class="ly_list">
+                <div class="mask"></div>
+							<span class="desc">
+								<span class="txt">
+									모바일 홈페이지를 PC에서<br>
+									봤을 때, 깨져 보인 적 있으시죠?
+								</span>
+								<span class="txt">
+									modoo!에서 모바일 홈
+									하나만 만들면<br>PC 화면에도 딱
+									맞게 보이는 PC 홈페이지가<br>
+									하나 더 생깁니다.
+								</span>
+								<span class="txt">
+									PC, 모바일 따로 관리하지 마시고,<br>
+									modoo!에서 편리하게 활용하세요!
+								</span>
+							</span>
+                <span class="valign"></span>
+            </div>
+        </li>
+        <li class="list list9">
+            <strong class="title">지인 위해 만든<br>모바일 홈 선물도 손쉽게</strong>
+            <div class="img sp"></div>
+            <!-- 마우스 오버시 노출 영역 -->
+            <div class="ly_list">
+                <div class="mask"></div>
+							<span class="desc">
+								<span class="txt">
+									모바일 홈 있으면 좋을텐데… 했던<br>
+									부모님, 친척, 지인분들에게
+									내가 만든<br>모바일 홈을 선물해 보세요.
+								</span>
+								<span class="txt">
+									모바일 홈을 만들고,
+									홈페이지 선물 버튼을<br>클릭하면
+									모바일 홈을 쉽게 선물할 수 있고<br>
+									관리하기 어려운 분들이라면
+									공통편집<br>기능을 통해
+									나도 함께 편집할 수 있습니다.
+								</span>
+								<a href="../notice/noticeDetail@boardId=41&amp;pageNum=1.html" target="_blank" class="btn_list_go" onclick="clickcr(this, 'prm.gift', '', '', event)">자세히 보기</a>
+							</span>
+                <span class="valign"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+        </div>
+    </div>
+
+    <div id="footer"  >
+        <div class="footer_wrap">
+            <ul class="provision">
+                <li class="list1"><a href="../signup/userPolicy.html" target="_blank" onClick="clickcr(this, 'fot.agreement', '', '', event);">서비스 이용약관</a></li>
+                <li class="list2"><a href="../signup/operationalPolicy.html" target="_blank" onClick="clickcr(this, 'fot.policy', '', '', event);">운영 정책</a></li>
+                <li class="list2"><a href="../signup/userPrivacy.html" target="_blank" onClick="clickcr(this, 'fot.privacy', '', '', event);"><strong>개인정보 처리방침</strong></a></li>
+                <li class="list3"><a href="https://help.naver.com/support/alias/modoo/main.naver" target="_blank" onClick="clickcr(this, 'fot.help', '', '', event);">modoo! 고객센터</a></li>
+            </ul>
+            <div class="corp_info">
+                <span class="info info1">사업자등록번호 : <em>220-81-62517</em></span>
+                <span class="info info2">통신판매업신고번호 : 경기성남 제<em>2006-692</em>호</span><br>
+                <span class="info info3">대표이사 : 최수연</span>
+                <span class="info info4">주소 : 경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561</span><br>
+                <span class="info info5">대표전화 : <em>1644-3930</em>(유료) <a href="https://help.naver.com/support/alias/modoo/main.naver" target="_blank" class="link_help">통화전 클릭</a></span>
+            </div>
+            <p class="copyright">
+                <span class="logo">
+                    <a href="https://www.naver.com/" target="_blank" class="sp" onClick="clickcr(this, 'fot.naver', '', '', event);"><span class="blind">NAVER</span></a>
+                </span>
+                Copyright © <a href="https://www.navercorp.com/" target="_blank"><strong>NAVER Corp.</strong></a> All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="rg_float_banner" style="display:none;">
+    <div class="rg_float_banner_inner">
+        <a href="../../management.html" target="_blank">
+            <i class="sp_rg_float_banner_content"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+        </a>
+    </div>
+</div>
+<div class="rg_float_banner_inner">
+    <a href="../../management.html">
+        <i class="sp_rg_float_banner_content"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+    </a>
+    <a href="https://markethub.modoo.at/">
+        <i class="sp_rg_float_banner_content v2"><span class="blind">새로워진 modoo!를 지금 바로 경험해보세요!</span></i>
+    </a>
+</div>
+
+<div class="layer_section" id="_first_mobile_layer" style="display:none">
+    <div class="layer_area" id="_first_mobile_layer_area">
+		<span class="blind">
+			모바일 편집기능 OPEN<br>
+			언제 어디서나 쉽고 빠르게 홈페이지 제작과 편집이 가능합니다<br>스마트폰에서  www.modoo.at 에 접속하세요<br>
+			홈페이지제작 : 이제 모바일에서도 제작과 편집을<br>
+			내용편집 : 사진,글,지도를 바로 수정<br>
+			구성수정 : 구성요소 이동,추가도 자유롭게<br>
+		</span>
+        <!-- [D] 선택시 selected 클래스 추가 -->
+        <a href="promote.html#" class="close_chk" id="_close_check"><span class="ico_chk sp"></span><span class="blind">다시 보지 않기</span></a>
+        <a href="promote.html#" class="layer_close" id="_layer_close"><span class="blind">닫기</span></a>
+    </div>
+</div>
+
+<div class="layer_section layer_event _newStuffLayer" style="display:none">
+    <div class="layer_area">
+        <div class="layer ly_event">
+            <div class="l_tit">
+                <h1 class="blind">modoo!에서 특별히 소개합니다!</h1>
+            </div>
+            <div class="l_cont">
+                <strong class="blind">연말에 가볼 만한곳 지금 만나보세요!</strong>
+                <p class="blind">2016년 특별한 연말을 계획하고 계신가요? 소중한 분들과 즐거운 추억을 만들 수 있도록 다양한 파티 공간부터 식사공간, 이색 숙소, 취향 저격 선물까지 소개합니다. 지금 만나보세요.</p>
+            </div>
+            <a href="https://finalfest2016.modoo.at" target="_blank" class="link_event _btn_go_event">2016 특별한 modoo! 보기</a>
+            <a href="start.html" class="link_event2">나도 홈페이지 만들기</a>
+            <a href="promote.html#" class="close_chk _btn_close_chk"><span class="ico_chk"></span><span class="blind">다시 보지 않기</span></a>
+            <a href="promote.html#" class="btn_clse _btn_close">닫기</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">var nsc="modoo.home";var $=jQuery;if(!window.console){window.console={log:function(){},dir:function(){}};}function mergeEnv(b){function a(d){var c;for(c in b){d[c]=b[c];}}ENV=window.ENV||{};a(ENV);}mergeEnv({resetCacheVer:"20250124144128",loginId:"",age:"",gender:"",customerId:parseInt("0",10),userType:"",name:"",penaltyFlag:parseInt("0",10),emailCertSt:parseInt("0",10),membershipLevel:"",runLevel:parseInt("0",10)});</script>
+
+<script type="text/javascript">$(window).on("load",function(){var b=$("#header");b.delegate("._naver_logout a","click",function(c){if(confirm("로그아웃 하시겠습니까?")){$.ajax({url:"https://www.modoo.at/home/oAuth/logout.json",type:"post",dataType:"json",success:function(d){if(d.retCode===0){location.href="https://www.modoo.at/home";}else{alert(d.retMsg);}}});}return false;});b.delegate("._naver_login a","click",function(c){location.href="https://www.modoo.at/home/oAuth/login?returnUrl="+encodeURIComponent(location.href);return false;});function a(){b.find("[data-role=info-login-id]").text(ENV.loginId);if(ENV.loginId.length>27){b.find("[data-role=info-login-id]").parent().addClass("id_ellipsis");}if(ENV.loginId){b.find("._user_name").html(ENV.loginId+" 님");b.find("._naver_login_btn").removeClass("_naver_login").addClass("_naver_logout").find("a").removeClass("btn_login").addClass("btn_logout").find(".blind").html("로그아웃");b.find("._naver_login_btn").bind("click",function(c){clickcr(this,"gnb.logout","","",c);});}else{b.find("._naver_login_btn").removeClass("_naver_logout").addClass("_naver_login").find("a").removeClass("btn_logout").addClass("btn_login");b.find("._naver_login_btn").bind("click",function(c){clickcr(this,"gnb.login","","",c);});}}a();$("body").find("img[data-lazy-src], video[data-lazy-src]").each(function(){var c=this.getAttribute("data-lazy-src");$(this).attr("src",c);});fixedGNB();});$(window).on("resize",function(){fixedGNB();});function fixedGNB(){if($(window).width()<=1024){$(".h_menu").css({right:"auto",left:10,top:100});}else{$(".h_menu").removeAttr("style");}}lcs_do();wcs_do();</script>
+
+</body>
+</html>
