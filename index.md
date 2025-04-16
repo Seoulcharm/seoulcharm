@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ 서울참정형외과 }}</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  {% include header.html %}
-  
-  <main>
+---
+layout: default
+title: 서울참정형외과의원
+---
 
 <div class="banner">
   <picture>
@@ -118,11 +110,3 @@
   </center>
 </div>
 
-  </main>
-  
-  {% include footer.html %}
-  
-  <!-- 공통 스크립트 (예: 슬라이드, 스크롤 효과 등) -->
-  <script src="/script.js"></script>
-</body>
-</html>
