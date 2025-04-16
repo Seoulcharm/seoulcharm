@@ -19,7 +19,7 @@ padding-top: 60px;
       display: flex; 
       align-items: center;
       justify-content: flex-start; /*로고옆에 바로 메뉴 붙게*/
-      gap: 30px;     
+      gap: 20px;      /*원래 40*/ 
       height: 60px;
       line-height: 60px; 
       position: fixed;
@@ -160,7 +160,7 @@ padding-top: 60px;
     .partner {  margin-top: 50px;  width:100%;}
 
     /* 모바일 반응형 스타일 */
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 840px) {
       header {
         padding: 0px 20px;
         height: auto;
