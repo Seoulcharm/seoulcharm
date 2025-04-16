@@ -6,8 +6,9 @@
       overflow-x: hidden;
     }
 main {
-  margin-top: 60px; /* 헤더 높이만큼 */
+  /*margin-top: 60px;  헤더 높이만큼 */
 }
+
     header {
       background: #000000; 
       color: #ffffff;
@@ -150,7 +151,9 @@ main {
       text-align: center;
     }
     /* (나머지 schedule, partner, map-section 등 동일) */
-    .schedule {width : 100%}
+    .schedule {width : 100%; }
+    .partner {width : 100%; }
+    .map-section{      background: #f9f9f9;}
 
     /* 모바일 반응형 스타일 */
     @media screen and (max-width: 768px) {
