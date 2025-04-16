@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서울참정형외과의원</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 기본 스타일 */
+    body { 
+      margin: 0; 
+      font-family: 'Arial', sans-serif;  
+      padding-top: 60px; 
+      overflow-x: hidden;
+    }
+    header {
+      background: #000000; 
+      color: #ffffff;
+      padding: 0px 80px;
+      display: flex; 
+      align-items: center;
+      justify-content: flex-start; /*로고옆에 바로 메뉴 붙게*/
+      gap: 40px;     
+      height: 60px;
+      line-height: 60px; 
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      overflow: visible;
+    }
+    header.scrolled {
+    background: rgba(0, 0, 0, 0.8); /* 검정색, 60% 투명 */
+    backdrop-filter: blur(10px);    /* 흐려지는 효과 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* 살짝 그림자 */
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo picture, .logo img {
+      display: block;
+      vertical-align: middle;
+    }
+    /* Navigation (PC) */
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;   
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul.main-menu > li {
+      position: relative;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 0 15px;
+      line-height: 60px;
+    }
+    nav ul.sub-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: #333;
+      padding: 10px 0;
+      min-width: 160px;
+      z-index: 2000;
+    }
+    nav ul.sub-menu.open {
+      display: block;
+    }
+    nav ul.sub-menu > li {
+      width: 100%;
+      margin: 0;
+    }
+    nav ul.sub-menu a {
+      display: block;
+      padding: 10px 15px;
+      color: #fff;
+      font-weight: normal;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    /* PC용 hover (원하는 경우) */
+    nav ul.main-menu > li:hover > ul.sub-menu {
+      display: block;
+    }
+    nav ul.sub-menu > li:hover {
+      background: #444;
+    }
+    
+    /* Hamburger 버튼 (모바일 전용, 기본 숨김) */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      margin: 3px 0;
+      transition: all 0.3s ease;
+    }
+
+    /* youtube media 등 기타 스타일 */
+    .youtube-section {  display: flex;  max-width: 1500px;  margin: 0 auto;  gap: 20px;}
+    .main-video {  flex: 3.2;}
+    .main-video img {  width: 100%;  height: auto;  display: block;}
+    .side-videos {  flex: 1;  display: flex;  flex-direction: column;  gap: 15px;}
+    .side-videos img {  width: 100%;  height: auto;  display: block;}
+
+
+    /* Banner, Sections 등 기타 스타일 */
+    .banner {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .sections {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: #f9f9f9;
+    }
+    .section-box {
+      text-align: center;
+      width: 30%;
+    }
+    .media { margin-top: 50px; }
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    /* (나머지 schedule, partner, map-section 등 동일) */
+    
+    /* 모바일 반응형 스타일 */
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 0px 20px;
+        height: auto;
+        line-height: normal;
+        overflow: visible; 
+      }
+      /* 햄버거 버튼 표시 */
+      .hamburger {
+        display: flex; flex-start;
+      }
+      /* 모바일용 사이드 드로어 내비게이션 */
+  .nav-container {
+  position: fixed;
+  top: 0;
+  right: -300px; /* 초기 숨김 */
+  width: 300px;
+  height: 100vh;  /* 화면 전체 높이 */
+  background: #000000; /* 검은색 배경 */
+  overflow-y: auto; /* 드로어 내부 스크롤 */
+  transition: right 0.3s ease;
+  z-index: 1500;
+    padding-top: 60px; 
+}
+.nav-container.open {
+  right: 0;  /* 열릴 때 화면 안으로 슬라이드 */
+}
+      /* 모바일 내비게이션 내부 메뉴: 세로 정렬 */
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        display: block;
+      }
+      nav a {
+        margin: 0;
+        font-size: 14px;
+        padding: 10px 5px;
+        border-bottom: 1px solid #444;
+        line-height: normal;
+      }
+      /* 모바일에서는 서브메뉴는 상대 위치로 */
+      nav ul.sub-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <picture>
+      <source media="(max-width: 768px)" srcset="img/mobile-logo.jpg" width="50">
+      <img src="img/logo.jpg" alt="서울참정형외과의원 로고">
+    </picture>
+  </div>
+  <!-- 햄버거 버튼 (모바일 전용) -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- PC 용 내비게이션 (모바일에서는 사이드 드로어 사용하므로 숨김) -->
+  <div class="nav-container" id="nav-container">
+    <nav>
+      <ul class="main-menu">
+        <li>
+          <a href="index.html">본원소개</a>
+          <ul class="sub-menu">
+            <li><a href="about/doctor.html">의료진소개</a></li>
+            <li><a href="about/clinic.html">시설안내</a></li>
+            <li><a href="about/device.html">장비소개</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="department.html">진료과목</a>
+          <ul class="sub-menu">
+            <li><a href="department/spine.html">척추</a></li>
+            <li><a href="department/shoulder.html">어깨</a></li>
+            <li><a href="department/foot.html">족부</a></li>
+            <li><a href="department/joint.html">관절</a></li>
+            <li><a href="department/hand.html">수부</a></li>
+            <li><a href="department/child.html">소아</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="menu/price.html">비급여수가표</a>
+        </li>
+        <li>
+          <a href="menu/wayto.html">오시는길</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <picture>
+    <source media="(max-width: 768px)" srcset="img/mobile-banner.jpg">
+    <img src="img/banner1.jpg" alt="배너1" class="slide" style="display: block;">
+    <img src="img/banner2.jpg" alt="배너2" class="slide" style="display: none;">
+    <img src="img/banner3.jpg" alt="배너3" class="slide" style="display: none;">
+    <img src="img/banner4.jpg" alt="배너4" class="slide" style="display: none;">
+  </picture>
+</div>
+
+<div class="sections">
+  <div class="section-box">
+    <img src="img/icon/icon1.png" alt="아이콘1" width="80">
+    <h3>진료시간</h3>
+    <p>평일 9:00~18:00<br>토요일 9:00~13:00<br>화/목 야간진료 18:00~20:00<br>평일점심시간 13:00~14:00</p>
+  </div>
+  <div class="section-box">
+    <img src="img/icon/icon2.png" alt="아이콘1" width="80">
+    <h3>전화상담</h3>
+    <p>051-791-1300<br>상담시간 내 연락 주세요.</p>
+  </div>
+  <div class="section-box">
+    <a href="https://maps.app.goo.gl/YcsEPiPn5uBr47VVA">
+      <img src="img/icon/icon3.png" alt="아이콘1" width="80">
+    </a>
+    <h3>오시는 길</h3>
+    <p>부산 남구 수영로 216, 2/3층<br>지하철 2호선 대연역 5번 출구</p>
+  </div>
+</div>
+
+<div class="media">
+  <div class="clear_fix h100"></div>
+  <div class="clear_fix h80 pc"></div>
+  <center>
+    <picture>
+      <source media="(max-width: 768px)" srcset="img/maintitle_media.jpg" width="90%">
+      <img src="img/maintitle_media.jpg" class="text_sizealls2 pc" data-aos="fade-down"/>
+    </picture>
+  </center>
+  <div class="clear_fix h80"></div>
+  <div class="youtube-section">
+    <div class="main-video">
+      <a href="https://www.youtube.com/watch?v=99vKw27ErXg&t" target="_blank">
+        <img src="img/mainthumb1.jpg" alt="메인 영상 썸네일">
+      </a>
+    </div>
+    <div class="side-videos">
+      <a href="https://www.youtube.com/watch?v=BNe6_n1V4CQ" target="_blank">
+        <img src="img/mainthumb2.jpg" alt="영상2 썸네일">
+      </a>
+      <a href="https://www.youtube.com/watch?v=KEtSMaIaa9o" target="_blank">
+        <img src="img/mainthumb3.jpg" alt="영상3 썸네일">
+      </a>
+      <a href="https://www.youtube.com/watch?v=MXvAT8DJ7Xc" target="_blank">
+        <img src="img/mainthumb4.jpg" alt="영상 4 썸네일">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="schedule">
+  <div class="clear_fix h100"></div>
+  <div class="clear_fix h80 pc"></div>
+  <center>
+    <picture>
+      <source media="(max-width: 768px)" srcset="img/maintitle_schedule.jpg" width="90%">
+      <img src="img/maintitle_schedule.jpg" class="text_sizealls2 pc" data-aos="fade-down"/>
+    </picture>
+  </center>
+  <div class="clear_fix h80"></div>
+  <center>
+    <picture>
+      <source media="(max-width: 768px)" srcset="img/mobile-schedule.jpg" width="90%">
+      <img src="img/main4.jpg" alt="진료일정">
+    </picture>
+  </center>
+</div>
+
+<div class="partner">
+  <div class="clear_fix h100"></div>
+  <div class="clear_fix h80 pc"></div>
+  <center>
+    <picture>
+      <source media="(max-width: 768px)" srcset="img/maintitle_partner.jpg" width="90%">
+      <img src="img/maintitle_partner.jpg" class="text_sizealls2 pc" data-aos="fade-down"/>
+    </picture>
+  </center>
+  <div class="clear_fix h80"></div>
+  <img src="img/main3.png" alt="협력기관" width="100%">
+</div>
+
+<div class="map-section">
+  <div class="clear_fix h100"></div>
+  <div class="clear_fix h80 pc"></div>
+  <center>
+    <picture>
+      <source media="(max-width: 768px)" srcset="img/maintitle_map.jpg" width="90%">
+      <img src="img/maintitle_map.jpg" class="text_sizealls2 pc" data-aos="fade-down"/>
+    </picture>
+  </center>
+  <div class="clear_fix h80"></div>
+  <div id="map"></div>
+  <center>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.8760975506643!2d129.0901153!3d35.1347654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568edcf85a63f1f%3A0xbe5db8f41f832f28!2z7ISc7Jq47LC47KCV7ZiV7Jm46rO87J2Y7JuQ!5e0!3m2!1sko!2skr!4v1744176610930!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </center>
+</div>
+
+<footer>
+  <p>© 2025 서울참정형외과의원. All rights reserved.</p>
+  <p>주소: 부산시 남구 수영로 216, 2/3층 | 대표전화: 051-791-1300</p>
+</footer>
+
+<script>
+  // 슬라이드
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+    });
+  }
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+  showSlide(currentIndex);
+  setInterval(nextSlide, 3000);
+</script>
+
+<script>
+  // Header scroll 효과
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<script>
+  // 배너 여백 조절
+  function updateBannerMargin() {
+    const banner = document.querySelector('.banner');
+    if (!banner) return;
+    const bannerImage = banner.querySelector('img.slide[style*="display: block"]') ||
+      banner.querySelector('img.slide');
+    if (bannerImage) {
+      const imgHeight = bannerImage.offsetHeight;
+      banner.style.marginBottom = imgHeight + 'px';
+    }
+  }
+  window.addEventListener('load', updateBannerMargin);
+  window.addEventListener('resize', updateBannerMargin);
+</script>
+
+<script>
+  // PC/모바일 공용 서브메뉴 토글 (a 태그에 이벤트 적용)
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuLinks = document.querySelectorAll('nav ul.main-menu > li > a');
+    menuLinks.forEach(link => {
+      const subMenu = link.parentElement.querySelector('ul.sub-menu');
+      if (subMenu) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // 기본 링크 이동 막기
+          subMenu.classList.toggle('open');
+          // 다른 서브메뉴 닫기
+          document.querySelectorAll('nav ul.main-menu > li > ul.sub-menu').forEach(menu => {
+            if (menu !== subMenu) {
+              menu.classList.remove('open');
+            }
+          });
+        });
+      }
+    });
+  });
+</script>
+
+<script>
+  // Hamburger toggle script
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navContainer = document.getElementById('nav-container');
+    hamburger.addEventListener('click', function() {
+      navContainer.classList.toggle('open');
+    });
+  });
+</script>
+</body>
+</html>
