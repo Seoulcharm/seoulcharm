@@ -19,7 +19,7 @@ padding-top: 60px;
       display: flex; 
       align-items: center;
       justify-content: flex-start; /*로고옆에 바로 메뉴 붙게*/
-      gap: 40px;     
+      gap: 30px;     
       height: 60px;
       line-height: 60px; 
       position: fixed;
@@ -126,7 +126,7 @@ padding-top: 60px;
     .banner {
       width: 100%;
       height: auto;
-      position: absolute; /* relative;*/ 
+      position: relative;
     }
     .banner img {
       width: 100%;
