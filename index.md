@@ -76,7 +76,7 @@ title: 서울참정형외과의원
   <center>
     <picture>
       <source media="(max-width: 768px)" srcset="img/mobile-schedule.jpg" width="90%">
-      <img src="img/main4.jpg" alt="진료일정" width="90%">
+      <img src="img/main4.jpg" alt="진료일정" width="100%">
     </picture>
   </center>
 </div>
