@@ -3,9 +3,11 @@
     body { 
       margin: 0; 
       font-family: 'Arial', sans-serif;  
-      padding-top: 60px; 
       overflow-x: hidden;
     }
+main {
+  margin-top: 60px; /* 헤더 높이만큼 */
+}
     header {
       background: #000000; 
       color: #ffffff;
@@ -148,7 +150,8 @@
       text-align: center;
     }
     /* (나머지 schedule, partner, map-section 등 동일) */
-    
+    .schedule {width : 100%}
+
     /* 모바일 반응형 스타일 */
     @media screen and (max-width: 768px) {
       header {
