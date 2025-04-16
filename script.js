@@ -1,5 +1,5 @@
 
-<script>
+
   // 슬라이드
   let currentIndex = 0;
   const slides = document.querySelectorAll('.slide');
@@ -15,9 +15,8 @@
   }
   showSlide(currentIndex);
   setInterval(nextSlide, 3000);
-</script>
 
-<script>
+
   // Header scroll 효과
   window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -27,9 +26,8 @@
       header.classList.remove('scrolled');
     }
   });
-</script>
 
-<script>
+
   // 배너 여백 조절
   function updateBannerMargin() {
     const banner = document.querySelector('.banner');
@@ -43,9 +41,8 @@
   }
   window.addEventListener('load', updateBannerMargin);
   window.addEventListener('resize', updateBannerMargin);
-</script>
 
-<script>
+
   // PC/모바일 공용 서브메뉴 토글 (a 태그에 이벤트 적용)
   document.addEventListener('DOMContentLoaded', function() {
     const menuLinks = document.querySelectorAll('nav ul.main-menu > li > a');
@@ -65,9 +62,7 @@
       }
     });
   });
-</script>
 
-<script>
   // Hamburger toggle script
   document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
@@ -76,4 +71,3 @@
       navContainer.classList.toggle('open');
     });
   });
-</script>
