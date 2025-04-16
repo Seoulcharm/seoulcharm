@@ -6,7 +6,10 @@
       overflow-x: hidden;
     }
 main {
-  /*margin-top: 60px;  헤더 높이만큼 */
+      margin: 0; 
+      font-family: 'Arial', sans-serif;  
+      overflow-x: hidden;
+padding-top: 60px;
 }
 
     header {
