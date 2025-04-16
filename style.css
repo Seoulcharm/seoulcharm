@@ -143,6 +143,11 @@ main {
       text-align: center;
       width: 30%;
     }
+   .notice { padding: 40px 20px; }
+    .notice h2 { margin-bottom: 20px; }
+    .notice ul { list-style: none; padding: 0; }
+    .notice li { margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+
     .media { margin-top: 50px; }
     footer {
       background: #333;
@@ -151,9 +156,10 @@ main {
       text-align: center;
     }
     /* (나머지 schedule, partner, map-section 등 동일) */
-    .schedule {width : 100%; }
-    .partner {width : 100%; }
-    .map-section{      background: #f9f9f9;}
+     .schedule { width:100%;   background: #f0f0f0; }
+     .map-section {  padding: 40px 20px;
+     background: #f0f0f0;}
+    .partner {  margin-top: 50px;  width:100%;}
 
     /* 모바일 반응형 스타일 */
     @media screen and (max-width: 768px) {
