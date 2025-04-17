@@ -103,7 +103,7 @@ padding-top: 60px;
     .hamburger {
       display: none;
       flex-direction: column;
-      justify-content: center;
+      justify-content: right;
       cursor: pointer;
     }
     .hamburger span {
@@ -158,6 +158,20 @@ padding-top: 60px;
      .map-section {  padding: 40px 20px;
      background: #f0f0f0;}
     .partner {  margin-top: 50px;  width:100%;}
+/* 사이드 드로어 우상단 X 버튼 */
+.drawer-close {
+  position: absolute;
+  top: 16px;       /* 헤더 높이 만큼 패딩 아래 */
+  right: 16px;     /* 드로어 우측 끝에서 16px */
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1600;   /* nav-container(1500) 위에 표시 */
+}
+
 
     /* 모바일 반응형 스타일 */
     @media screen and (max-width: 840px) {
@@ -171,12 +185,15 @@ padding-top: 60px;
       .hamburger {
         display: flex; flex-start;
       }
+  .drawer-close {
+    display: block;
+  }
       /* 모바일용 사이드 드로어 내비게이션 */
   .nav-container {
   position: fixed;
   top: 0;
-  right: -300px; /* 초기 숨김 */
-  width: 300px;
+  right: -200px; /* 초기 숨김 */
+  width: 200px;
   height: 100vh;  /* 화면 전체 높이 */
   background: #000000; /* 검은색 배경 */
   overflow-y: auto; /* 드로어 내부 스크롤 */
