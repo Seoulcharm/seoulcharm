@@ -177,7 +177,7 @@ padding-top: 60px;
     @media screen and (max-width: 840px) {
       header {
         padding: 0px 20px;
-        height: auto;
+        height: 60px;
         line-height: normal;
         overflow: visible; 
       }
