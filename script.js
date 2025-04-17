@@ -67,7 +67,13 @@
   document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const navContainer = document.getElementById('nav-container');
+  const drawerClose  = document.getElementById('drawer-close');
     hamburger.addEventListener('click', function() {
       navContainer.classList.toggle('open');
     });
+  // X 버튼 클릭 → 드로어 닫기
+  drawerClose.addEventListener('click', () => {
+    navContainer.classList.remove('open');
   });
+  });
+
