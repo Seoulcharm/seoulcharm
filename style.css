@@ -103,7 +103,7 @@ padding-top: 60px;
     .hamburger {
       display: none;
       flex-direction: column;
-      justify-content: right;
+      justify-content: center;
       cursor: pointer;
     }
     .hamburger span {
@@ -160,7 +160,7 @@ padding-top: 60px;
     .partner {  margin-top: 50px;  width:100%;}
 /* 사이드 드로어 우상단 X 버튼 */
 .drawer-close {
-  position: absolute;
+  position: fixed;
   top: 16px;       /* 헤더 높이 만큼 패딩 아래 */
   right: 16px;     /* 드로어 우측 끝에서 16px */
   background: transparent;
@@ -170,6 +170,11 @@ padding-top: 60px;
   line-height: 1;
   cursor: pointer;
   z-index: 1600;   /* nav-container(1500) 위에 표시 */
+}
+
+footer a[href^="tel:"] {
+  color: #fff !important;
+  text-decoration: none;
 }
 
 
@@ -188,7 +193,7 @@ padding-top: 60px;
        justify-content: center;
        cursor: pointer;
         margin-left: auto;   /* 왼쪽 여백을 자동으로 채워서 오른쪽 정렬 */
-        margin-right: 20px;  /* 오른쪽 여백을 20px 줘서 양쪽 간격 조절 */
+        margin-right: 50px;  /* 오른쪽 여백을 20px 줘서 양쪽 간격 조절 */
       }
   .drawer-close {
     display: block;
