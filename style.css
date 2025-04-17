@@ -54,7 +54,7 @@ h1 {
 h2 {
   font-size: var(--font-size-h2);
   color: var(--color-heading);
-  font-weight: normal;
+  font-weight: bold;
 }
 h3 {
   font-size: var(--font-size-h3);
@@ -63,7 +63,7 @@ h3 {
 }
 h4 {
   font-size: var(--font-size-h4);
-  color: var(--color-blockquote);
+  color: var(--color-text);
 }
 h5 {
   font-size: var(--font-size-h5);
@@ -120,7 +120,10 @@ main {
       margin: 0; 
       font-family: 'Arial', sans-serif;  
       overflow-x: hidden;
-padding-top: 60px;
+padding-top: 60px;  /* 가운데 정렬용 최대 너비 */
+  max-width: 1024px;  /* 브라우저 가로 중앙에 위치 */
+  margin: 0 auto;  /* 내부 여백 추가 (위/아래 1rem, 좌/우 1rem) */
+  padding: 1rem;
 }
 
     header {
