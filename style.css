@@ -183,7 +183,12 @@ padding-top: 60px;
       }
       /* 햄버거 버튼 표시 */
       .hamburger {
-        display: flex; flex-start;
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       cursor: pointer;
+        margin-left: auto;   /* 왼쪽 여백을 자동으로 채워서 오른쪽 정렬 */
+        margin-right: 20px;  /* 오른쪽 여백을 20px 줘서 양쪽 간격 조절 */
       }
   .drawer-close {
     display: block;
