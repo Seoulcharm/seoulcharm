@@ -63,9 +63,7 @@ home: true
     </div>
   </div>
 </div>
-  <div class="clear_fix h100"></div>
-  <div class="clear_fix h80 pc"></div>
-
+<div style="height:100px;"></div>
 
 <div class="schedule">
   <div class="clear_fix h100"></div>
@@ -99,9 +97,9 @@ home: true
   </center>
   <div class="clear_fix h80"></div>
   <img src="img/main3.png" alt="협력기관" width="100%">
-  <div class="clear_fix h100"></div>
-  <div class="clear_fix h80 pc"></div>
+<div style="height:100px;"></div>
 </div>
+
 
 <div class="map-section">
   <div class="clear_fix h100"></div>
