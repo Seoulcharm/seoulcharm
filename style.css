@@ -123,12 +123,15 @@ blockquote {
        padding: 60px 1rem 1rem;
        }  /* 위 60px, 왼/오 1rem, 아래 1rem */
 
-     body.home main {
-      margin: 0; 
-      font-family: 'Arial', sans-serif;  
+body.home main {
+      /* 전역 max-width 해제 */
+      max-width: none;
+      width: 100%;
+      /* 좌우 마진도 없애서 화면 끝까지 꽉 채움 */
+      margin: 0;
       overflow-x: hidden;
-     padding-top: 60px;
-}
+      padding-top: 60px 0 1rem; 
+} 
 
     header {
       background: #000000; 
