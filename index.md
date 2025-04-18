@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 서울참정형외과의원
+home: true 
 ---
 
 <div class="banner">

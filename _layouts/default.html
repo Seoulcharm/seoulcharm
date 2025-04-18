@@ -6,7 +6,8 @@
   <title> 서울참정형외과의원 </title>
   <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
 </head>
-<body>
+<body{% if page.home %} class="home"{% endif %}> /*index는 home으로 별도 서식 적용*/
+
   {% include header.html %}
   
   <main>
