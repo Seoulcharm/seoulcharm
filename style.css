@@ -248,14 +248,14 @@ body.home main {
     .banner {
       width: 100%;
       height: auto;
-      position: static;
+      position: relative;
       top :0;
     }
     .banner img {
       width: 100%;
       height: auto;
-      position:  static;
-      top: 0;
+      position: absolute;
+      top: -10;
       left: 0;
       transition: opacity 1s ease-in-out;
 
@@ -292,8 +292,8 @@ body.home main {
   border-bottom: 1px solid #666666;  /* 아래에만 1px 선 */
   margin: 1rem 0;             /* 위/아래 간격 조절 */
 }
-.img-90 {
-  width: 90%;
+.img-100 {
+  width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
