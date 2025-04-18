@@ -121,7 +121,7 @@ blockquote {
        overflow-x: hidden;
        max-width: 1024px;
        margin: 0 auto;
-       padding: 60px 1rem 1rem;
+       padding: 30 px 1rem 1rem;
        }  /* 위 60px, 왼/오 1rem, 아래 1rem */
 
 body.home main {
@@ -249,13 +249,13 @@ body.home main {
       width: 100%;
       height: auto;
       position: relative;
-      top :0;
+     
     }
     .banner img {
       width: 100%;
       height: auto;
       position: absolute;
-      top: -10;
+      top: 0;
       left: 0;
       transition: opacity 1s ease-in-out;
 
