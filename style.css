@@ -119,10 +119,10 @@ blockquote {
     }
     main {
        overflow-x: hidden;
-       max-width: 1024px;
+       max-width: 1250px;
        margin: 0 auto;
-       padding: 30 px 1rem 1rem;
-       }  /* 위 60px, 왼/오 1rem, 아래 1rem */
+       padding: 40 px 1rem 1rem;
+       }  /* 위 40px, 왼/오 1rem, 아래 1rem */
 
 body.home main {
       /* 전역 max-width 해제 */
