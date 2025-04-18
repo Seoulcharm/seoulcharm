@@ -120,11 +120,10 @@ main {
       margin: 0; 
       font-family: 'Arial', sans-serif;  
       overflow-x: hidden;
-padding-top: 60px;  /* 가운데 정렬용 최대 너비 */
   max-width: 1024px;  /* 브라우저 가로 중앙에 위치 */
   margin: 0 auto;  /* 내부 여백 추가 (위/아래 1rem, 좌/우 1rem) */
-  padding: 1rem;
-}
+  padding: 60px 1rem 1rem;}  /* 위 60px, 왼/오 1rem, 아래 1rem */
+
 
     header {
       background: #000000; 
@@ -284,6 +283,7 @@ padding-top: 60px;  /* 가운데 정렬용 최대 너비 */
   line-height: 1;
   cursor: pointer;
   z-index: 1600;   /* nav-container(1500) 위에 표시 */
+  display: none;   /* 기본 숨김 */
 }
 
 footer a[href^="tel:"] {
@@ -309,9 +309,9 @@ footer a[href^="tel:"] {
         margin-left: auto;   /* 왼쪽 여백을 자동으로 채워서 오른쪽 정렬 */
         margin-right: 50px;  /* 오른쪽 여백을 20px 줘서 양쪽 간격 조절 */
       }
-  .drawer-close {
+  .nav-container.open .drawer-close {
     display: block;
-  }
+
       /* 모바일용 사이드 드로어 내비게이션 */
   .nav-container {
   position: fixed;
