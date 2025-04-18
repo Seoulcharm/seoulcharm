@@ -120,9 +120,9 @@ main {
       margin: 0; 
       font-family: 'Arial', sans-serif;  
       overflow-x: hidden;
-  max-width: 1024px;  /* 브라우저 가로 중앙에 위치 */
-  margin: 0 auto;  /* 내부 여백 추가 (위/아래 1rem, 좌/우 1rem) */
-  padding: 60px 1rem 1rem;}  /* 위 60px, 왼/오 1rem, 아래 1rem */
+  max-width: 1024px;
+  margin: 0 auto;    /* 브라우저 가로 중앙에 위치 */
+  padding: 60px 1.5rem 1rem;}  /* 위 60px, 왼/오 1.5rem, 아래 1rem */
 
 
     header {
