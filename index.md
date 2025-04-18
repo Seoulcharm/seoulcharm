@@ -26,7 +26,7 @@ home: true
     <p>051-791-1300<br>상담시간 내 연락 주세요.</p>
   </div>
   <div class="section-box">
-    <a href="https://maps.app.goo.gl/YcsEPiPn5uBr47VVA">
+    <a href="https://naver.me/xBwJiqfD">
       <img src="img/icon/icon3.png" alt="아이콘1" width="80">
     </a>
     <h3>오시는 길</h3>
