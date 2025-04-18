@@ -251,12 +251,13 @@ body.home main {
       position: relative;
     }
     .banner img {
-      width: 100%;
-      height: auto;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: opacity 1s ease-in-out;
+	position: static;    /* ← absolute → static */
+  	display: block;      /* 인라인 요소를 블록으로 만들어서 폭 100% 적용되게 */
+ 	width: 100%;
+	height: auto;
+	top: auto;           /* 필요 없지만 명시적으로 초기화 */
+	left: auto;
+ 	transition: opacity 1s ease-in-out;
     }
     .sections {
       display: flex;
