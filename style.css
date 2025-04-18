@@ -17,8 +17,8 @@
   /* 색상 */
   --color-text: #333333; /*진회색*/
   --color-heading: #23378b; /*남색*/
-  --color-link: #007bff;
-  --color-link-hover: #0056b3;
+  --color-link: #007bff;(하늘색)
+  --color-link-hover: #ffffff(흰색)
   --color-blockquote: #666666; /*grey*/
 }
 
@@ -248,13 +248,13 @@ body.home main {
     .banner {
       width: 100%;
       height: auto;
-      position: relative;
+      position: static;
       top :0;
     }
     .banner img {
       width: 100%;
       height: auto;
-      position: absolute;
+      position:  static;
       top: 0;
       left: 0;
       transition: opacity 1s ease-in-out;
@@ -382,3 +382,5 @@ footer a[href^="tel:"] {
 
       }
     }
+
+
