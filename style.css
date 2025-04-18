@@ -124,11 +124,10 @@ blockquote {
        }  /* 위 60px, 왼/오 1rem, 아래 1rem */
 
      body.home main {
-       overflow-x: hidden;
-       max-width: none;
-       margin: 0;
-       padding-top : 60px;
-
+      margin: 0; 
+      font-family: 'Arial', sans-serif;  
+      overflow-x: hidden;
+     padding-top: 60px;
 }
 
     header {
