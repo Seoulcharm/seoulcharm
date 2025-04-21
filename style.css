@@ -323,7 +323,12 @@ footer a[href^="tel:"] {
 
     /* 모바일 반응형 스타일 */
     @media screen and (max-width: 840px) {
-      header {
+
+ main {
+    padding: 40px 0.5rem 0.5rem;
+  }     
+
+ header {
         padding: 0px 20px;
         height: 60px;
         line-height: normal;
