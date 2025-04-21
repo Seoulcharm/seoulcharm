@@ -299,6 +299,11 @@ body.home main {
   height: 100%;
   border: 0;
 }
+.contact-info .phone {
+  display: inline;
+  margin-left: 0.5rem;  /* 파이프 기호와 약간의 간격 */
+}
+
 
 /*기타 스타일*/ 
 
@@ -359,7 +364,10 @@ footer a[href^="tel:"] {
         margin-right: 50px;  /* 오른쪽 여백을 20px 줘서 양쪽 간격 조절 */
       }
 
-
+ .contact-info .phone {
+    display: block;
+    margin: 0.5rem 0 0; /* 위 여백 조절 */
+  }
   .nav-container.open .drawer-close {
     display: block;}
 
