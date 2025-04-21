@@ -326,7 +326,9 @@ hr.dotted-line {
   display: block;
   margin: 1rem 0; /* 위아래 여백도 살짝 주기 */
 }
-
+figure {
+  margin: 0;
+}
 
 /* 사이드 드로어 우상단 X 버튼 */
 .drawer-close {
