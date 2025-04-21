@@ -11,7 +11,6 @@ main 최대폭이 1024px이라 그런듯. -> 1500px
 문제 2) 모바일에서 doctor/facility 여백이 1도 없음.  -> 60 px -> 60px로 바꿈 해결 
 
 doctor page 영상 삽입- ok
-footer 전화번호 짤리는거 추가 
-
-
-
+footer 전화번호 짤리는거 정리 -ok
+X크기 키우기 - ok
+사이드바 글자 크기 14-> 16px로 조정  - ok 
