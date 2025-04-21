@@ -14,3 +14,7 @@ doctor page 영상 삽입- ok
 footer 전화번호 짤리는거 정리 -ok
 X크기 키우기 - ok
 사이드바 글자 크기 14-> 16px로 조정  - ok 
+facility page -ok 
+device 삽입 - ok 
+
+페이지 디자인이 맘에 안듬.  이미지 사이즈가 작은 느낌. 더 키우고 싶음. 
