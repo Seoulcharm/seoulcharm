@@ -324,7 +324,7 @@ hr.dotted-line {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 1rem auto; /* 위아래 여백도 살짝 주기 */
+  margin: 1rem 0; /* 위아래 여백도 살짝 주기 */
 }
 
 
