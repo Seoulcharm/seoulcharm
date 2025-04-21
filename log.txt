@@ -18,3 +18,5 @@ facility page -ok
 device 삽입 - ok 
 
 페이지 디자인이 맘에 안듬.  이미지 사이즈가 작은 느낌. 더 키우고 싶음. 
+device에 <main> 삭제  이미지를 줄이기위해서
+점선 추가
