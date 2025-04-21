@@ -121,7 +121,7 @@ blockquote {
        overflow-x: hidden;
        max-width: 1024px;
        margin: 0 auto;
-       padding: 60 px 1rem 1rem;
+       padding: 60px 1rem 1rem;
        }  /* 위 60px, 왼/오 1rem, 아래 1rem */
 
 body.home main {
