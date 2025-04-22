@@ -509,13 +509,13 @@ footer a[href^="tel:"] {
 
 /* 각각 원하는 색상으로 조정하세요 */
 .fab-phone {
-  background: #ff6b6b;
+  background: ##FEEFC5;
 }
 .fab-map {
-  background: #1dd1a1;
+  background: #FFCD4A;
 }
 .fab-reserve {
-  background: #feca57;
+  background: ##FD9F28;
 }
 
     }
