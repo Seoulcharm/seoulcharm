@@ -377,29 +377,45 @@ footer a[href^="tel:"] {
   max-width: 1024px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  color: var(--color-text);
 }
+
+/* 핵심: 좌우 레이아웃 */
 .info-block {
-  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;            /* 헤더와 본문 사이 간격 */
+  margin-bottom: 2rem;  /* 블록 간 세로 간격 */
+}
+.info-header {
+  flex: 0 0 120px;      /* 헤더(아이콘+제목) 고정폭 */
+  display: flex;
+  align-items: center;
 }
 .info-icon {
-  display: inline-block;
-  width: 1.2em;
-  text-align: center;
+  font-size: 1.25rem;
   margin-right: 0.5rem;
   color: var(--color-heading);
 }
-.info-block strong {
-  font-size: var(--font-size-h4);
+.info-details {
+  flex: 1;              /* 나머지 공간 차지 */
 }
-.info-block p {
-  margin: 0.5rem 0;
+.info-details p {
+  margin: 0.25rem 0;
   line-height: var(--line-height-base);
 }
-.parking-info {
-  font-size: 0.9rem;
-  color: #666;
+/* 구분선 */
+hr.dotted-line {
+  border: none;
+  border-top: 1px dotted #666;
+  margin: 1rem 0 2rem;
 }
+
+/* 예: 야간진료만 빨갛게 */
+.night-shift {
+  color: #e63946;
+}
+
+/*fixed action */ 
 
   .fixed-actions {
     display: none;
