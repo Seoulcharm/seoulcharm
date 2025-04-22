@@ -7,7 +7,7 @@
   --font-size-base: 16px;
   --font-size-h1: 2rem;  /* 28px */
   --font-size-h2: 1.75rem;   /* 24px */
-  --font-size-h3: 1.75rem;  /* 20px */
+  --font-size-h3: 1.5rem;  /* 20px */
   --font-size-h4: 1.25rem;     /* 16px */
   --font-size-h5: 1.25rem;  /* 20px */
   --font-size-h6: 1rem;     /* 16px */
@@ -60,7 +60,6 @@ h3 {
   font-size: var(--font-size-h3);
   color: var(--color-text);
   font-weight: bold;
-  line-height: 1.75;    margin-bottom: 0.3em;
 
 }
 h4 {
@@ -339,7 +338,7 @@ figure {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 300px; /* 필요에 따라 조절 */
+  height: 250px; /* 필요에 따라 조절 */
 }
 
 .title-text {
