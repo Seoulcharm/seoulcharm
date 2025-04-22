@@ -372,6 +372,35 @@ footer a[href^="tel:"] {
   color: #fff !important;
   text-decoration: none;
 }
+/*오시는길 관련 스타일*/
+.clinic-info {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: var(--color-text);
+}
+.info-block {
+  margin-bottom: 1.5rem;
+}
+.info-icon {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
+  margin-right: 0.5rem;
+  color: var(--color-heading);
+}
+.info-block strong {
+  font-size: var(--font-size-h4);
+}
+.info-block p {
+  margin: 0.5rem 0;
+  line-height: var(--line-height-base);
+}
+.parking-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
 
 
     /* 모바일 반응형 스타일 */
