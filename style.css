@@ -404,12 +404,13 @@ footer a[href^="tel:"] {
   .fixed-actions {
     display: none;
   }
-}
+
 
 
 
     /* 모바일 반응형 스타일 */
     @media screen and (max-width: 840px) {
+
 
  main {
     padding: 40px 0.5rem 0.5rem;
@@ -516,7 +517,6 @@ footer a[href^="tel:"] {
 .fab-reserve {
   background: #feca57;
 }
-
 
     }
 
