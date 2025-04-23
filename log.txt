@@ -38,6 +38,5 @@ floating action button
 플로팅 버튼 색깔 수정 ok 
 오시는길 모바일 버전 더 이쁘게 ok 
 title 높이 모바일에서 조정. ok
-
-header hight 60-> 80px로 줄여봄. 
+header hight 60-> 80px로 줄여봄. -> script 수정으로 해결.. 
 

@@ -27,39 +27,40 @@
     }
   });
 
-
-// ————— 배너 위치 보정 —————
+// ——— 배너 위치 & 다음 섹션 여백 보정 ———
 function updateBannerPosition() {
-  const header   = document.querySelector('header');
-  const banner   = document.querySelector('.banner');
-  const sections = document.querySelector('.sections'); // 겹치는 섹션
+  const header       = document.querySelector('header');
+  const banner       = document.querySelector('.banner');
+  const firstSection = document.querySelector('.sections'); // 필요시 클래스 변경
 
-  if (!header || !banner || !sections) return;
-
-  // 1) 이전에 설정한 margin 초기화
+  if (!header || !banner) return;
+  // 1) 이전 설정 초기화
   banner.style.marginTop   = '';
-  sections.style.marginTop = '';
+  if (firstSection) firstSection.style.marginTop = '';
 
-  // 2) header 바로 아래에 붙이기
-  const bannerRect  = banner.getBoundingClientRect();
-  const headerH     = header.offsetHeight;
-  const gap         = bannerRect.top - headerH;
+  // 2) 현재 보이는 슬라이드 이미지 높이 구하기
+  const currentImg = banner.querySelector('img.slide[style*="display: block"]')
+                   || banner.querySelector('img.slide');
+  const imgH = currentImg ? currentImg.offsetHeight : 0;
+
+  // 3) header 바로 아래로 배너 띄우기 (갭만큼만 위로)
+  const gap = banner.getBoundingClientRect().top - header.offsetHeight;
   if (gap > 0) {
     banner.style.marginTop = `-${gap}px`;
   }
 
-  // 3) 배너 높이만큼 .sections를 밀어내기
-  const bannerH = banner.offsetHeight;
-  sections.style.marginTop = `${bannerH}px`;
+  // 4) 이미지 높이만큼 첫 섹션(.sections) 아래로 밀기
+  if (firstSection && imgH > 0) {
+    firstSection.style.marginTop = `${imgH}px`;
+  }
 }
 
-// load/resize/image-load 시 실행
+// load / resize / 이미지 로드 시 모두 재계산
 window.addEventListener('load',  updateBannerPosition);
 window.addEventListener('resize', updateBannerPosition);
 document.querySelectorAll('.banner img').forEach(img =>
   img.addEventListener('load', updateBannerPosition)
 );
-
   // PC/모바일 공용 서브메뉴 토글 (a 태그에 이벤트 적용)
   document.addEventListener('DOMContentLoaded', function() {
     const menuLinks = document.querySelectorAll('nav ul.main-menu > li > a');
