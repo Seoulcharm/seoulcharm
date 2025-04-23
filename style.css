@@ -432,7 +432,7 @@ hr.dotted-line {
   height: 3.5rem;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   transition: transform .2s ease;
@@ -446,10 +446,10 @@ hr.dotted-line {
   background: #feca57;
 }
 .fab-map {
-  background: #ff6b6b;
+  background: #3A4CA8;
 }
 .fab-reserve {
-  background: #1dd1a1;
+  background: #67B465;
     }
 
 
