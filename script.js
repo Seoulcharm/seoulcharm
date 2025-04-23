@@ -29,16 +29,20 @@
 
 
   // 배너 여백 조절
-  function updateBannerMargin() {
-    const banner = document.querySelector('.banner');
-    if (!banner) return;
-    const bannerImage = banner.querySelector('img.slide[style*="display: block"]') ||
-      banner.querySelector('img.slide');
-    if (bannerImage) {
-      const imgHeight = bannerImage.offsetHeight;
-      banner.style.marginBottom = imgHeight + 'px';
-    }
+function updateBannerMargin() {
+  const banner = document.querySelector('.banner');
+  const header = document.querySelector('header');
+
+  if (!banner || !header) return;
+
+  const headerHeight = header.offsetHeight;
+  // marginBottom은 설정하지 않고, 대신 padding-top을 main에 적용
+  const main = document.querySelector('main');
+  if (main) {
+    main.style.paddingTop = headerHeight + 'px';
   }
+}
+
   window.addEventListener('load', updateBannerMargin);
   window.addEventListener('resize', updateBannerMargin);
 
