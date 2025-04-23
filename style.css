@@ -410,10 +410,6 @@ hr.dotted-line {
   margin: 1rem 0 2rem;
 }
 
-/* 예: 야간진료만 빨갛게 */
-.redcolor {
-  color: #e63946;
-}
 
 /*fixed action */ 
 
