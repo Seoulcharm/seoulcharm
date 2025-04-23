@@ -449,7 +449,7 @@ hr.dotted-line {
   background: #feca57;
 }
 .fab-reserve {
-  background-image: url('{{ site.baseurl }}/img/icon/fab3.jpg');
+  background-image: url('/img/icon/fab3.jpg');
 
   background: #1dd1a1;
     }
