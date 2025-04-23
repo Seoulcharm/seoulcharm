@@ -443,14 +443,12 @@ hr.dotted-line {
 
 /* 각각 원하는 색상으로 조정하세요 */
 .fab-phone {
-  background: #ff6b6b;
-}
-.fab-map {
   background: #feca57;
 }
+.fab-map {
+  background: #ff6b6b;
+}
 .fab-reserve {
-  background-image: url('/img/icon/fab3.jpg');
-
   background: #1dd1a1;
     }
 
