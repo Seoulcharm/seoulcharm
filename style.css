@@ -525,15 +525,13 @@ hr.dotted-line {
 
 /* 각각 원하는 색상으로 조정하세요 */
 .fab-phone {
-  background: #FD8A69;
+  background: #ff6b6b;
 }
 .fab-map {
-  background: #FD8A69;
+  background: #feca57;
 }
 .fab-reserve {
-  background: #FD8A69;
-}
-
+  background: #1dd1a1;
     }
 
 
