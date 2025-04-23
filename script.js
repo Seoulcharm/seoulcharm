@@ -28,23 +28,32 @@
   });
 
 
-  // 배너 여백 조절
-function updateBannerMargin() {
-  const banner = document.querySelector('.banner');
+// ————— 배너 위치 보정 —————
+function updateBannerPosition() {
   const header = document.querySelector('header');
+  const banner = document.querySelector('.banner');
+  if (!header || !banner) return;
 
-  if (!banner || !header) return;
+  // 이전에 설정한 margin-top 초기화
+  banner.style.marginTop = '';
 
+  // 배너 컨테이너의 화면 상단 위치
+  const bannerRect = banner.getBoundingClientRect();
   const headerHeight = header.offsetHeight;
-  // marginBottom은 설정하지 않고, 대신 padding-top을 main에 적용
-  const main = document.querySelector('main');
-  if (main) {
-    main.style.paddingTop = headerHeight + 'px';
+
+  // header 바로 아래가 배너 top이 되도록 gap만큼만 보정
+  const gap = bannerRect.top - headerHeight;
+  if (gap > 0) {
+    banner.style.marginTop = `-${gap}px`;
   }
 }
 
-  window.addEventListener('load', updateBannerMargin);
-  window.addEventListener('resize', updateBannerMargin);
+// load/resize/이미지 로드 시 모두 실행
+window.addEventListener('load',  updateBannerPosition);
+window.addEventListener('resize', updateBannerPosition);
+document.querySelectorAll('.banner img').forEach(img =>
+  img.addEventListener('load', updateBannerPosition)
+);
 
 
   // PC/모바일 공용 서브메뉴 토글 (a 태그에 이벤트 적용)
