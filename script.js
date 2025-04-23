@@ -95,3 +95,17 @@ document.querySelectorAll('.banner img').forEach(img =>
   });
   });
 
+//floating 
+document.addEventListener('DOMContentLoaded', function() {
+  const phoneBtn = document.querySelector('.fab-phone');
+  if (!phoneBtn) return;
+
+  phoneBtn.addEventListener('click', function(e) {
+    // PC 판정: 윈도우 가로 폭 > 840px
+    if (window.innerWidth > 840) {
+      e.preventDefault();
+      alert('서울참정형외과 전화번호 : 051-791-1300');
+    }
+    // 모바일(<=840px)이면 e.preventDefault() 없이 tel: 동작
+  });
+});
