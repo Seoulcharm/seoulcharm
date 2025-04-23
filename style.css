@@ -411,7 +411,7 @@ hr.dotted-line {
 }
 
 /* 예: 야간진료만 빨갛게 */
-.night-shift {
+.redcolor {
   color: #e63946;
 }
 
