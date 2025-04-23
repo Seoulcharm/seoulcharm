@@ -534,4 +534,17 @@ hr.dotted-line {
   background: #1dd1a1;
     }
 
-
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;       /* 블록 간 간격 줄이기 */
+  }
+  /* 헤더(아이콘+제목)는 왼쪽에 고정하지 않고 상단에만 표시 */
+  .info-header {
+    flex: none;
+    margin-bottom: 0.5rem;
+  }
+  /* 상세 내용에는 여백 조금씩 추가 */
+  .info-details p {
+    margin-left: 1.75rem;  /* 아이콘 정도 들여쓰기 */
+  }
