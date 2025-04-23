@@ -141,12 +141,12 @@ body.home main {
     header {
       background: #000000; 
       color: #ffffff;
-      padding: 0px 80px;
+      padding: 0px 60px;
       display: flex; 
       align-items: center;
       justify-content: flex-start; /*로고옆에 바로 메뉴 붙게*/
-      gap: 20px;      /*원래 40*/ 
-      height: 60px;
+      gap: 20px;      
+      height: 80px;
       line-height: 60px; 
       position: fixed;
       top: 0;
@@ -463,7 +463,7 @@ hr.dotted-line {
 
  header {
         padding: 0px 20px;
-        height: 80px;
+        height: 85px;
         line-height: normal;
         overflow: visible; 
       }
@@ -474,7 +474,7 @@ hr.dotted-line {
        justify-content: center;
        cursor: pointer;
         margin-left: auto;   /* 왼쪽 여백을 자동으로 채워서 오른쪽 정렬 */
-        margin-right: 50px;  /* 오른쪽 여백을 20px 줘서 양쪽 간격 조절 */
+        margin-right: 50px;  /* 오른쪽 여백을 50px 줘서 양쪽 간격 조절 */
       }
 
  .contact-info .phone {

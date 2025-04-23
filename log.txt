@@ -37,5 +37,7 @@ floating action button
 페이지 채워넣기 
 플로팅 버튼 색깔 수정 ok 
 오시는길 모바일 버전 더 이쁘게 ok 
-title 높이 모바일에서 조정. 
+title 높이 모바일에서 조정. ok
+
+header hight 60-> 80px로 줄여봄. 
 
