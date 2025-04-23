@@ -413,32 +413,42 @@ hr.dotted-line {
 
 
 /* footer floaiting action*/
-
 .fixed-actions {
   position: fixed;
-  bottom: 3rem;      /* 아래 여백 */
-  right: 1rem;       /* 오른쪽 여백 */
+  bottom: 1.5rem;
+  right: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;      /* 버튼 간격 */
-  z-index: 1000;     /* 위에 뜨도록 */
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
 }
 
 .fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0052d4, #4364f7); /* 예시 그라데이션 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3.5rem;     /* 버튼 크기 */
-  height: 3.5rem;
-  border-radius: 50%;
   text-decoration: none;
-  font-size: 2rem;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  transition: transform .2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .fab:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.24);
+}
+
+.fab svg, /* SVG 아이콘일 때 */
+.fab i {  /* 폰트 아이콘일 때 */
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  font-size: 24px;
+  color: #fff;
 }
 
 /* 각각 원하는 색상으로 조정하세요 */
