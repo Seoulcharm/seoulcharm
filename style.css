@@ -528,6 +528,8 @@ hr.dotted-line {
   background: #feca57;
 }
 .fab-reserve {
+  background-image: url('{{ site.baseurl }}/img/icon/fab3.jpg');
+
   background: #1dd1a1;
     }
 
@@ -551,7 +553,7 @@ hr.dotted-line {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 100px; /* 필요에 따라 조절 */
+  height: 120px; /* 필요에 따라 조절 */
 }
 
 .title-text {
