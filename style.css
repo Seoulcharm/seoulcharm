@@ -380,7 +380,7 @@ footer a[href^="tel:"] {
   padding: 2rem 1rem;
 }
 
-/* 핵심: 좌우 레이아웃 */
+/* wayto 스타일 */
 .info-block {
   display: flex;
   align-items: flex-start;
@@ -391,6 +391,8 @@ footer a[href^="tel:"] {
   flex: 0 0 120px;      /* 헤더(아이콘+제목) 고정폭 */
   display: flex;
   align-items: center;
+  gap: 0.5rem;    /* 아이콘⇄타이틀 사이 여백 (원하는 값으로 조정) */
+}
 }
 .info-icon {
   font-size: 1.25rem;
@@ -534,6 +536,7 @@ hr.dotted-line {
   .info-header {
     flex: none;
     margin-bottom: 0.5rem;
+     gap: 0.5rem;    
   }
   /* 상세 내용에는 여백 조금씩 추가 */
   .info-details p {
