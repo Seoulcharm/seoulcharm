@@ -563,3 +563,18 @@ hr.dotted-line {
   font-weight: bold;
   text-align: center;
 }
+
+  .youtube-section {
+    flex-direction: column;
+    gap: 15px;           /* 세로 간격 조정 */
+  }
+  .main-video,
+  .side-videos {
+    flex: none;          /* flex 비율 해제 */
+    width: 100%;         /* 전체 너비로 */
+  }
+  .side-videos {
+    /* 이미 column 이지만 확실히 세로 정렬 */
+    flex-direction: column;
+    gap: 10px;           /* 각 사이드 비디오 간격 */
+  }
