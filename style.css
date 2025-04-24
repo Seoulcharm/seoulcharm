@@ -566,17 +566,32 @@ hr.dotted-line {
 
   .youtube-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  /* 메인 아래로 내려오도록 */
     gap: 15px;
   }
+
   .main-video,
   .side-videos {
     width: 100%;
+    flex: none;              /* PC용 flex 설정 해제 */
   }
+
   .side-videos {
+    display: flex;           /* 가로 정렬 */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;                /* 썸네일 간 간격 */
+  }
+
+  /* 세 개가 균등하게 퍼지도록 각 링크에 비율 지정 */
+  .side-videos a {
+    flex: 1;                 /* 3개가 동일 비율로 공간 차지 */
+    text-align: center;      /* 캡션 등이 있으면 가운데 정렬 */
+  }
+
+  .side-videos a img {
+    width: 100%;             /* a 요소 너비에 맞춰 꽉 채우기 */
+    height: auto;
     display: block;
   }
-  /* 기본적으로 사이드 영상 링크 모두 숨김 */
-  .side-videos a {
-    display: none;
-  }
+}

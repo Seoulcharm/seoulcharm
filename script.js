@@ -110,19 +110,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//유튜브 섹션 표시 변경//
-  document.addEventListener('DOMContentLoaded', function() {
-    // 모바일 화면일 때만 실행
-    if (window.matchMedia('(max-width: 768px)').matches) {
-      const sideLinks = document.querySelectorAll('.side-videos a');
-      if (sideLinks.length > 0) {
-        const randomIndex = Math.floor(Math.random() * sideLinks.length);
-        sideLinks.forEach((link, idx) => {
-          if (idx === randomIndex) {
-            link.style.display = 'block';  // 랜덤으로 선택된 항목만 보이도록
-          }
-        });
-      }
-    }
-  });
-
