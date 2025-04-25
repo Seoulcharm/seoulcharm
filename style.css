@@ -453,6 +453,18 @@ hr.dotted-line {
   color: #fff;
 }
 
+/* 초기 상태: 투명하고 살짝 아래로 내려가 있음 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+/* 화면에 보일 때 추가될 클래스 */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
     /* 모바일 반응형 스타일 */
