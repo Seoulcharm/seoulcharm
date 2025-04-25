@@ -397,7 +397,7 @@ footer a[href^="tel:"] {
 .info-icon {
   font-size: 1.25rem;
   margin-right: 0.5rem;
-  color: var(--color-heading);
+  color:  #ccc;
 }
 .info-details {
   flex: 1;              /* 나머지 공간 차지 */
