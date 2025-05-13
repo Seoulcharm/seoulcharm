@@ -43,7 +43,7 @@ home: true
       <img src="img/maintitle_media.jpg" class="text_sizealls2 pc" data-aos="fade-down"/>
     </picture>
 
-<h3><big>최</big>고의 의료진,<big>참</big>된 진료</h3>
+//<h3><big>최</big>고의 의료진,<big>참</big>된 진료</h3>
 
   </center>
   <div class="clear_fix h80"></div>
