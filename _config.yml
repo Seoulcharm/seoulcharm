@@ -4,3 +4,4 @@ url: "https://seoulcharm.github.io"
 baseurl: ""
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
