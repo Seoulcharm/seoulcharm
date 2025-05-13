@@ -1,5 +1,8 @@
 5/13
 네이버 SEO최적화 
+- meta dexcription 
+- robots.txt 추가 
+
 fade in 추가로 해야함
 
 
