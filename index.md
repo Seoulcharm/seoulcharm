@@ -14,25 +14,24 @@ home: true
   </picture>
 </div>
 
-<div class="schedule">
-  <div class="clear_fix h100"></div>
-  <div class="clear_fix h80 pc"></div>
-  <center>
-    <picture>
-      <source media="(max-width: 840px)" srcset="img/maintitle_schedule.jpg" width="90%">
-      <img src="img/maintitle_schedule.jpg" class="text_sizealls2 pc" data-aos="fade-down"/>
-    </picture>
-  </center>
-  <div class="clear_fix h100"></div>
-  <div class="clear_fix h80 pc"></div>
-  <center>
-    <picture>
-      <source media="(max-width: 840px)" srcset="img/mobile-schedule.jpg" width="90%">
-      <img src="img/main4.jpg" alt="진료일정" width="100%">
-  <div class="clear_fix h100"></div>
-  <div class="clear_fix h80 pc"></div>
-    </picture>
-  </center>
+<div class="sections">
+  <div class="section-box">
+    <img src="img/icon/icon1.png" alt="아이콘1" width="80">
+    <h3>진료시간</h3>
+    <p>평일 9:00~18:00<br>토요일 9:00~13:00<br>화/목 야간진료 18:00~20:00<br>평일점심시간 13:00~14:00</p>
+  </div>
+  <div class="section-box">
+    <img src="img/icon/icon2.png" alt="아이콘1" width="80">
+    <h3>전화상담</h3>
+    <p>051-791-1300<br>상담시간 내 연락 주세요.</p>
+  </div>
+  <div class="section-box">
+    <a href="https://naver.me/xBwJiqfD">
+      <img src="img/icon/icon3.png" alt="아이콘1" width="80">
+    </a>
+    <h3>오시는 길</h3>
+    <p>부산 남구 수영로 216, 2/3층<br>지하철 2호선 대연역 5번 출구</p>
+  </div>
 </div>
 
 <div class="media">
@@ -43,8 +42,6 @@ home: true
       <source media="(max-width: 840px)" srcset="img/maintitle_media.jpg" width="90%">
       <img src="img/maintitle_media.jpg" class="text_sizealls2 pc" data-aos="fade-down"/>
     </picture>
-
-
   </center>
   <div class="clear_fix h80"></div>
   <div class="youtube-section">
@@ -68,26 +65,26 @@ home: true
 </div>
 <div style="height:100px;"></div>
 
-<div class="sections">
-  <div class="section-box">
-    <img src="img/icon/icon1.png" alt="아이콘1" width="80">
-    <h3>진료시간</h3>
-    <p>평일 9:00~18:00<br>토요일 9:00~13:00<br>화/목 야간진료 18:00~20:00<br>평일점심시간 13:00~14:00</p>
-  </div>
-  <div class="section-box">
-    <img src="img/icon/icon2.png" alt="아이콘1" width="80">
-    <h3>전화상담</h3>
-    <p>051-791-1300<br>상담시간 내 연락 주세요.</p>
-  </div>
-  <div class="section-box">
-    <a href="https://naver.me/xBwJiqfD">
-      <img src="img/icon/icon3.png" alt="아이콘1" width="80">
-    </a>
-    <h3>오시는 길</h3>
-    <p>부산 남구 수영로 216, 2/3층<br>지하철 2호선 대연역 5번 출구</p>
-  </div>
+<div class="schedule">
+  <div class="clear_fix h100"></div>
+  <div class="clear_fix h80 pc"></div>
+  <center>
+    <picture>
+      <source media="(max-width: 840px)" srcset="img/maintitle_schedule.jpg" width="90%">
+      <img src="img/maintitle_schedule.jpg" class="text_sizealls2 pc" data-aos="fade-down"/>
+    </picture>
+  </center>
+  <div class="clear_fix h100"></div>
+  <div class="clear_fix h80 pc"></div>
+  <center>
+    <picture>
+      <source media="(max-width: 840px)" srcset="img/mobile-schedule.jpg" width="90%">
+      <img src="img/main4.jpg" alt="진료일정" width="100%">
+  <div class="clear_fix h100"></div>
+  <div class="clear_fix h80 pc"></div>
+    </picture>
+  </center>
 </div>
-
 
 <div class="partner">
   <div class="clear_fix h100"></div>
